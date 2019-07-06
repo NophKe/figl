@@ -1,0 +1,94 @@
+Vim
+
+
+%%toc 
+
+=What is Vim?=
+
+Vim est une version très améliorée du bon viel éditeur de texte Vi. Il inclus de nombreuses fo,nctionnalités dont se dernier manquait comme la coloration syntaxique, un historique d'annulation, une interface graphique. En clair, c'est la version moderne de vi.
+
+Vim fonctionne sous MS-Windows (NT, 2000, XP, Vista, 7, 8, 10), Macintosh, et presque toutes les version d'UNIX.
+
+Toutes les distribution de Gnu-Linux qui se respectent proposent l'installation de Vim par leur gestionnaire de paquet.
+
+Vim est ce que l'on apelle un « Charityware ». Vous pouvez l'utiliser, le copier, et le modifier à votre guise, mais vous êtes encouragé à faire un don pour les orphelins en Ouganda.
+
+Vim arrive par défaut beaucoup mieux configuré que vi. (Par exemple il permet d'utiliser les flèches sur le clavier...)
+
+Pour apprendre à l'utiliser, entrez la commande:
+```
+$ vimtutor
+```
+Cela devrait vous donner les bases...
+
+Des bases qui seront également valables pour vi ( qui fait partie du standard POSIX ). Je vous conseille donc vivement d'installer vim et d'entrer cette commande.
+
+__PS:__ Je suis sérieux, en installant le programme, et en exécutant cette commande, vous serez parti pour un guide interactif. Ce guide vous permettra de vous familiariser en une quinzaine de minutes à Vim.
+
+Vous n'allez pas vous retrouver devant un livre de 150 pages difficiles à lire. Ce tutoriel est ludique et pratique. Prenez le temps d'y jeter un coup d'œil.
+
+==Aide Mémoire==
+
+__Pour ajouter du texte:__
+
+: **a**
+ajoute après le curseur
+: **A**
+Ajoute en fin de ligne
+
+: **i**
+Ajoute sous le curseur
+: **I**
+Ajoute en début de ligne
+
+
+__Copier - Coller__
+
+: **dd**
+Coupe la ligne courante
+: **yy**
+Copie la ligne courante
+
+: **d5d**
+Coupe cinq lignes
+: **y6y**
+Copie six lignes
+: **P**
+Coller avant le curseur
+
+: **"+p**
+Coller depuis le presse-papier de l'interface graphique.
+
+
+__Se déplacer__
+
+: **gg**
+Aller au début du fichier
+: **G**
+Aller à la fin du fichier
+: **zz**
+Recentrer l'écran autour du curseur
+
+
+==Les Astuces==
+
+- Quand vous passez en mode ex, la flèche du haut permet de rechercher dans l'historique.
+- Quand vous passez en mode ex, la touche [ tab ] donne accès à une auto-completion.
+- La touche ``i`` pour insertion est facile à mémoriser, mais ``a`` sert plus souvent.
+
+
+==Trouver de l'aide==
+
+L'aide de Vim est très fournie, mais très anglophone.
+```
+:help
+```
+Pour une aide sur l'utilisation de l'aide,
+```
+:help help
+```
+
+ | [Pour une traduction complète en français de l'aide de Vim http://david.blanchet.free.fr/vim/doc/fr62017/help.txt.html] 
+
+
+

@@ -1,0 +1,589 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<META NAME="generator" CONTENT="http://txt2tags.org">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+<LINK REL="stylesheet" TYPE="text/css" HREF="inc/site.css">
+<TITLE>Un ordinateur ?</TITLE>
+</HEAD>
+<BODY>
+
+<DIV CLASS="header" ID="header">
+<H1>Un ordinateur ?</H1>
+</DIV>
+
+<DIV CLASS="body" ID="body">
+<DIV CLASS="toc">
+
+  <UL>
+  <LI><A HREF="#toc1">La Préhistoire</A>
+    <UL>
+    <LI><A HREF="#vocab">Vocabulaire inutile</A>
+    <LI><A HREF="#boulier">Le Boulier</A>
+    <LI><A HREF="#m_a_c">La Machine à calculer</A>
+    <LI><A HREF="#m_d_turing">La Machine de Turing</A>
+    </UL>
+  <LI><A HREF="#toc6">Anatomie de base</A>
+    <UL>
+    <LI><A HREF="#von_neumann">L'Architecture de Von Neumann</A>
+    <LI><A HREF="#arch_materielle">Une Architecture matérielle</A>
+    <LI><A HREF="#port">Les ports</A>
+    <LI><A HREF="#bus">Un bus</A>
+    <LI><A HREF="#vrai">Ce qui est vrai quelque soit l'architecture</A>
+    <LI><A HREF="#arch_moderne">Les Architechtures modernes</A>
+    </UL>
+  <LI><A HREF="#periph">Les périphériques</A>
+    <UL>
+    <LI><A HREF="#indisp">Les indispensables</A>
+      <UL>
+      <LI><A HREF="#cg">La carte graphique</A>
+      <LI><A HREF="#cs">La carte son</A>
+      <LI><A HREF="#masse">Une mémoire de stockage</A>
+      <LI><A HREF="#net">Une carte réseau</A>
+      </UL>
+    <LI><A HREF="#keyb">Un clavier</A>
+    <LI><A HREF="#moins_connu">Les moins connus</A>
+      <UL>
+      <LI><A HREF="#discrete_card">La Dicrete card</A>
+      </UL>
+    </UL>
+  <LI><A HREF="#interrupts">Interruptions système</A>
+  <LI><A HREF="#controler">Les Contrôleurs</A>
+    <UL>
+    <LI><A HREF="#controler_idee">L'idée</A>
+    <LI><A HREF="#controler_dd">Exemple avec un Disque Dur</A>
+    </UL>
+  </UL>
+
+</DIV>
+
+<A NAME="toc1"></A>
+<H1>La Préhistoire</H1>
+
+<P>
+En gros, avant le 01 Janvier 1970...
+</P>
+<P>
+On appelle cette date «l'epoch» (époque en français). Et depuis celle-ci, tous les ordinateurs qui fonctionnent sous un <A HREF="04_software.php#os">système d'exploitation</A> de type Unix, battent la seconde à l'unisson...
+</P>
+
+<A NAME="vocab"></A>
+<H2>Vocabulaire inutile</H2>
+
+<P>
+<B>Réaliser une action</B> c'est agir pour changer la <B>situation actuelle</B> en une <B>nouvelle situation</B>.
+</P>
+<P>
+Pour réaliser une opération mathématique, un humain réalise des calculs (<B>des instructions élémentaires</B>) sur des nombres (<B>des <A HREF="01_hardware.php#vocab">données</A> d'entrée</B>) pour trouver un résultat (<B>des <A HREF="01_hardware.php#vocab">données</A> de sortie</B>).
+</P>
+<P>
+L'ordre et la manière de réaliser ces calculs (ces instructions) est nommé <B>l'algorithme</B> (la technique de calcul).
+</P>
+<P>
+On va éclaircir par la suite...
+</P>
+
+<A NAME="boulier"></A>
+<H2>Le Boulier</H2>
+
+<P>
+On a inventé le <A HREF="01_hardware.php#boulier">boulier</A> de calcul, et on peut faire plein de choses avec un <A HREF="01_hardware.php#boulier">boulier</A> (addition, soustraction, noter un nombre...)
+</P>
+<P>
+Mais le <A HREF="01_hardware.php#boulier">boulier</A> a besoin d'un humain qui réalise des instructions sur les données... Il existe <B>5 instructions élémentaires</B> sur le boulier:
+</P>
+
+<OL>
+<LI>passer une boule de gauche à droite
+<LI>passer une boule de droite à gauche
+<LI>déplacer la main sur la ligne du dessus
+<LI>déplacer la main sur la ligne du dessous
+<LI>remettre à zéro (toutes les boules du même coté)
+</OL>
+
+<P>
+L'exemple du <A HREF="01_hardware.php#boulier">boulier</A> fait bien ressortir la distinction qu'il existe <B>entre</B> <U>les instructions</U> <B>et</B> <U>l'algorithme</U>... Connaitre les instructions ne sert à rien sans un <A HREF="01_hardware.php#vocab">algorithme</A> pour leur donner une utilité.
+</P>
+<P>
+On a aussi inventé le métier à tisser le fil... Avec, on fait des tapis, même si cela ne parait avoir que très peu à voir avec le boulier...
+</P>
+
+<A NAME="m_a_c"></A>
+<H2>La Machine à calculer</H2>
+
+<P>
+Plus fort que les bouliers, on a inventé la machine à calculer. Un objet bien plus efficace que le boulier... On lui entre des nombres qui font bouger des mécanismes dans la machine. Et le mouvement des roues dentées, des machins et des bidules mécaniques font qu'on peut lire un résultat!
+</P>
+<P>
+<A HREF="https://fr.wikipedia.org/wiki/Calculatrice_m%C3%A9canique"><IMG ALIGN="middle" SRC="img/Calculator.jpg" BORDER="0" ALT=""></A>
+</P>
+
+<TABLE ALIGN="center">
+<TR>
+<TD>Machine à calculer Olivetti sans capot, 1964 ( credit Wikipedia )</TD>
+</TR>
+</TABLE>
+
+<P>
+Plus besoin d'un humain qui connait les détails de l'algorithme. La forme des rouages de la machine, leurs formes et leurs dispositions, c'est çà le véritable algorithme. Plus même besoin de connaitre les différentes instructions. (Sauf pour les techniciens!)
+</P>
+<P>
+Cependant, ces première machines ne savaient réaliser qu'une seule opération (soit addition soit soustraction). Et à cet époque les machines doubles opérations étaient deux fois plus lourdes car elles comptaient deux fois plus de mécanique!
+</P>
+<P>
+La machine à calculer pouvait, certes, effectuer différentes instructions, mais elle ne pouvait mettre en pratique qu'un seul algorithme...
+</P>
+<P>
+Et une machine qui savait réaliser deux algorithmes différents, c'était <I>à peu près</I> deux machines dans une même carcasse!
+</P>
+<P>
+Historiquement c'est peu de temps plus tard que l'on a commencer à programmer des métiers à tisser avec des cartes perforées. Ces cartes perforées, c'était la suite des instructions à réaliser pour obtenir tel ou tel motif sur le tissus. Vous faites le lien?
+</P>
+
+<A NAME="m_d_turing"></A>
+<H2>La Machine de Turing</H2>
+
+<P>
+On commence à se dire qu'un <A HREF="01_hardware.php#boulier">boulier</A> multifonction programmable à la carte perforée...
+</P>
+<P>
+Du coup... On a voulu inventer une machine calculer <B>universelle</B> qui sache effectuer n'importe quelle opération. Et cela malgré un nombre d'instruction restreint. En fonction d'un <A HREF="01_hardware.php#vocab">algorithme</A> codé dans un support (comme une carte perforée) cette machine réaliserait  différentes instructions sur des <A HREF="01_hardware.php#vocab">données</A> et obtiendrait le résultat voulu.
+</P>
+<P>
+On aurait plus besoin de modifier <B>matériellement</B> la machine mais juste de remplacer la carte pour changer d'algorithme, et lui faire exécuter un autre programme.
+</P>
+<P>
+Turing a imaginé et théoriser la machine de <A HREF="01_hardware.php#m_d_turing">Turing</A> Celle-ci malgré un nombre d'instruction restreint peut simuler le fonctionnement de <B>n'importe quelle</B> machine à calculer classique. Ainsi, plus question d'inventer de machine à calculer nouvelle... Une seule machine de <A HREF="01_hardware.php#m_d_turing">Turing</A> peut toutes les remplacer, si on lui fournit le bon algorithme...
+</P>
+<P>
+Je fais simple, mais c'est l'idée. Ne perdez pas le fil!
+</P>
+<P>
+Aussi <A HREF="01_hardware.php#m_d_turing">Turing</A> a poursuivi son étude du sujet et a démontré qu'il existe des machines de <A HREF="01_hardware.php#m_d_turing">Turing</A> dites <B>universelles</B>. Celles-ci sont universelles quand elles sont capables de simuler le fonctionnement de n'importe quelle machine de <A HREF="01_hardware.php#m_d_turing">Turing</A> Une seule machine de <A HREF="01_hardware.php#m_d_turing">Turing</A> universelle remplace n'importe quelle machine de Turing!
+</P>
+<P>
+Alan <A HREF="01_hardware.php#m_d_turing">Turing</A> a été l'homme qui fait passer l'informatique de la recherche théorique sur les algorithmes, à de l'écriture de programmes.
+</P>
+<P>
+<A HREF="https://fr.wikipedia.org/wiki/Alan_Turing"><IMG ALIGN="middle" SRC="img/turing.jpg" BORDER="0" ALT=""></A>
+</P>
+
+<TABLE ALIGN="center">
+<TR>
+<TD>Alan <A HREF="01_hardware.php#m_d_turing">Turing</A> ( credit Wikipedia )</TD>
+</TR>
+</TABLE>
+
+<A NAME="toc6"></A>
+<H1>Anatomie de base</H1>
+
+<A NAME="von_neumann"></A>
+<H2>L'Architecture de Von Neumann</H2>
+
+<P>
+Comme la machine de <A HREF="01_hardware.php#m_d_turing">Turing</A> est une machine purement théorique, pour ce qui est de la réalisation pratique, l’architecture matérielle des ordinateurs modernes est basée sur ce que l'on appelle l'architecture de <A HREF="01_hardware.php#von_neumann">Von Neumann</A> qui décompose l’ordinateur ainsi:
+</P>
+
+<UL>
+<LI>Les <B>dispositifs d’entrées/sorties</B>, qui permettent de communiquer avec le monde extérieur.
+  <UL>
+  <LI>(clavier, écran, imprimante...) de façon plus moderne, on parlera de <I>périphériques</I>
+  <P></P>
+  </UL>
+<LI>L’<B>unité de contrôle</B>, qui est chargée du séquençage des opérations, du respect de l'algorithme
+<LI>L’<B>unité arithmétique et logique</B> (UAL) ou unité de traitement, qui effectue les instructions de base
+  <UL>
+  <LI>Ces deux derniers correspondent à nos <B>processeurs</B> modernes.
+  <P></P>
+  </UL>
+<LI>La <B>mémoire</B> qui contient les programmes et les données
+  <OL>
+  <LI>mémoire de <A HREF="01_hardware.php#masse">stockage</A> (programmes et <A HREF="01_hardware.php#vocab">données</A> de base de la machine, <I>les disques de données</I>)
+  <LI>mémoire vive (programmes et <A HREF="01_hardware.php#vocab">données</A> en cours de fonctionnement, <I>La Ram</I>)
+  <P></P>
+<A HREF="https://fr.wikipedia.org/wiki/Architecture_de_von_Neumann"><IMG ALIGN="middle" SRC="img/arch_von_neumann.png" BORDER="0" ALT=""></A>
+  </OL>
+</UL>
+
+<TABLE ALIGN="center">
+<TR>
+<TD>Schémas de principe de l'architecture de <A HREF="01_hardware.php#von_neumann">Von Neumann</A> ( credit Wikipedia )</TD>
+</TR>
+</TABLE>
+
+<A NAME="arch_materielle"></A>
+<H2>Une Architecture matérielle</H2>
+
+<P>
+Il existe un <A HREF="01_hardware.php#vocab">algorithme</A> capable de réaliser des additions <I>de tête</I>, comme il existe un <A HREF="01_hardware.php#vocab">algorithme</A> pour faire des additions sur un boulier! Dans les deux cas le résultat est le même, pour ce qui est du résultat! Mais la réalisation pratique pour y parvenir est très différente!
+</P>
+<P>
+Un <A HREF="01_hardware.php#vocab">algorithme</A> mental ne peut pas être reproduit sur un boulier. Et de la même façon vous n'imaginez pas un <A HREF="01_hardware.php#boulier">boulier</A> dans votre tête pour faire des additions.
+</P>
+<P>
+Il existe un <A HREF="01_hardware.php#vocab">algorithme</A> capable de réaliser de additions avec une machine de <A HREF="01_hardware.php#m_d_turing">Turing</A> Une machine de <A HREF="01_hardware.php#m_d_turing">Turing</A> <U>universelle</U> peut toujours reproduire le comportement d'une autre machine de Turin. (au besoin en la simulant!) Donc n'importe quelle machine de <A HREF="01_hardware.php#m_d_turing">Turing</A> universelle devrait pouvoir effectuer une addition...
+</P>
+<P>
+Oui! Bien sur, mais pas en suivant le même programme! De la même façon qu'un <A HREF="01_hardware.php#vocab">algorithme</A> valable au <A HREF="01_hardware.php#boulier">boulier</A> n'est pas forcément exportable sur une calculatrice; un <A HREF="04_software.php#intro">programme</A> écrit pour une <A HREF="01_hardware.php#arch_materielle">architecture matérielle</A> n'est pas exportable sur une autre <B>architecture</B>.
+</P>
+<P>
+On va y revenir...
+</P>
+
+<A NAME="port"></A>
+<H2>Les ports</H2>
+
+<P>
+Votre ordinateur possède à l'intérieur de lui un processeur qui réalise des instructions. Il possède une mémoire interne, appelée mémoire vive (ou juste ram). Le processeur et la mémoire vive se trouvent <B>physiquement</B> sur une carte électronique appelée "carte mère" qui est le cœur de votre ordinateur.
+</P>
+<P>
+Votre ordinateur possède un écran et un clavier, il possède un <A HREF="07_disks.php#disque">disque dur</A> , un lecteur de DVD, un lecteur de cartes sd...
+</P>
+<P>
+Les différentes pièces de votre ordinateur sont toutes connectées par un port. Un port, c'est physiquement ce qui "porte" la connectique de l'appareil en question! Physiquement, c'est donc, ce dans quoi vous branchez vos périphériques. Les ports sont les autoroutes matérielles des <A HREF="01_hardware.php#vocab">données</A> entre votre processeur, votre écran, votre disques et tout le reste.
+</P>
+
+<A NAME="bus"></A>
+<H2>Un bus</H2>
+
+<P>
+Le processeur, qui orchestre tout cela ne peut donc voir aucun des composants de l'ordinateur directement, il voit un <B>bus</B> qui peut prendre différentes valeurs numériques!
+</P>
+<P>
+Un bus, c'est un la même chose qu'un port, mais du point de vue du processeur. C'est un <A HREF="01_hardware.php#port">port</A> débarrassé de toutes les considération matérielles.
+</P>
+<P>
+Imaginez un appareil simplisme! Le câble pour le brancher à l'ordinateur ne possède qu'un seul fil. S'il y a du courant électrique sur ce fil, l'ordinateur comprendra que c'est un UN. S'il n'y a pas de courant électrique sur ce fil, l'ordinateur comprendra que c'est un ZÉRO.
+</P>
+	<BLOCKQUOTE>
+	- COURANT ou PAS DE COURANT, sont les états <I>physique</I> de ce port.
+	</BLOCKQUOTE>
+	<BLOCKQUOTE>
+	- ZÉRO et UN, sont les valeurs numériques du bus.
+	</BLOCKQUOTE>
+
+<A NAME="vrai"></A>
+<H2>Ce qui est vrai quelque soit l'architecture</H2>
+
+<P>
+Le seul composant dont la vitesse de fonctionnement est comparable à celle du processeur est la mémoire vive. Pour que les programmes puissent fonctionner, il faut qu'ils soient en mémoire.
+</P>
+<P>
+Certains de ces appareils sont dirigés par des cartes <A HREF="01_hardware.php#controler">contrôleurs</A> que l'on branche sur la carte mère pour aider l'ordinateur à les piloter.
+</P>
+<P>
+Quand votre ordinateur lit un <A HREF="04_software.php#intro">programme</A> ou une <A HREF="01_hardware.php#vocab">donnée</A> depuis le disque, ce qui se passe en réalité, c'est que le processeur utilise en <A HREF="01_hardware.php#bus">bus</A> pour envoyer une requête de lecture au <A HREF="01_hardware.php#controler">contrôleur</A> du disque. Quelque temps après le <A HREF="01_hardware.php#controler">contrôleur</A> du disque utilise le <A HREF="01_hardware.php#bus">bus</A> pour envoyer  le signal au processeur qu'il a lu la donner et la placer à telle adresse de la mémoire. Le processeur peut ensuite utiliser le <A HREF="01_hardware.php#bus">bus</A> pour lire cette donnée.
+</P>
+<P>
+Votre <A HREF="01_hardware.php#keyb">clavier</A> et votre écran communique également avec le processeur moyen d'un bus, mais d'une façon plus simple. Nous en discuterons plus tard. Pour le moment nous en savons assez pour poursuivre.
+</P>
+
+<A NAME="arch_moderne"></A>
+<H2>Les Architechtures modernes</H2>
+
+<P>
+<U>Quelques remarques:</U>
+</P>
+
+<UL>
+<LI>Une unité d'information binaire (ZÉRO ou UN) c'est un bit.
+<LI>La largeur du <A HREF="01_hardware.php#bus">bus</A> (mesurée en bits) détermine le nombre de valeurs que peuvent prendre un bus.
+<LI>La taille du <A HREF="01_hardware.php#bus">bus</A> qui relie le processeur à la carte mère est donc un déterminant essentiel d'un ordinateur.
+<LI>Dans la pratique, pour identifier une architecture matérielle, il suffit de donner le type de processeur.
+</UL>
+
+<P>
+L'architecture en 32 bits des processeur d'ordinateurs <I>grand publics</I> est appelée x86 à cause de ses différentes variantes (386,486,686...).
+</P>
+<P>
+De nos jours la plupart des processeurs <I>d'ordinateur grand publics</I> se basent sur l'architecture x86_64 qui fonctionne en 64 bits. Les processeurs x86_64 sont vus comme des simples processeurs 64 bits s'ils sont utilisés par un <A HREF="04_software.php#os">système d'exploitation</A> x86_64. Et sont vus comme un double processeur (dual core) par des <A HREF="04_software.php#os">systèmes d'exploitation</A> 32 bits.
+</P>
+<P>
+Les téléphones portables et les tablettes utilisent des processeur ARM (64 bits), qui sont plus économes en énergie que les x86 (32 ou 64 bits)
+</P>
+<P>
+<A HREF="https://fr.wikipedia.org/wiki/Carte_m%C3%A8re"><IMG ALIGN="middle" SRC="img/architecture.png" BORDER="0" ALT=""></A>
+</P>
+
+<TABLE ALIGN="center">
+<TR>
+<TD>Architecture "classique" d'une carte mère. ( credit Wikipedia )</TD>
+</TR>
+</TABLE>
+
+<A NAME="periph"></A>
+<H1>Les périphériques</H1>
+
+<HR NOSHADE SIZE=1>
+
+<P>
+Attention, on distingue:
+</P>
+
+<UL>
+<LI>Périphériques <U>intégrés</U> (comme le <A HREF="01_hardware.php#keyb">clavier</A> d'un ordinateur portable, ou un composant soudé sur la carte mère d'un pc)
+<LI>Périphériques <U>externes</U> (tous ceux qui sont amovible, ou que l'on peut débrancher)
+</UL>
+
+<HR NOSHADE SIZE=1>
+
+<P>
+On entends par <A HREF="01_hardware.php#periph">périphérique</A> tout appareil que l'on peut "brancher" à l'ordinateur. Un <A HREF="01_hardware.php#keyb">clavier</A> ou une souris, est des exemples de périphériques.
+</P>
+<P>
+Le véritable cœur de votre ordinateur (l'unité de calcul), vous ne communiquerez jamais vraiment avec... C'est un composant électronique qui fonctionne en 5 volts et qui communique sur un <A HREF="01_hardware.php#bus">bus</A> de 64 bit... Il nous faut tout un équipement autour du processeur pour pouvoir tirer profit de ses capacités.
+</P>
+<P>
+Mais quand bien même nous pourrions parler en binaire cinq volts haute fréquence avec une calculatrice de collégien, elle ne nous serait que de peu d'utilité avec son petit écran. On veut que la machine puisse s'exprimer, qu'elle fasse des choses... En bref, qu'elle puisse piloter des appareils (les périphériques)
+</P>
+<P>
+Les <A HREF="01_hardware.php#periph">périphériques</A> sont les entrées et les sorties, ils sont ce qui fait que ceci est un ordinateur, un serveur, un téléphone, ou une calculette... Et non une théorique machine de Turing...
+</P>
+
+<A NAME="indisp"></A>
+<H2>Les indispensables</H2>
+
+<A NAME="cg"></A>
+<H3>La carte graphique</H3>
+
+<P>
+C'est ce qui va communiquer avec les écrans. Comme le traitement d'image en temps réel est une activité très gourmande en ressources, elle possède sa propre mémoire vive et son propre processeur, (le GPU).
+</P>
+
+<A NAME="cs"></A>
+<H3>La carte son</H3>
+
+<P>
+Même discours que pour la carte graphique, à la différence que de nos jours la puissance de calcul disponible est telle que <I>(pour la plupart des applications courantes, et donc pour la plupart des ordinateurs portables ou bas de gamme</I>) une petite puce électronique intégrée à la carte mère est suffisante.
+</P>
+
+<A NAME="masse"></A>
+<H3>Une mémoire de stockage</H3>
+
+<P>
+Sans aucun <A HREF="04_software.php#intro">programme</A> à réaliser, un ordinateur ne fait rien...ou presque! On a besoin d'au moins un <A HREF="04_software.php#intro">programme</A> à lui donner.
+</P>
+<P>
+Forcément, on aura besoin d'<B>au moins un</B> cd-rom, un dvd, une clef-usb, une carte sd, n'importe quoi... Ou se trouve <B>au moins un</B> programme.... 
+</P>
+<P>
+Bon! Dans la pratique un support avec un <A HREF="04_software.php#os">système d'exploitation</A> complet c'est mieux!
+</P>
+<P>
+Et toujours dans la pratique si c'est un support sur lequel on peut lire... mais aussi écrire (pour y enregistrer des trucs, ou modifier nos programme), bein c'est encore mieux. Ainsi on préfèrera les <A HREF="07_disks.php#disque">disques durs</A>  (hdd) ou mémoire flash parallèles (ssd)
+</P>
+<P>
+<U>Remarque:</U>Oui oui les ssd sont comme plusieurs cartes sd empilées
+</P>
+
+<A NAME="net"></A>
+<H3>Une carte réseau</H3>
+
+<P>
+Une interface matérielle qui transforme des <A HREF="01_hardware.php#vocab">données</A> en signal à émettre et un signal reçu en données.
+</P>
+
+<DL>
+<DT>Modem</DT><DD>
+Carte réseau qui transforme des <A HREF="01_hardware.php#vocab">données</A> en signal pour les réseaux téléphonique
+<P></P>
+<DT>Carte Ethernet</DT><DD>
+Carte réseau qui transforme des <A HREF="01_hardware.php#vocab">données</A> en signal pour les réseaux câblés
+<P></P>
+<DT>Carte wifi</DT><DD>
+Carte réseau qui transforme des <A HREF="01_hardware.php#vocab">données</A> en signal pour les réseaux sans fils
+</DL>
+
+<A NAME="keyb"></A>
+<H2>Un clavier</H2>
+
+<P>
+Oui oui c'est un indispensable! Si le <A HREF="02_boot.php#bios">micro-logiciel</A> n'arrive pas à trouver de clavier, il va bipper trois fois et va refuser de démarrer la machine! C'est comme çà, la souris, elle par contre est optionnelle.
+</P>
+
+<A NAME="moins_connu"></A>
+<H2>Les moins connus</H2>
+
+<P>
+Il reste encore toute une panoplie:
+</P>
+
+<UL>
+<LI>de <A HREF="01_hardware.php#controler">contrôleurs</A> (on y reviendra...)
+<LI>de <A HREF="01_hardware.php#periph">périphériques</A> de pointage (comme les tablettes tactiles, les écrans tactiles...)
+<LI>de lecteurs (de cartes, de disquette, cd, dvd...)
+<LI>des graveurs (cd, dvd-R, dvd+R)
+<LI>des récepteurs (radio, TV...)
+<LI>des webcam, un micro...
+<LI>et j'en passe..
+</UL>
+
+<A NAME="discrete_card"></A>
+<H3>La Dicrete card</H3>
+
+<P>
+Mais il y en a un qu'il faut comprendre car il peut être source de confusion...
+</P>
+<P>
+De nos jours les ordinateurs portable en on souvent deux cartes graphiques, une qui est dite "intégrée" et l'autre dite "discrète". Cette dernière est <I>théoriquement</I> plus puissante, mais elle est aussi plus consommatrice d'électricité.
+</P>
+<P>
+(J'ai écrit "théoriquement" car souvent, la discrete card ne possède pas sa propre mémoire vive, elle l'emprunte au processeur.
+</P>
+<P>
+Ainsi, suivant votre configuration, elle démarrera quand vous brancherez un second écran, ou quand l'ordinateur est en charge... Parfois elle se configure dans le bios, parfois pas... Parfois le <A HREF="04_software.php#os">système d'exploitation</A> gère tellement mieux l'une que l'autre que voilà... Dans ces cas faut bidouiller...
+</P>
+
+<A NAME="interrupts"></A>
+<H1>Interruptions système</H1>
+
+<P>
+Votre <A HREF="01_hardware.php#keyb">clavier</A> est un <A HREF="01_hardware.php#periph">périphérique</A> très simple, il est simple car il génère une petite quantité de <A HREF="01_hardware.php#vocab">données</A> et lentement (selon les standards d'un ordinateur). Quand vous appuyez ou relâchez une touche, cet événement est signalé à travers le fil du clavier. La valeur d'un <A HREF="01_hardware.php#bus">bus</A> change et déclenche ce qu'on appelle une interruption matérielle.
+</P>
+<P>
+C'est le travail de <A HREF="04_software.php#os">système d'exploitation</A> de surveiller de telles interruptions. Pour chaque cas possible d'interruption, il y aura un gestionnaire d'interruption, un composant du <A HREF="04_software.php#os">système d'exploitation</A> qui consigne les <A HREF="01_hardware.php#vocab">données</A> associées à cette interruption jusqu'à ce qu'elle puisse être traitée.
+</P>
+<P>
+N'importe quel type d'interruption est associée à un niveau de priorité. Les interruptions de base priorité (comme les événements du clavier) devront attendre le traitement des <A HREF="02_boot.php#kernel">processus</A> de haute priorité (comme les événements de <A HREF="07_disks.php#disque">disque dur</A> ).
+</P>
+<P>
+C'est la capacité du <A HREF="04_software.php#os">système d'exploitation</A> à savoir correctement prioriser les interruptions qui rend ce système stable et réactif. Et c'est un des gros point fort de Linux, qui font de lui la norme dans le monde des serveurs.
+</P>
+<P>
+Une des <A HREF="01_hardware.php#interrupts">interruptions système</A> les plus importante est l'horloge. Elle empêche qu'un seul <A HREF="04_software.php#intro">programme</A> qui plante ne s'accapare l'ordinateur. A chaque fois qu'elle intervient, le <A HREF="04_software.php#os">système d'exploitation</A> reprends la main et réactualise ses priorités.
+</P>
+
+<A NAME="controler"></A>
+<H1>Les Contrôleurs</H1>
+
+<A NAME="controler_idee"></A>
+<H2>L'idée</H2>
+
+<P>
+En Informatique, on appelle un Contrôleur, une puce électronique qui fournit une interface entre un <A HREF="01_hardware.php#periph">périphérique</A> et une carte mère.
+</P>
+<P>
+Par exemple votre écran doit pourvoir afficher différentes résolutions (niveau de détail de l'affichage), et cependant, certaines résolutions incorrectes pourraient l'endommager...
+</P>
+<P>
+Le Contrôleur est là pour détecter un ordre de changer de résolution, et ne pas le transmettre à l'écran si cet ordre est invalide !
+</P>
+<P>
+Un Contrôleur, c'est une puce électronique qui fonctionne à des vitesses comparables à celle des processeurs, mais qui sait se mettre à la vitesse de ceux qu'elle contrôle.
+</P>
+
+<A NAME="controler_dd"></A>
+<H2>Exemple avec un Disque Dur</H2>
+
+<P>
+(Pour les besoins de la démonstration imaginez votre <A HREF="07_disks.php#disque">disque dur</A>  comme un lecteur de disque vinyle! Il faut lever la tête de lecture avant de la déplacer sous peine de rayer le disque! Et on éteindra le moteur et on remettra la tête dur à l'origine/ sur son reposoir avant d'éteindre le moteur)
+</P>
+<P>
+Donc:
+</P>
+
+<UL>
+<LI>Le processeur envoi une demande de lecture d'un fichier.
+<LI>Le Contrôleur répond qu'il a comprit la requête.
+<LI>Le Contrôleur vérifie que la tête de lecture n'est pas déjà en train de lire quelque chose ailleurs, et attend si besoin.
+<LI>Si la tête de lecture est disponible, il va traduire la requête:
+ <UL>
+ <LI>LÈVE LA TÊTE DE LECTURE
+  <UL>
+  <LI>OK, c'est fait! Répond le disque.
+  </UL>
+ </UL>
+<LI>Le processeur envoi une autre requête de lecture.
+<LI>Le Contrôleur répond qu'il est trop occupé pour le moment mais qu'il le place dans sa liste des choses à faire
+ <UL>
+ <LI>DÉPLACE LA TÊTE A CET ENDROIT
+  <UL>
+  <LI>OK, c'est fait!
+  </UL>
+ <LI>DESCEND LA TÊTE ET LIT
+  <UL>
+  <LI>bla bla bla bla bla.
+  </UL>
+ <LI>OK J'AI EU CE QUE JE VOULAIS ARRÊTE DE LIRE
+ </UL>
+<LI>Le <A HREF="01_hardware.php#controler">contrôleur</A> commence à envoyer les <A HREF="01_hardware.php#vocab">données</A> là ou on lui a demandé.
+ <UL>
+ <LI>RELÈVE LA TÊTE
+  <UL>
+  <LI>OK, c'est fait!
+  </UL>
+ <LI>DÉPLACE LA TÊTE A CET ENDROIT (on a encore du travail...)
+  <UL>
+  <LI>ok j'y suis !
+  </UL>
+ <LI>DESCEND LA TÊTE ET LIT
+  <UL>
+  <LI>bla bla bla bla bla.
+  </UL>
+ <LI>OK J'AI EU CE QUE JE VOULAIS
+ </UL>
+<LI>Le <A HREF="01_hardware.php#controler">contrôleur</A> commence à envoyer les <A HREF="01_hardware.php#vocab">données</A> là ou on lui a demandé.
+ <UL>
+ <LI>RELÈVE LA TÊTE
+  <UL>
+  <LI>ok, c'est fait!
+  </UL>
+ </UL>
+<LI>Le processeur signal qu'il n'a rien d'autre à demander
+ <UL>
+ <LI>RANGE TA TÊTE A L'ORIGINE
+  <UL>
+  <LI>ok j'y suis !
+  </UL>
+ <LI>ÉTEINTS LE MOTEUR
+ </UL>
+</UL>
+
+<P>
+Bien entendu les choses sont plus complexes, les <A HREF="07_disks.php#disque">disques durs</A>  sont un goulot d'étranglement de l'ordinateur... Et en voyant à quel point les choses deviennent embrouillées en quelques ligne, on devine l'utilité du Contrôleur!
+</P>
+<P>
+Programmer deux composants très différents avec des vitesses de fonctionnement très différentes pour qu'ils travaillent ensemble est un casse-tête... On préfèrera fabriquer:
+</P>
+
+<UL>
+<LI>d'un coté, un <A HREF="07_disks.php#disque">disque dur</A>  qui fonctionne comme les ingénieurs des disques décident.
+<LI>de l'autre, un processeur qui fonctionne comme les ingénieurs des processeurs décident.
+<P></P>
+Et au milieu un Contrôleur nous donnera juste le un <A HREF="03_interface.php#abstr">niveau d'abstraction</A> nécessaire pour nous simplifier la vie.
+<P></P>
+Aussi, pour la qualité et le sérieux de cette page, arrêtez désormais d'imaginer votre <A HREF="07_disks.php#disque">disque dur</A>  comme un disque vinyle! Vous remarquerez que la discussion entre le <A HREF="01_hardware.php#controler">contrôleur</A> et le processeur n'a pas de raison de changer pour autant!
+<P></P>
+Remarquez d'ailleurs qu'il pourrait bien y avoir une armée de tailleurs de pierre derrière le contrôleur... Çà ne changerai rien du point de vue du processeur!
+<P></P>
+C'est l'intérêt des <B>niveaux d'abstraction</B>. Une notion fondamentale pour la programmation des logiciels! Retenez ce terme, vous le retrouverez bientôt.
+<P></P>
+Pour charger tous ces niveaux d'abstraction, et passer du tas inerte d'électronique à l'ordinateur fonctionnel, on procède au boot. Le démarrage de l'ordinateur!
+<P></P>
+Vous êtes en principe armé pour passer à la suite....
+</UL>
+
+<HR NOSHADE SIZE=5>
+
+<TABLE ALIGN="center" BORDER="1">
+<TR>
+<TD>PREC: <A HREF="15_bashrc.html">Un joli bashrc</A></TD>
+<TD></TD>
+<TD COLSPAN="2">SUIV: <A HREF="02_boot.html">Le Boot</A></TD>
+</TR>
+<TR>
+<TD></TD>
+<TD><A HREF="index.html">Menu Principal</A></TD>
+<TD></TD>
+</TR>
+</TABLE>
+
+<HR NOSHADE SIZE=5>
+
+</DIV>
+<!-- html code generated by txt2tags 2.6 (http://txt2tags.org) -->
+<!-- cmdline: txt2tags 01_hardware.t2t.temp 02_boot.t2t.temp 03_interface.t2t.temp 04_software.t2t.temp 05_network.t2t.temp 06_unix.t2t.temp 07_disks.t2t.temp 08_libre.t2t.temp 09_shell.t2t.temp 10_console.t2t.temp 11_editor.t2t.temp 12_config.t2t.temp 13_help.t2t.temp 14_programming.t2t.temp 15_archlinux.t2t.temp 15_bashrc.t2t.temp author.t2t.temp bashrc_comment.t2t.temp index.t2t.temp roadmap.t2t.temp -->
+</BODY></HTML>
+-------------------------------------
+Version Html, commentaires désactivés
+-------------------------------------

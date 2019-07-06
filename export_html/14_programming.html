@@ -1,0 +1,209 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<META NAME="generator" CONTENT="http://txt2tags.org">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+<LINK REL="stylesheet" TYPE="text/css" HREF="inc/site.css">
+<TITLE>Programmer</TITLE>
+</HEAD>
+<BODY>
+
+<DIV CLASS="header" ID="header">
+<H1>Programmer</H1>
+</DIV>
+
+<DIV CLASS="body" ID="body">
+<P>
+Bon cette fois-ci c'est partie, on va commencer à programmer!
+</P>
+<P>
+On va programmer en Bash. Car Bash, c'est bien et c'est utile. On refera le même <A HREF="04_software.php#intro">programme</A> plus tard avec d'autres langages. ( Comme çà vous en serez certains vous aussi... que <A HREF="09_shell.php#bash">Bash</A> c'est bien! )
+</P>
+
+<A NAME="toc1"></A>
+<H1>Hello World</H1>
+
+<P>
+Quand on commence à écrire des commandes qui tiennent sur de nombreuses lignes, il existe un risque bien réel de faire des erreurs. Une méthode plus commode, est de créer un fichier un fichier texte, et d'y inscrire les commandes que l'on souhaite exécuter.
+</P>
+<P>
+Créez donc un fichier texte avec votre éditeur favori, donnez lui le nom "foo.sh" et insérez le texte suivant:
+</P>
+
+<PRE>
+echo "Bonjour le monde!"
+</PRE>
+
+<P>
+On a déjà vu la commande <CODE>echo</CODE> qui permet d'afficher un message à l'écran.
+</P>
+<P>
+Ensuite entrez la commande:
+</P>
+
+<PRE>
+$ bash ./foo.sh
+Bonjour le monde!
+</PRE>
+
+<P>
+Il est d'usage de commencer à apprendre n'importe quel langage de programmation par ce classique «Hello World!», qui donne un aperçu du fonctionnement, et de la syntaxe du langage.
+</P>
+<P>
+Bravo! Vous venez d'écrire votre premier programme!
+</P>
+
+<A NAME="toc2"></A>
+<H1>Les variables</H1>
+
+<P>
+Une variable est une case mémoire dans laquelle on enregistre quelque chose. Pour créer une variable foo, contenant le texte « bar » rien de plus simple:
+</P>
+
+<PRE>
+$ foo=bar
+$ 
+$ echo $foo
+bar
+$
+</PRE>
+
+<P>
+Remarquez le signe dollar! La première fois que l'on va entrer le mot foo, le <A HREF="02_boot.php#shell">shell</A> va comprendre qu'il s'agit d'une variable à initialiser, car il s'agit d'un mot suivi du symbole 'égal'. La seconde fois le <A HREF="02_boot.php#shell">shell</A> ne devine que foo est une variable que grâce au signe 'dollar'.
+</P>
+<P>
+Vous pouvez vous en convaincre avec:
+</P>
+
+<PRE>
+$ echo foo
+foo
+$
+</PRE>
+
+<P>
+<U>La syntaxe est importante:</U>
+</P>
+
+<UL>
+<LI>pas d'espace avant et après le 'égal'.
+<LI>un 'dollar' pour accéder au contenu d'une variable
+<LI>pas de 'dollar' pour modifier une variable
+</UL>
+
+<A NAME="toc3"></A>
+<H1>Commentaires et sha-bang</H1>
+
+<P>
+On a déja vu des commentaires! Avec bash les commentaires se  font avec le symbole <CODE>#</CODE>. Tout ce qui suit ce symbole est ignoré. Démonstration:
+</P>
+
+<PRE>
+$ echo dièse # dièse
+dièse
+</PRE>
+
+<A NAME="toc4"></A>
+<H1>Les Conditions, et quelques élements de stylistique</H1>
+
+<P>
+Pour l'instant l'on a utilisé que des commandes qui tenaient sur une seule ligne. Préparez vous à perdre la prompte (comme avec ce fichier l'embrouille), car ce qui suit est une commande sur plusieurs lignes.
+</P>
+<P>
+Donc on veut réaliser différente actions en fonction de notre variable $foo:
+</P>
+	<BLOCKQUOTE>
+	SI foo contient bar
+	</BLOCKQUOTE>
+<P>
+ALORS
+</P>
+	<BLOCKQUOTE>
+	affiche "foo = bar"
+	</BLOCKQUOTE>
+<P>
+SINON
+</P>
+	<BLOCKQUOTE>
+	affiche "foo != bar"
+	</BLOCKQUOTE>
+<P>
+Enfin affiche "baz" dans tous les cas.
+</P>
+<P>
+Ce qui donne:
+</P>
+
+<PRE>
+$ if [[ $foo = bar ]]
+&gt; then
+&gt; echo "foo = bar"
+&gt; else
+&gt; echo "foo != bar"
+&gt; fi
+echo "baz"
+</PRE>
+
+<P>
+Ce n'est pas le lieu de donner un cous d'anglais mais:
+</P>
+
+<UL>
+<LI>« if » signifie « si »
+<LI>« then » signifie « alors »
+<LI>« else » signifie « sinon »
+<LI>« fi » ne signifie rien du tout
+</UL>
+
+<P>
+En fait le « fi » est là que pour indiquer la fin de la boucle conditionnelle. Si <CODE>echo "baz"</CODE> avait été placé avant le « fi », "baz" se serait affiché uniquement si foo avait été différent de bar...
+</P>
+<P>
+<U>Remarque</U>: <CODE>then</CODE> <CODE>else</CODE> et <CODE>fi</CODE> doivent être seuls sur leur ligne, car le retour à la ligne fait partie de la syntaxe.
+</P>
+<P>
+<U>Remarque</U>: Pour le <A HREF="02_boot.php#shell">shell</A> le symbole <CODE>;</CODE> est équivalent à un retour à la ligne. Donc on peut faire tenir ce genre de commande sur une seule ligne.
+</P>
+
+<PRE>
+if [[ foo ]] ; then ; blabla ; fi
+</PRE>
+
+<P>
+Bien-entendu, si l'on entre cette commande dans un scripte, la question de la stylistique, doit être envisagée différent. L'indentation du texte (l'alignement des tabulations) va aider à la relecture.
+</P>
+
+<PRE>
+if [[ $foo = bar ]] ;then
+	echo "foo = bar"
+else
+	echo "foo != bar"
+fi
+
+echo "baz"
+</PRE>
+
+<HR NOSHADE SIZE=5>
+
+<TABLE ALIGN="center" BORDER="1">
+<TR>
+<TD>PREC: <A HREF="13_help.html">Trouver de l'aide et progresser</A></TD>
+<TD></TD>
+<TD COLSPAN="2">SUIV: <A HREF="15_archlinux.html">Cas pratique: Installer Arch-Linux</A></TD>
+</TR>
+<TR>
+<TD></TD>
+<TD><A HREF="index.html">Menu Principal</A></TD>
+<TD></TD>
+</TR>
+</TABLE>
+
+<HR NOSHADE SIZE=5>
+
+</DIV>
+<!-- html code generated by txt2tags 2.6 (http://txt2tags.org) -->
+<!-- cmdline: txt2tags 01_hardware.t2t.temp 02_boot.t2t.temp 03_interface.t2t.temp 04_software.t2t.temp 05_network.t2t.temp 06_unix.t2t.temp 07_disks.t2t.temp 08_libre.t2t.temp 09_shell.t2t.temp 10_console.t2t.temp 11_editor.t2t.temp 12_config.t2t.temp 13_help.t2t.temp 14_programming.t2t.temp 15_archlinux.t2t.temp 15_bashrc.t2t.temp author.t2t.temp bashrc_comment.t2t.temp index.t2t.temp roadmap.t2t.temp -->
+</BODY></HTML>
+-------------------------------------
+Version Html, commentaires désactivés
+-------------------------------------

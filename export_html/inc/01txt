@@ -1,0 +1,19 @@
+<HR NOSHADE SIZE=5>
+
+<p>
+Les champs "mail" et "pseudo" sont optionnels. Les adresses mail resterons privées.
+<br/>
+Je ne collecte aucune autre donnée.
+<p/>
+
+<form method="post" action="cible.php">
+
+<p>
+Mail: <input type="text" name="email" /> <br/>
+Pseudo: <input type="text" name="pseudo"/> <br/>
+Votre Message: 
+<textarea  required placeholder="Les commentaires sont encouragés ^_^ !" name="message" rows="10" cols="90">
+</textarea>
+
+<p>
+

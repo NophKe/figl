@@ -1,0 +1,227 @@
+Le scripte qui génère ce site
+
+
+Voyons maintenant, comment ce site Internet est généré.
+
+
+
+=Le But=
+
+
+L'idée c'est de passer d'un ensemble de fichiers texte, à une série de pages html qui contiennent chacune un tableau en bas de page. Tableau qui contiendra un lien vers la page précédente, vers la suivante, et au millieu en dessous, un lien vers la page principale.
+
+
+On voudra aussi intégrer un petit bout de code pour les commentaires ci dessous.
+
+Pour que chaque page aie sont propre formulaire de commentaire, chaque page sera identifiée par un numéro  dans la base de donnée des commentaires.
+
+=Précisions=
+
+Ce site est un ensemble de textes écrits en langage t2t. Ces fichiers sont utiliser pour obtenir des pages html embellies d'un style css. Il y a bout de php en bas de page pour les commentaires. Ce bout de php contient enfin des instructions sql...
+
++ Le scripte Bash récupère le titre de chacune des page, le nom de fichier correspondant et génère une liste des fichiers et de leur titre
++ Le scripte crée la page d'acceuil (qui est donc une page t2t généré par Bash)
++ Il crée des fichiers temporaires pour ne pas toucher aux originaux
++ Le scripte insère les liens de bas de page dans chacun des fichiers t2t (temporaires)
++ Le scripte utilise le compilateur txt2tags et transforme les fichiers temporaires en fichiers html
++ Il supprime les fichiers temporaire
++ Le scripte génère enfin un bout de code php spécifique à chaque page pour le formulaire de commentaire (pour que le commentaire soit consigné en fonction de l'identifiant de la page)
++ Et un bout de php pour récupérer les commentaires qui correspondent à cet identifiant de page
+
+
+==txt2tags==
+
+Il s'agit d'un langage de balise. à l'instar du HTML, il permet donc de mettre en page du texte, de créer des tableaux, et des liens. Le txt2tags, ou //t2t// est un  langage de balise extremement simple et redoutablement efficace.
+
+Relisez le paragraphe sur le HTML pour revenir sur ce que sont des balises...
+
+S'il ne developpe pas des fonctionnalitées très poussées, il présente néanmoins l'avantage d'être exporté vers de nombreux formats (dont le HTML).
+
+Une chaine de caractères au format ``[titre fichier]`` qui sera plus tard reconnu par txt2tags commme un lien hypertexte. Les crochets ouvrants et fermants sont les balises.
+
+
+=Le scripte=
+
+
+
+==Version O: les commandes depuis le terminal==
+
+On a un fichier foo.t2t. Sur ce fichier, on fait:
+```
+cp foo.t2t foo.t2t.temp
+```
+On a notre fichier temporaire, on lui ajoute le lien vers la page précédente, la suivant et l'index:
+```
+echo " [PRECEDENT: nom_du_fichier_prec.html]  [SUIVANT: fichier_suivant.html] " >> foo.t2t.temp
+echo "                      [Menu Principal index.html]                       " >> foo.t2t.temp
+```
+On compile le fichier
+```
+$ txt2tags foo.t2t.temp
+```
+On a maintenant un fichier ``foo.t2t.temp.html`` que l'on renomme aussi tôt!
+```
+$ mv foo.t2t.temp.html foo.php
+
+```
+Et on y insère du code php
+```
+$ cat code_php >> foo.php
+
+```
+
+
+==Version 1: menu== 
+
+L'idée c'est que l'on va créer une liste de tous les fichiers t2t et un tableau vide.
+```
+liste=( *.t2t ) 
+Menu[0]='' 
+```
+
+
+
+```
+Les commandes seront les suivantes:
+
+
+On va d'abord boucler autour de la liste des fichier *.t2t et peupler un tableau $Menu[]
+
+
+
+Nous crérons également un fichier temporaire pour chacun des fichiers de cette liste.
+
+```
+```
+
+```
+
+
+for (( f=0 ; f != ${#liste[*]} ; f++ )) ; do
+
+	# on extrait la première ligne de chaque fichier
+
+	TITRE=`head -n1 ${liste[$f]}`
+
+	# On récupère le nom de chacun des fichiers de la liste
+
+	FILE=${liste[$f]}
+
+	# Et on enlève l'extension .t2t du nom du fichier.
+	
+	FILE=${FILE%%.t2t*}
+
+	# Puis on peuple le menu avec notre lien au format txt2tag
+	
+	Menu[$f]='['$TITRE' '$FILE''$ext']'
+	
+	# Puis on copie tous ces fichiers de la liste vers de fichier temp
+	
+	cp ${liste[$f]} ${liste[$f]}.temp
+done
+```
+
+
+
+Et maintenant, on ajoute à chacun de nos fichiers temporaire, les liens qui ont été placé dans le tableau Menu[]. Pour chaque page on veut ajouter un lien vers la page précédente et vers la suivante On définit idonc les variables $e et $g comme respectivement $f-1 et $f+1
+
+
+```for (( f=0 ; f != ${#liste[*]} ; f++ )) ; do
+```
+
+
+	# S'il s'agit du premier élément de la liste on définit $e comme 
+	# la taille de la liste. Ainsi le lien vers le fichier précédent mènera au
+	# dernier fichier de la liste.
+	
+	
+	if [[ $f == 0 ]] ; then
+		e=${#liste[*]}
+	else
+		e=$f-1
+	fi
+
+	# Et si c'est le dernier fichier, boucler vers le premier afin que le menu soit circulaire
+
+	if [[ $f == ${#liste[*]} ]] ; then
+		g=0;
+	else
+		g=$f+1
+	fi
+
+	# ajoute le Menu
+	echo '===========================================' 		>> ${liste[$f]}.temp
+	echo ' | PREC: '${Menu[$e]}' |  | SUIV: '${Menu[$g]}' ||'  	>> ${liste[$f]}.temp
+	echo ' |  | [Menu Principal index'$ext'] |  |' 			>> ${liste[$f]}.temp
+	echo '===========================================' 		>> ${liste[$f]}.temp
+done
+
+# On compile les fichiers temp
+/bin/txt2tags *.temp
+
+# Puis on les supprime
+rm *.temp
+
+# if [[ $ext = .html ]]; then; NoComment ; fi
+# if [[ $ext = .ext ]]; then; Comment ; fi
+
+
+liste=( *.temp.html )
+
+for (( f=0 ; f !=${#liste[*]} ; f++ )) ; do
+
+	FILE=${liste[$f]}
+	FILE=${FILE%%.t2t.temp.html}
+	PAGE=${FILE%%_*}
+
+	cat ${liste[$f]} > $FILE
+
+
+	if [[ $PAGE =~ ^-?[0-9]+$ ]]
+	then
+	
+		cat ./inc/01txt >> $FILE
+	
+		echo '<input type="hidden" name="page" value="'$PAGE'">' >> $FILE
+	
+		cat ./inc/02txt >> $FILE
+	
+		echo '$result = mysqli_query($conn,"SELECT * FROM _01 WHERE page = '$PAGE'");' >> $FILE
+	
+		cat ./inc/03txt >> $FILE
+	
+		mv $FILE ./export/$FILE$ext
+	else
+	
+		mv $FILE ./export/$FILE$ext
+	fi
+
+
+
+
+done
+
+
+rm *.temp.html
+
+
+
+##	# Si la page débute par un caractère numérique
+#	if [[ $PAGE =~ ^-?[0-9]+$ ]]
+#	then
+#		echo "-------------------------------------" >> $FILE
+#		echo "Version Html, commentaires désactivés" >> $FILE
+#		echo "-------------------------------------" >> $FILE
+#		mv $FILE ./export_html/$FILE$ext
+#	else
+#	
+#		mv $FILE ./export_html/$FILE$ext
+	
+	if [[ $f == 0 ]] ; then
+		e=${#liste[*]}
+	else
+		e=$f-1
+	fi
+
+```
+

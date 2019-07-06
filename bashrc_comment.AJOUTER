@@ -1,0 +1,45 @@
+
+On saute une ligne en utilisant echo sans lui donner de message à afficher
+
+
+
+#---------------------------------------------------------
+# CONFIGURATION DU TERMINAL et des variables nécessaires  |
+#---------------------------------------------------------
+
+# On active le pavé numérique,  
+# Déclaration des Alias
+# Déclaration du format de la prompte
+# Déclarations des variables 
+#----------------------------
+#----------------------------
+
+
+
+	
+
+
+	# On saute une ligne
+
+
+# On appelle notre fonction Ybienvenue
+	# Je ne commente plus les "echo" qui sautent des lignes!
+
+#  affichage en jaune
+	# affichage en gras
+
+#  \" est le caractère d'echapement pour afficher un " litterral
+	# retour affichage normal
+
+# remplace le programme courant par zsh
+# La Fonction 'Ymenu' Affiche vous laisse choisir votre interface utilisateur
+
+
+
+	
+	# la forme $(prog) exécute le programme prog dans un sous-shell
+	# lisez man date pour plus d'informations.
+	# retour à l'affichage normal
+	# passe l'affichage en gras
+
+
