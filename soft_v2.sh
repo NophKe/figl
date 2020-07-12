@@ -1,6 +1,8 @@
 #!/bin/bash
 
-liste=( *.t2t ) ; Menu[0]='' ; ext=.php
+liste=`ls src/*.t2t`
+Menu[0]=''
+ext=.php
 
 # On va d'abord boucler autour de la liste des fichier *.t2t
 # et peupler un tableau $Menu[] avec une chaine de caractères
@@ -12,25 +14,28 @@ liste=( *.t2t ) ; Menu[0]='' ; ext=.php
 
 for (( f=0 ; f != ${#liste[*]} ; f++ )) ; do
 
+	TITRE=`head -n1 ${liste[$f]}`
 	# on extrait la première ligne de chaque fichier
 
-	TITRE=`head -n1 ${liste[$f]}`
-
-	# On récupère le nom de chacun des fichiers de la liste
 
 	FILE=${liste[$f]}
+	# On récupère le nom de chacun des fichiers de la liste
 
-	# Et on enlève l'extension .t2t du nom du fichier.
-	
 	FILE=${FILE%%.t2t*}
+	# Et on enlève l'extension '.t2t' du nom du fichier.
 
+	FILE=${FILE#src/}
+	# Et on enlève l'extension le suffix 'src/' du nom du fichier.
+	
+	
+
+	Menu[$f]='['$TITRE' '$FILE''$ext']'
 	# Puis on peuple le menu avec notre lien au format txt2tag
 	
-	Menu[$f]='['$TITRE' '$FILE''$ext']'
-	
-	# Puis on copie tous ces fichiers de la liste vers de fichier temp
 	
 	cp ${liste[$f]} ${liste[$f]}.temp
+	# Puis on copie tous ces fichiers de la liste vers de fichier temp
+	
 done
 
 
@@ -57,16 +62,7 @@ for (( f=0 ; f != ${#liste[*]} ; f++ )) ; do
 	# Et si c'est le dernier fichier, boucler vers le premier afin que le menu soit circulaire
 
 	if [[ $f == ${#liste[*]} ]] ; then
-		g=0;$mod+
-$mod+
-$mod+
-$mod+
-$mod+
-$mod+
-$mod+
-$mod+
-$mod+
-$mod+
+		g=0
 
 	else
 		g=$f+1
