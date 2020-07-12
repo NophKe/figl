@@ -2,7 +2,7 @@
 
 rm -i index.t2t
 
-liste=(*.t2t)
+liste=(src/*.t2t)
 
 cat inc/index > index.t2t
 
