@@ -78,6 +78,7 @@ mkdir export_$ext
 
 mv temp/*.$ext export_$ext
 
+rm -rf temp/
 
 # Et maintenant, on ajoute à chacun de nos fichiers temporaire, les liens qui ont
 # été placé dans le tableau Menu[].
