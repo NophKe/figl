@@ -1,6 +1,6 @@
 #!/bin/bash
 
-Menu[0]=''
+declare -a Menu
 ext=md
 
 # On va d'abord boucler autour de la liste des fichier *.t2t
@@ -13,7 +13,7 @@ ext=md
 rm -rf temp/
 mkdir temp/
 cp src/*.t2t temp/
-cat inc/index > index.t2t
+cat inc/index > temp/index.t2t
 
 liste=( temp/* )
 
@@ -32,11 +32,15 @@ do
 	# Et on enlève l'extension le suffix 'src/' du nom du fichier.
 
 	Menu[$f]="[$TITRE $FILE.$ext]"
-	echo " | $Menu[$f] | " >> temp/index.t2t
 done
-
+#
+#for item in "$Menu"
+#do
+#done
+#
 for (( f=0 ; f != ${#liste[*]} ; f++ )) ; do
 
+	echo " | ${Menu[$f]} | " >> temp/index.t2t
 
 	# S'il s'agit du premier élément de la liste on définit $e comme 
 	# la taille de la liste. Ainsi le lien vers le fichier précédent mènera au
@@ -73,8 +77,6 @@ rm -rf export_$ext
 mkdir export_$ext
 
 mv temp/*.$ext export_$ext
-
-rm -rf temp/
 
 
 # Et maintenant, on ajoute à chacun de nos fichiers temporaire, les liens qui ont
