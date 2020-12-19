@@ -1,7 +1,7 @@
-Trouver de l'aide et progresser
+# Trouver de l'aide et progresser
 
 
-# En local 
+## En local 
 
 Sans avoir besoin d'aucune sorte de connections à Internet, de nombreux documents sont là pour vous aider dans votre apprentissage de l'environnement Gnu-Linux.
 
@@ -9,7 +9,7 @@ Ces sources d'informations sont à privilégier **en toutes circonstances**, car
 
 Enfin, lire ces informations vous permettra d'explorer la documentation. Aussi quand vous aurez un trou de mémoire, vous devriez pouvoir retrouver l'information aisément sur n'importe quelle distribution de Gnu-Linux....
 
-## Le Manuel 
+### Le Manuel 
 
 RTFM (Read That Fucking Manuel) Lis ce putain de manuel!
 
@@ -23,7 +23,7 @@ Vous donnera la page de manuel du programme `man`
 
 Vérifiez bien que vous avez installé la version française des 'manpages'. Toutes les distributions de Gnu-Linux ne le font pas automatiquement!
 
-## --help 
+### --help 
 
 La plupart des programme en ligne de commande ont une option `--help` qui résume rapidement les options disponible à l'invocation du programme.
 
@@ -84,7 +84,7 @@ Au passage essayez de lire la ligne suivante:
 
 Vous n'utiliserez JAMAIS cette commande!
 
-## Les pages info 
+### Les pages info 
 
 C'est la même chose que les page man, à la différence que les pages info possèdent une sorte de système de liens hypertexte!
 
@@ -102,15 +102,15 @@ Pour le manuel d'un programme particulier, info suivi du nom du programme. Par e
 
     $ info info
 
-# Sur Internet 
+## Sur Internet 
 
-## Le manuel en français 
+### Le manuel en français 
 
 Certes, ces pages seront peut-être moins "à jour" que celle présentes sur votre système. Mais elle sont toutes en français.
 
 |[Traduction des man-pages](http://manpagesfr.free.fr/index.html)|
 
-## Les Howtos 
+### Les Howtos 
 
 La plus grande partie d'entre eux sont vieux, et ne correspondent donc plus vraiment à l'état de l'art. Cependant ce sont des références. Ils peuvent donc apporter beaucoup pour ce qui est de la compréhension globale des choses.
 
@@ -122,9 +122,9 @@ Certaines parties de ce site sont des adaptations/traductions/mises à jour dire
 
 |[Linux Security Howto](http://www.tldp.org/HOWTO/Security-HOWTO/index.html)|
 
-# Par la pratique 
+## Par la pratique 
 
-## Réutiliser /home et /etc 
+### Réutiliser /home et /etc 
 
 Dans ces deux répertoires se trouvent vos fichiers de configuration. Pourquoi donc les supprimer lors de la réinstallation d'une distribution?
 
@@ -132,7 +132,7 @@ Personnalisez votre configuration et tentez de la réutiliser lors de la réinst
 
 Placez donc ces deux répertoires sur des partitions distinctes que vous ne formaterez plus!
 
-## Écrire des scriptes 
+### Écrire des scriptes 
 
 Vous pouvez écrire des scriptes, et créer ainsi vos propres programmes. C'est une bonne pratique qui vous permets de vous créer vos propres outils pour automatiser vos tâches répétitives.
 
@@ -140,7 +140,7 @@ Dans ces pages, nous ne faisons qu'effleurer la complexité du shell, mais ne vo
 
 |[Un guide plutôt pédagogique en français](https://abs.traduc.org/abs-fr/index.html)|
 
-## Vous impliquer 
+### Vous impliquer 
 
 La communauté libriste est grande, et toutes le bonnes volontés sont les bienvenues.
 
@@ -152,13 +152,13 @@ Si vous maitrisez assez bien une langue, vous pouvez traduire de la documentatio
 
 Autre catégorie très recherché sont les graphistes et les designers.
 
-## Choisir une distribution_ pédagogique 
+### Choisir une distribution_ pédagogique 
 
 Passer à une distribution plus *élitiste* est envisageable.
 
 Si vous avez été capable de suivre ces pages, sachez que vous n'avez *presque* plus rien à craindre!
 
-### Arch Linux 
+#### Arch Linux 
 
 Arch Linux est une distribution complète sans installateur. Pour la mettre en place, il vous sera nécessaire de comprendre le fonctionnement d'une distribution.
 
@@ -170,7 +170,7 @@ KISS !
 
 |[Arch possède une belle communauté francophone](https://archlinux.fr/)|
 
-### Linux From Scratch 
+#### Linux From Scratch 
 
 En fait, ce n'est même pas une distribution. C'est un livre qui vous apprendra à construire une distribution complète depuis les fichiers du code source.
 

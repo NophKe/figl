@@ -1,7 +1,7 @@
-Le réseau
+# Le réseau
 
 
-# Internet 
+## Internet 
 
 Internet, c'est une technologie qui permet de connecter **physiquement** autant de petits réseaux d'ordinateurs que l'on veut *ou presque* à l'intérieur d'un réseau global.
 
@@ -13,11 +13,11 @@ On commet de nombreux, abus de langage dans le domaine. Ce que l'on appelle comm
 
 Mais de nombreuses application comme les emails, le partage de fichier (ftp), et bien d'autres sont tout à fait possible sur un réseau local, sans accès à internet.
 
-# IP, TCP et UDP 
+## IP, TCP et UDP 
 
 Tcp et ip sont les protocoles élémentaires de tous les réseaux. Udp est surtout utile sur Internet et doit être connu pour savoir régler un pare-feu.
 
-## Ip 
+### Ip 
 
 Ip c'est l'Internet Protocole. Du coup c'est le standard *de facto* de tous les réseaux.
 
@@ -31,7 +31,7 @@ Ainsi chez vous se trouve une probablement une "box" qui est le routeur d'un sou
 
 Cette box est en fait, un modem **+** un routeur. Ainsi vos appareils sont sur un sous-réseau local (chez vous), et il possèdent tous une adresse locale unique, mais partagent tous la même adresse vu de l'Internet.
 
-## Tcp 
+### Tcp 
 
 Ip est donc un protocole rudimentaire mais qui permet que chaque ordinateur puisse communiquer avec n'importe quel autre, mais Ip ne nous certifie pas que les données reçues sont arrivées ni dans l'ordre ni que l'on a tout reçu en bonne qualité, ni que ce que l'on a envoyé a bien été reçu.
 
@@ -39,7 +39,7 @@ Ip permet ce qu'on appelle un échange de "paquets de données". Tcp est le prot
 
 Tcp établie une connexion entre deux adresse ip, et c'est à l'intérieur de cette connexion de les paquets ip prennent leur sens les uns par rapport aux autres.
 
-## Udp 
+### Udp 
 
 Il fait en comme tcp, mais sans l'accusé de réception et une méthode de contrôle de l'intégrité de données plus souple.
 
@@ -47,11 +47,11 @@ L'exemple mille fois donné, c'est les balles de mitrailleuse dans les jeux en l
 
 Udp est donc moins fiable mais plus rapide que Tcp.
 
-# Dhcp 
+## Dhcp 
 
 C'est le « Dynamic Host Configuration Protocol ». Pour faire simple (car il n'y a pas de raison!), c'est un protocole qui permet à chacun des ordinateurs d'un réseau de se faire attribuer automatiquement une adresse ip.
 
-## L'adresse MAC 
+### L'adresse MAC 
 
 Une adresse MAC unique est attribuée à chacune des carte réseau vendue sur Terre depuis *(je ne trouve plus la date)* grâce à une technique que les vendeurs de carte réseau ont tous adoptée.
 
@@ -59,7 +59,7 @@ Il existe des logiciels qui permettent de changer d'adresse MAC pour ceux qui ti
 
 Edward Snowden a notamment fait des révélations pour ce qui est de la N.S.A, mais c'est pas valable que pour cette dernière étant donné que vous divulguez votre adresse MAC à chaque connexion réseau. (pensez à tous ces réseaux de supermarché, les MacDonald's, etc... qui demandent votre nom ou votre adresse mail pour vous autoriser la connexion)
 
-## Le principe 
+### Le principe 
 
 Ainsi, votre ordinateur quand il détecte une nouvelle connexion à un réseau, signale publiquement son adresse MAC et demande publiquement s'il n'y a pas de service dhcp qui traine dans le coin.
 
@@ -69,13 +69,13 @@ Le serveur nous envoi également un masque de sous-réseau. Sans rentrer dans le
 
 Et enfin! Nous recevons éventuellement une adresse de serveur dns (c'est la suite)
 
-# Dns 
+## Dns 
 
 Le Domain Name Système, le système de noms de domaine, permet de ne pas connaitre les adresses ip de tous les serveurs que vous utilisez.
 
 Ainsi quand vous tapez une adresse web du style http://www.DesGrosLolos.biz ce qui se passe c'est que vous envoyez une requete à votre serveur dns auquel vous êtes connecté, et ce dernier traduit [www.desgroslolos.biz](http://www.desgroslolos.biz) zn une adresse ip (genre 91.198.174.192, d'ailleurs tapez 91.198.174.192, dans votre navigateur internet, vous verrez que çà marchera!)
 
-## Le choix du dns 
+### Le choix du dns 
 
 Si vous ne spécifiez pas de serveur dns à votre ordinateur, il utilisera celui qui sera proposé par le serveur dhcp. Souvent ce sera alors celui de votre fournisseur d'accès à internet. Mais si vous n'êtes pas chez vous, alors difficile de savoir qui ce sera.
 
@@ -87,7 +87,7 @@ Le choix du dns se fait très simplement en éditant le fichier texte `/etc/reso
 
 Nous y reviendrons dans la partie sur les fichiers de configuration.
 
-## Le fichier /etc/hosts 
+### Le fichier /etc/hosts 
 
 S'il y a un autre fichier texte bien pratique c'est celui-ci. Il nous permet des définir depuis notre propre ordinateur. Par exemple, supposons que vous aimiez bien le moteur de recherche [www.DuckDuckGo.com](http://www.DuckDuckGo.com) mais que vous trouvez son adresse trop longue.... Alors vous trouvez l'adresse ip de DuckDuckGo (46.51.197.89) et vous editez ainsi votre `/etc/hosts`
 
@@ -119,7 +119,7 @@ A la différence d'un Adblock ou autre qui ne fonctionne que pour votre navigate
 
 On peut trouver des fichier `/etc/hosts` déja bien fournis, que ce soit pour éviter le dns, pour créer de raccourcis d'adresse, ou pour réaliser un filtre parental, c'est efficace et rapide, car c'est géré en direct par le système d'exploitation et aucun programme ne peut passer outre.
 
-# Http 
+## Http 
 
 La grande idée qui a lancé l'Internet grand public, c'est le web!
 
@@ -133,7 +133,7 @@ Et le web, c'est la réunion de trois choses:
 
 |La suite des protocoles qui contribuent au http ( credit Wikipedia )|
 
-## Html, HyperText Markup Langage 
+### Html, HyperText Markup Langage 
 
 Quand vous entrez le nom d'un site web, le dns vous envoi une adresse ip à laquelle joindre le serveur. Puis votre ordinateur établit une connexion tcp/ip avec le serveur web.
 
@@ -192,7 +192,7 @@ Et l'on peut ainsi se balader de lien en lien tant que le protocole (le début d
 
 Si la ressource n'est pas une page html, le navigateur essaiera de la lire avec ses plugin, ou avec les programmes disponibles sur votre ordinateur. Si votre ordinateur ne possède pas de programme pour afficher/gérer cette ressource, le navigateur vous proposera de la télécharger.
 
-## Http dans tous çà? 
+### Http dans tous çà? 
 
 Et bien pas tant que çà en fait...
 
@@ -200,17 +200,17 @@ C'est un protocole de transfert de données, il ne fait en ce sens pas beaucoup 
 
 Cependant il indique au trois choses au serveur de la ressource:
 
-### 1/ Le site web 
+#### 1/ Le site web 
 
 Le premier est le seul indispensable auquel on demande la ressource (des fois il y a plusieurs sites sur une seule adresse ip)
 
-### 2/ Le Referer 
+#### 2/ Le Referer 
 
 Cette section indique le document dans lequel se trouvait le lien vers la ressource que vous demandez actuellement.
 
 Remarque: Cela signifie que même les tous les sites (même ceux qui ne cherchent pas à vous suivre) savent toujours d'où vous arrivez.... À moins de régler votre navigateur pour ne pas le faire (parfois il faut ruser pour y arriver, pour Firefox ou chrome, le plus simple est passer par des extensions)
 
-### 3/ Le User Agent 
+#### 3/ Le User Agent 
 
 Dans cette section les navigateurs vont indiquer votre langue, votre matériel, et plein d'autres détails qui permettrons de vous offrir une expérience *personnalisée*.
 

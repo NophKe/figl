@@ -1,8 +1,8 @@
-La philosophie du Libre
+# La philosophie du Libre
  
 
 
-# Remarques sur les éxécutables 
+## Remarques sur les éxécutables 
 
 Un programme qui est fournit uniquement sous la forme d'un exécutable est une injustice car l'utilisateur qui récupère (ou pire, achète!) ce programme n'obtient en retour aucun contrôle sur le fonctionnement du logiciel. Il doit faire confiance à l'éditeur pour savoir ce que le logiciel fait /ou ne fait pas sur son ordinateur.
 
@@ -18,17 +18,17 @@ Sans cela aucun format propriétaire breveté (mp3, flash, documents word...) n'
 
 Pour le dire vite: le *binary hacking* c'est réservé à de grands érudits, qui font un travail indispensable et terriblement important pour la communauté du libre!
 
-# Le logiciel propriétaire 
+## Le logiciel propriétaire 
 
 Les logiciels propriétaires demandent généralement à leur utilisateur de signer (électroniquement) un contrat de l'utilisateur final. Dans ce contrat vous vous engagez généralement à ne pas chercher à savoir comment marche le logiciel, à ne pas le modifier. Vous ne pouvez pas l'améliorer et le donner à un ami, ni le lui vendre.... etc... Il n'y a pas de règles internationales, c'est entre l'éditeur et l'utilisateur. Et seulement eux! Parfois vous renoncez ainsi à vos droits de poursuite, parfois vous acceptez l'utilisation de vos données personnelles! C'est selon.
 
 Les Logiciels propriétaires (la plupart de ceux que vous trouverez dans le commerce) viennent donc sous forme d'un exécutable pratiquement impossible à analyser ou à modifier. Mais au juste pourquoi vouloir savoir ce qu'il se passe à l'intérieur? Pourquoi vouloir le modifier?
 
-## Les bugs 
+### Les bugs 
 
 Parfois un logiciel fonctionne mal, et l'éditeur (pour de bonnes raisons parfois) ne veut pas appliquer de correctif à son logiciel. Parfois, le logiciel est trop vieux et l'éditeur a laissé tombé sa maintenance. Parfois aussi, c'est juste lié à vous et à votre configuration particulière, et le programme a besoin d'une correction personnalisée!
 
-## L'ajout de fonctionnalité 
+### L'ajout de fonctionnalité 
 
 Richard Stallman, le fondateur et initiateur du mouvement de l'informatique libre travaillait dans les années 70 au MIT (l'université). Son travail était d'améliorer et de faire évoluer le système informatique qu'utilisait l'université. Nous sommes dans les années 70, il n'y a qu'une seule imprimante, et toute l'université veut l'utiliser...  La pauvre est souvent en rade de papier! Une réussite de Stallman avait été de programmer l'imprimante pour qu'elle signale à tous les ordinateurs connectés quand elle manquait de papier. Juste un petit message, et il y avait toujours quelqu'un de bonne volonté!
 
@@ -38,7 +38,7 @@ Quand une nouvelle imprimante fut offert à l'université Richard Stallman voulu
 
 |Richard Stallman, Fondateur du mouvement du logiciel libre|
 
-## Les Fonctionnalités malicieuses 
+### Les Fonctionnalités malicieuses 
 
 Pourquoi ne voulait on pas laisser Stallman étudier le programme. Ce programme cachait-t-il quelque chose, un espion à l'université? Probablement pas, mais sans le code source impossible à dire! À l'époque de cette histoire, les ordinateurs n'étaient pas interconnectés comme aujourd'hui. Collecter des données, était une tâche difficile et la puissance de calcul n'était pas encore là. Mais de nos jours, on connait tellement ces pratiques qu'on leur a donné des noms.
 
@@ -53,13 +53,13 @@ Pareil que précédemment, à la différence qu'elle permet à ce tiers de modif
 
 Cette liste n'est pas exhaustive...
 
-## Les autres raisons 
+### Les autres raisons 
 
  * On peut vouloir garder une seule *(ou seulement quelques unes)* des fonctionnalités (encore plus si on a payé pour le logiciel en entier), pour avoir un logiciel plus léger, ou plus *sur-mesure*.
  * On veut parfois faire tourner le logiciel sur un nouveau système d'exploitation , une autre architecture de processeur...
  * S'amuser?..
 
-# Le Logiciel Libre (Free Software) 
+## Le Logiciel Libre (Free Software) 
 
 Pour toutes les raisons évoquées ci-dessus, la Free Sofware Foundation s'est lancé dans l'écriture d'une license qui permettrait à tout ceux qui voudrait écrire des programmes de le faire dans le respect des libertés de l'utilisateur final. C'est la G.P.L, General Public License.
 
@@ -83,15 +83,15 @@ La possibilité de redistribuer (donner ou vendre) des copies modifiées du logi
 
 |Carte conceptuelle du logiciel libre ( credit: Wikipedia )|
 
-## Libertés individuelles 
+### Libertés individuelles 
 
 Les deux premières libertés nous assurent le contrôle individuel du logiciel. Cependant elle ne nous permettent pas de donner une copie de notre logiciel à un copain programmeur et de lui commander une modification. D'où la nécessité des deux suivantes!
 
-## Libertés collectives 
+### Libertés collectives 
 
 Les deux dernières libertés nous assurent le contrôle collectif. Elles permettent  à un groupe d'utilisateurs qui n'aiment pas les évolutions d'un logiciel, de reprendre ce logiciel et de se constituer en groupe informel, association, entreprise... Chacun est libre! Mais le code sous license GPL reste sous license GPL.
 
-# La Jungle du logiciel libre 
+## La Jungle du logiciel libre 
 
 Si tout le monde a accès au code source, alors chacun va développer des versions personnelles, on parlera de:
 
@@ -120,7 +120,7 @@ Exemples:
  * IceWeasel est une version de Firefox patchée pour enlever tout ce qui porte atteinte à votre vie privée...
  * Et Gnu-Linux est globalement un clone d'Unix
 
-# Un Système modulaire 
+## Un Système modulaire 
 
 Windows est un système d'exploitation tout intégré, il arrive avec son propre programme de gestion des périphériques, son propre programme de gestion du réseau, sa propre interface graphique, un éditeur de texte, Microsoft Paint, et le solitaire....
 
@@ -128,7 +128,7 @@ Gnu-Linux n'est pas aussi monolithique, au contraire! Par défaut, Gnu-Linux est
 
 À la différence de Windows, donc, vous êtes libres d'utiliser les programmes que vous souhaitez. Cela inclut aussi les programmes qui sont liés à l'interface graphique. Vous pouvez par exemple construire un environnement qui ne possédera aucune interface graphique, mais seulement une interface texte. (La plupart des serveurs n'ont pas d'écran à eux, on n'y connecte avec d'autres ordinateurs qui ont leur écran à eux)
 
-## Une Distribution 
+### Une Distribution 
 
 C'est en associant tout un tas de programmes (un éditeur de texte, un shell, une interface graphique, des programmes de configuration....) que l'on obtient une **distribution** Gnu-Linux.
 
@@ -146,7 +146,7 @@ Et surtout qu'avoir avoir clefs de cette *culture générale de l'informatique* 
 
 |Les composants d'une distribution Linux ( credit Wikipedia )|
 
-## Le Minimum requis 
+### Le Minimum requis 
 
 Il est une question très saine à se poser! En taillant dans le gras d'une distribution, que me faut il pour booter mon ordinateur?
 

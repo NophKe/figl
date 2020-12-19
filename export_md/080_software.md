@@ -1,7 +1,6 @@
-Le Logiciel
-
-
 # Introduction au logiciel 
+
+
 
 Un logiciel c'est de la donnée exécutable. Par opposition les fichiers ne sont pas exécutables.
 Tous les programmes s'exécutent pas de la même façon.
@@ -21,7 +20,7 @@ Il existe de nombreux systèmes d'exploitation:
  * Android
  * Gnu-Linux...
 
-## Les rôles du Système d'exploitation 
+### Les rôles du Système d'exploitation 
 
 Ils sont nombreux, mais pour faire simple, disons qu'un système d'exploitation est un ensemble de programme qui vous permettent de profiter d'un ordinateur. Pour ce qui est de son rôle global, il est donc clair: vous permettre de gérer vos données et de lancer vos programmes.
 
@@ -39,7 +38,7 @@ Ainsi, système d'exploitation est un concept à la fois évident, et subtile. O
 
 |Schemas de Principe ( credit Wikipedia )|
 
-## Le Noyau du système d'exploitation 
+### Le Noyau du système d'exploitation 
 
 Il est le seul à communiquer directement avec le matériel. Il intercepte toutes les demandes des programmes, et ne les retransmet que s'il les juge valides.
 
@@ -49,7 +48,7 @@ Il fournit un environnement favorable aux applications.
 
 Certains OS sont fait pour fonctionner sur certains matériels, d'autres pour une grande diversité de machines.
 
-# Le Langage Machine 
+## Le Langage Machine 
 
 A l'origine était le langage machine, on perforait des cartes avec des trous qui représentaient des ZÉROs et des UNs....
 
@@ -160,13 +159,13 @@ Donc en gros le langage assembleur, c'est qu'au lieu d'écrire avec des barbaris
 
 Bon c'était rudimentaire... Alors on s'est lancé dans l'écriture de langage de plus haut niveau....
 
-# Les Langages de programmation 
+## Les Langages de programmation 
 
 Si vous avez suivis la page précédente sur l'assembleur, l'intérêt des langage de programmation de haut niveau devraient vous paraitre évident.
 
 Sinon, vous avez un problème!
 
-## Exemple de cette même calculette à la noix 
+### Exemple de cette même calculette à la noix 
 
 Pour reprendre l'exemple de la page assembleur, si on voulais modifier notre programme pour qu'il fasse la même chose mais qu'il ajoute un petit message de bienvenu.
 
@@ -245,7 +244,7 @@ Langage de programmation proche du langage humain
 : Exécutable
 Programme issu d'une compilation pour une architecture matérielle spécifique et un système d'exploitation spécifique. En gros, un fichier qui contient des segments de données et des segments de code qu'un système d'exploitation sait reconnaitre et démarrer. (et à qui il sait fournir des librairies)
 
-# Les Librairies 
+## Les Librairies 
 
 ---
 
@@ -275,9 +274,9 @@ Fournit les éléments d'interface graphique de Gnome
 : Qt
 Fournit les éléments d'interface graphique de Kde
 
-# Les éxécutables.... 
+## Les éxécutables.... 
 
-## Les principaux formats 
+### Les principaux formats 
 
 Les utilisateurs de Windows connaissent surement les fichers ".exe"
 
@@ -290,7 +289,7 @@ Ce sont tous les deux des fichiers compressés qui contiennent:
  * des des exigences de librairies présentes sur le système d'exploitation
  * et des morceaux de librairies
 
-# Comment mon ordinateur peut-il faire plusieurs choses à la fois? 
+## Comment mon ordinateur peut-il faire plusieurs choses à la fois? 
 
 En faits, ça ne se passe pas comme ça. Les ordinateurs ne peuvent faire qu'une chose à la fois par nombre de processeurs. Mais les ordinateurs sont capables de changer de tache rapidement, et trop les humains qui pensent que ces derniers font plusieurs choses à la fois. On appelle ceci le temps partagé.
 

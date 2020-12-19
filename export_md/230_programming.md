@@ -1,9 +1,9 @@
-Programmer
+# Programmer
 
 
 En général pouyr commencer à apprendre n'importe quel langage de programmation, on commence par écrire un programme simple qui affiche "bonjour" à l'écran.
 
-## Hello World en langage assembleur 
+### Hello World en langage assembleur 
 
     section	.text
        global _start     ;must be declared for linker (ld)
@@ -27,7 +27,7 @@ Bon cette fois-ci c'est partie, on va commencer à programmer! Car à part lire 
 
 On va programmer en Bash. Car Bash, c'est bien et c'est utile à connaitre. On refera le même programme plus tard avec d'autres langages. ( Comme çà vous en serez certains vous aussi... que Bash c'est bien! )
 
-# Hello World 
+## Hello World 
 
 Quand on commence à écrire des commandes qui tiennent sur de nombreuses lignes, il existe un risque bien réel de faire des erreurs. Une méthode plus commode, est de créer un fichier un fichier texte, et d'y inscrire les commandes que l'on souhaite exécuter.
 
@@ -46,7 +46,7 @@ Il est d'usage de commencer à apprendre n'importe quel langage de programmation
 
 Bravo! Vous venez d'écrire votre premier programme!
 
-# Les variables 
+## Les variables 
 
 Une variable est une case mémoire dans laquelle on enregistre quelque chose. Pour créer une variable foo, contenant le texte « bar » rien de plus simple:
 
@@ -70,14 +70,14 @@ La syntaxe est importante:
  * un 'dollar' pour accéder au contenu d'une variable
  * pas de 'dollar' pour modifier une variable
 
-# Commentaires et sha-bang 
+## Commentaires et sha-bang 
 
 On a déja vu des commentaires! Avec bash les commentaires se  font avec le symbole `#`. Tout ce qui suit ce symbole est ignoré. Démonstration:
 
     $ echo dièse # dièse
     dièse
 
-# Les Conditions, et quelques élements de stylistique 
+## Les Conditions, et quelques élements de stylistique 
 
 Pour l'instant l'on a utilisé que des commandes qui tenaient sur une seule ligne. Préparez vous à perdre la prompte (comme avec ce fichier l'embrouille), car ce qui suit est une commande sur plusieurs lignes.
 

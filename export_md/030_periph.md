@@ -1,4 +1,4 @@
-Les Périphériques
+# Les Périphériques
 
 
 ---
@@ -18,17 +18,17 @@ Mais quand bien même nous pourrions parler en binaire cinq volts haute fréquen
 
 Les périphériques sont les entrées et les sorties, ils sont ce qui fait que ceci est un ordinateur, un serveur, un téléphone, ou une calculette... Et non une théorique machine de Turing...
 
-# Les Indispensables 
+## Les Indispensables 
 
-## La Carte Graphique 
+### La Carte Graphique 
 
 C'est ce qui va communiquer avec les écrans. Comme le traitement d'image en temps réel est une activité très gourmande en ressources, elle possède sa propre mémoire vive et son propre processeur (le GPU).
 
-## La Carte Son 
+### La Carte Son 
 
 Même discours que pour la carte graphique, à la différence que de nos jours la puissance de calcul disponible est telle que *(pour la plupart des applications courantes, et donc pour la plupart des ordinateurs portables ou bas de gamme*) une petite puce électronique intégrée à la carte mère est suffisante.
 
-## Une Mémoire De Stockage 
+### Une Mémoire De Stockage 
 
 Sans aucun programme à réaliser, un ordinateur ne fait rien...ou presque! On a besoin d'au moins un programme à lui donner.
 
@@ -40,7 +40,7 @@ Et toujours dans la pratique si c'est un support sur lequel on peut lire... mais
 
 Remarque:Oui oui les ssd sont comme plusieurs cartes sd empilées
 
-## Une Carte Réseau 
+### Une Carte Réseau 
 
 Une interface matérielle qui transforme des données en signal à émettre et un signal reçu en données.
 
@@ -53,11 +53,11 @@ Carte réseau qui transforme des données en signal pour les réseaux câblés
 : Carte wifi
 Carte réseau qui transforme des données en signal pour les réseaux sans fils
 
-## Un Clavier 
+### Un Clavier 
 
 Oui oui c'est un indispensable! Si le micro-logiciel n'arrive pas à trouver de clavier, il va bipper trois fois et va refuser de démarrer la machine! C'est comme çà, la souris, elle par contre est optionnelle.
 
-## Les Moins Connus 
+### Les Moins Connus 
 
 Il reste encore toute une panoplie:
 
@@ -69,7 +69,7 @@ Il reste encore toute une panoplie:
  * des webcam, un micro...
  * et j'en passe..
 
-### La Dicrete Card 
+#### La Dicrete Card 
 
 Mais il y en a un qu'il faut comprendre car il peut être source de confusion...
 
@@ -79,7 +79,7 @@ De nos jours les ordinateurs portable en on souvent deux cartes graphiques, une 
 
 Ainsi, suivant votre configuration, elle démarrera quand vous brancherez un second écran, ou quand l'ordinateur est en charge... Parfois elle se configure dans le bios, parfois pas... Parfois le système d'exploitation gère tellement mieux l'une que l'autre que voilà... Dans ces cas faut bidouiller...
 
-# Interruptions Système 
+## Interruptions Système 
 
 Votre clavier est un périphérique très simple, il est simple car il génère une petite quantité de données et lentement (selon les standards d'un ordinateur). Quand vous appuyez ou relâchez une touche, cet événement est signalé à travers le fil du clavier. La valeur d'un bus change et déclenche ce qu'on appelle une interruption matérielle.
 
@@ -91,9 +91,9 @@ C'est la capacité du système d'exploitation à savoir correctement prioriser l
 
 Une des interruptions système les plus importante est l'horloge. Elle empêche qu'un seul programme qui plante ne s'accapare l'ordinateur. A chaque fois qu'elle intervient, le système d'exploitation reprends la main et réactualise ses priorités.
 
-# Les Contrôleurs 
+## Les Contrôleurs 
 
-## L'Idée 
+### L'Idée 
 
 En Informatique, on appelle un Contrôleur, une puce électronique qui fournit une interface entre un périphérique et une carte mère.
 
@@ -103,7 +103,7 @@ Le Contrôleur est là pour détecter un ordre de changer de résolution, et ne 
 
 Un Contrôleur, c'est une puce électronique qui fonctionne à des vitesses comparables à celle des processeurs, mais qui sait se mettre à la vitesse de ceux qu'elle contrôle.
 
-## Exemple Avec Un Disque Dur 
+### Exemple Avec Un Disque Dur 
 
 Si vous trouvez qui cette page est trop longue, Passez à la suivante (ou sautez le dialogue, pour avoir envie de la lire plus tard...). Ne lisez pas la suite et passez à la prochaine page.
 

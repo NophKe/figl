@@ -1,4 +1,4 @@
-Le clavier
+# Le clavier
 
 
 Le clavier est probablement l'interface la plus pratique pour communiquer avec un ordinateur.
@@ -18,7 +18,7 @@ Un Clavier se compose de:
 
 Un combo ou combinaison de touche c'est le fait d'appuyer sur deux touches à la fois, par exemple, [ Alt + F4 ] permet de fermer la fenêtre courante sous Windows.
 
-# Des Touches étranges 
+## Des Touches étranges 
 
 : Esc
 

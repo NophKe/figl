@@ -1,7 +1,7 @@
-Unix...
+# Unix...
 
 
-# Le Point historique 
+## Le Point historique 
 
 Elle est longue cette histoire. Et en faits, elle commence avec l'informatique elle même car Unix est le grand-père de nombreux système d'exploitation.
 
@@ -19,7 +19,7 @@ Ces concepts tiennent néanmoins car ils fournissent une interface standard pour
 
 Le principe de l'utilisation exclusive de données texte limite le recours à des caractères d'échappement. Ssh, par exemple, est un protocole moderne qui permet de se connecter à un ordinateur à distance. Et la plupart des serveurs informatique du web fonctionnent grâce à une variante d'Unix ou de Gnu-Linux.
 
-# La Philosophie Unix 
+## La Philosophie Unix 
 
 > " Those who do not understand Unix
 > are doomed to reinvent it, poorly.”
@@ -29,7 +29,7 @@ Dans toute cette longue histoire, et toute cette diversité ont émergé des con
 
 Par exemple...
 
-## Tout est Fichier 
+### Tout est Fichier 
 
  * Les fichiers sont des fichiers. C'est logique.
  * Les processus sont des fichiers. Bon c'est étrange...
@@ -45,7 +45,7 @@ C'est pour cela qu'Unix fournit de nombreux petits programmes redoutablement eff
 
 Remarque: Communiquer avec un bus c'est parler en binaire à haute fréquence.... Il y a donc un certain degré d'abstraction pour simplifier la vie de l'utilisateur. Certains fichiers sont de véritables interfaces de communication!
 
-## Plein de petits programmes valent mieux qu'un gros 
+### Plein de petits programmes valent mieux qu'un gros 
 
 Douglas McIlroy, l'inventeur des tuyaux Unix (Unix pipes en anglais) et l’un des fondateurs de la tradition d'Unix, résume la philosophie comme suit :
 
@@ -58,7 +58,7 @@ Ce qui est souvent résumé par :
 
 > « Ne faire qu'une seule chose, et la faire bien. ».
 
-## deux lettres 
+### deux lettres 
 
 Les plus vieux programmes Unix ont seulement deux lettres pour nom (ls, ps, df, du, mv, cp...).
 
@@ -81,7 +81,7 @@ La ligne ci dessus est un exemple typique de commande Unix. En langage humain ce
 > demande moi confirmation
 > > > (fais comme si j'avais utilisé le programme rm avec l'option d'interactivité). »
 
-## KISS 
+### KISS 
 
 Keep it Simply Stupid
 
@@ -121,7 +121,7 @@ Simple et stupide ce n'est pas toujours avoir une belle interface graphique et d
 
 Un système minimaliste et puissant. Capable d'être administrés par une console texte, et dont la configuration se fait par des fichiers humainement lisibles...
 
-## SuckLess 
+### SuckLess 
 
 Rien de trop ne sera toléré.
 
@@ -129,13 +129,13 @@ Chaque philosophie possède ses extrémistes.... ^_^
 
 PARAGRAPHE A COMPLETER
 
-# histoire 
+## histoire 
 
-## Bell Labs 
+### Bell Labs 
 
 Bell Labs, c'était la grosse compagnie de téléphone étasunienne, monopole d'état. Leur centre de recherche a été un des acteur clef du développement de l'informatique.
 
-## Gnu 
+### Gnu 
 
 Définissons Gnu:
 

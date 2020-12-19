@@ -1,7 +1,7 @@
-L'arborescence
+# L'arborescence
 
 
-# Les différents types de fichiers 
+## Les différents types de fichiers 
 
 Il existe différents types de fichiers, pour une liste non exhaustive :
 
@@ -23,21 +23,21 @@ Vous vous en doutez, l'arborescence de Linux est une caverne au merveille, et on
 
 Les différentes tentatives pour standardiser les choses à ce niveau ont donné peu de résultat, mais ici on ne regardera pas les sous-sous-sous-répertoires, donc, oubliez ce que je viens de dire! Et voici ce sur quoi il n'y a pas à discuter!
 
-## /home 
+### /home 
 
 Ici seront vos données, et sur une partition séparée de préférence. L'intérêt de les séparer physiquement est de pouvoir, par exemple, réinstaller Linux sans toucher à vos données. Donnez la taille que vous voulez. Chaque utilisateur aura son propre répertoire à l'intérieur de cette partition. Par exemple l'utilisateur Lambda aura comme répertoire personnel `/home/lambda`.
 
-## /boot 
+### /boot 
 
 Ici se trouvent les noyaux, et ce qui est nécessaire pour l'exécution du chargeur de démarrage.
 
-## /bin 
+### /bin 
 
 Binaries (exécutables), c'est ici que l'on trouve les applications (sans leur ressources, données, librairies...juste les exécutables)
 
 En fait, souvent ce n'est pas un vrai répertoire, mais un lien vers `/usr/bin` (on va y venir)
 
-## /dev 
+### /dev 
 
 Devices (périphérique), les fichiers qui se trouvent dans ce répertoire sont des fichiers spéciaux qui pointent vers des périphériques.
 
@@ -47,17 +47,17 @@ Les fichiers qui commencent par `/dev/sd` sont les **DISQUES**. Il y a de fortes
 
 Les Fichiers qui commencent par `/dev/sdX` (ou X est une lettre minuscule suivie d'un chiffre) sont des **PARTITIONS** (votre partition racine pourrait être par exemple `/dev/sda1`)
 
-## /etc 
+### /etc 
 
 Oui oui oui, c'est le répertoire « et cætera»! Tous les fichiers qui ne rentraient pas dans un de ces autres dossier, mais qui étaient trop importants pour qu'on les perde.
 
 C'est dans ce dossier que se trouvent tous les fichiers de configuration du système.
 
-## /lib 
+### /lib 
 
 Les librairies dont le système a besoin pour fonctionner.
 
-## /mnt 
+### /mnt 
 
 Un répertoire vide pour servir de point de montage temporaire.
 
@@ -65,33 +65,33 @@ C'est l'occasion d'évoquer que si vous montez une partition à l'intérieur d'u
 
 Donc laissez ce dossier vide.
 
-## /proc 
+### /proc 
 
 C'est un système de fichier très particulier qui est monté en `/proc`. C'est véritablement la représentation que se fait le noyau de son environnement. Il contient un dossier pour chaque processus en cour d'exécution sur le système. (il faudrait parler des PID), ce dossier contient aussi le fichier `interrupts` et `meminfo` qui vous donneront des info sur l'utilisation du système. Il y a beaucoup à apprendre en explorant /proc.
 
 C'est ce que l'on appelle un "pseudo-système de fichier".
 
-## /root 
+### /root 
 
 Le Super-utilisateur n'a pas son dossier personnel dans la /home, mais directement dans la partition racine, ainsi lors d'une panne du système, il peut se connecter à son shell correctement configuré, et avoir accès à ses fichiers.
 
 Si vous allez faire quelque chose de dangereux, vous pouvez déconnecter tous les utilisateur, vous connecter en root, et démonter la `/home` et toutes les partitions qui craignent quelque chose.
 
-## /tmp 
+### /tmp 
 
 Pour les fichiers temporaires. Si votre gestionnaire d'initialisation est Systemd, il aura surement monté un "tmpfs" à cet endroit.
 
 C'est un autre "pseudo-système" qui imite une véritable partition uniquement avec la mémoire vive. C'est bien plus rapide qu'un disque-dur, et utile pour les applications qui doivent constamment stocker une grosse quantité de données (pensez au streaming!)
 
-## /srv 
+### /srv 
 
 Pour les répertoires partagés sur Internet.
 
-## /sys 
+### /sys 
 
 `/proc` nous offrait la possibilité de voir ce qu'il se passait dans le noyau. Cette fois ci, le noyau nous propose une interface pour communiquer avec lui et les différents périphériques, en manipulant les fichiers de ce pseudo système.
 
-## /usr 
+### /usr 
 
 C'est un peu le `C:\Program Files`de Gnu-Linux.
 
@@ -99,13 +99,13 @@ A la base, c'était le répertoire des dossiers utilisateurs, la `/home` de l'é
 
 Quand ils on eu un nouveau disque, ils ont déplacé le répertoire des utilisateurs dans `/home`, seul `/usr/share` (qui contient la documentation notamment) est resté en place. Depuis c'est comme çà, c'est historique!
 
-## /var 
+### /var 
 
 Des fichiers utiles mais pas indispensables. Les journaux de connections et autre journaux de surveillance du système. Une copie des paquetages que l'on installe...
 
 Le carnet de maintenance en somme! Si vous ne voulez pas faire tournez un serveur, ou devenir agent secret, ne vous en souciez plus.
 
-## /lost+found 
+### /lost+found 
 
 Parfois le système ne sait plus à quel fichier correspond un cluster d'un disque. À la racine de chacune des partition au format ext, il y aura ce répertoire.
 

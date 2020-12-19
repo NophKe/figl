@@ -1,11 +1,11 @@
-Le Codage de l'information
+# Le Codage de l'information
 
 
 Le Hardware c'est le matériel qui permet de traiter de l'information. Voyons un peu comment le matériel représente **physiquement** une information **virtuelle**.
 
 Ce qui est finalement toute la sorcellerie du truc...
 
-# La Mauvaise idée: l'analogique 
+## La Mauvaise idée: l'analogique 
 
 On parle d'analogique quand une information est représenté par une valeur physique qui peut prendre des valeurs continues...
 
@@ -22,7 +22,7 @@ Vous ne voudriez pas d'un clavier qui se trompe!
 > « - Monsieur votre machine de vote électronique n'a que trois touches ! GAUCHE  , DROITE , et INSOUMISSION CITOYENNE! J'ai appuyé sur INSOUMISSION CITOYENNE et ça a quand même voté pour DROITE ! »
 > « - Oui mais vous savez.... Ce n'est pas par ce qu'il n'y a que trois touches que c'est infaillible à tous les coups...»
 
-# Un Clavier à trois touches 
+## Un Clavier à trois touches 
 
 Comme nous l'avons vu au paragraphe précédent, en informatique, nous codons les informations sous forme de données binaires ( qui ne peuvent prendre que deux valeurs 0 ou 1, vrai ou faux....). Une unique information binaire est un BIT d'information. Un bit est l'unité minimum du codage de l'information.
 
@@ -111,7 +111,7 @@ Ainsi on ne se trompera pas entre 0x10 (SEIZE) et 10 (DIX) et bx10 (DEUX)...
 
 ---
 
-# Les unités de l'informatique 
+## Les unités de l'informatique 
 
 Comme le bit est une unité de base, on s'est très vite mis à utiliser ses multiples. Ainsi, 8 bits est un OCTET.
 
@@ -129,7 +129,7 @@ vaut huit bits
 
 C'était les unités de la préhistoire, et personne n'avait rien à y redire...
 
-## Les multiples de l'octet 
+### Les multiples de l'octet 
 
 Dernière question: combien de valeurs différentes un bus de DIX bits peut-il prendre? La réponse est simple, mille vingt-quatre! (c'est la que l'on s'est fait avoir par le vendeur...)
 
@@ -147,7 +147,7 @@ Remarquez bien le petit « i » dans l'unité abrégée.
  * Un méga-octet (Mio) est mille-vingt-quatre kilo-octets (Kio)
  * Un giga-octet (Gio) est mille-vingt-quatre méga-octets (Mio)
 
-## L'Arnaque des vendeurs 
+### L'Arnaque des vendeurs 
 
 Les vendeurs de disques durs, on très vite compris qu'ils avaient cependant intérêt à ne pas utiliser des kilos de quatre-vingt-quatre... Ils utilisent des kilos qui valent mille pour que les capacités de leur disques paraissent plus impressionnantes. C'est pour cette raison que lors ce que vous achetez une clef USB, sa capacité est souvent inférieure à celle qui était annoncée sur l’emballage....
 

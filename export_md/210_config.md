@@ -1,4 +1,4 @@
-Les fichiers de configuration
+# Les fichiers de configuration
 
 
 Généralement les programmes se configurent à travers **deux** fichiers de configurations. Le premier se place généralement dans le répertoire `/etc`, et devient le défaut du système.
@@ -9,7 +9,7 @@ Le second, le dot-file, n'est créé que si cela est nécessaire, et ce peut êt
 
 Comme son nom l'indique, un dot-file possède un nom de fichier qui commence par un point (dot en anglais), c'est donc un fichier caché!
 
-# Les dot-files 
+## Les dot-files 
 
 Ce sont des fichiers qui commencent par un point. Ce sont donc des fichiers cachés.
 
@@ -19,7 +19,7 @@ Le symbole `~` (tilde) est interprété par le shell comme le répertoire person
 
 Chose importante à savoir: Le système d'exploitation ne touche pas à ces fichiers. C'est à l'utilisateur qu'il revient de supprimer les fichiers des programmes désinstallés.
 
-## ~/.bashrc 
+### ~/.bashrc 
 
 RC signifie "Run Command". Ainsi vous pouvez imaginer ce fichier comme une suite d'instructions que vous taperiez à chaque fois que vous démarrez votre shell.
 
@@ -40,7 +40,7 @@ Faites en sorte qu'elles restent bien en tête du fichier. Elle demandent à Bas
 
 Remarquez que tout ce qui suit un symbole `#` est considéré comme un commentaire
 
-## ~/.bash_profile 
+### ~/.bash_profile 
 
 A la différence du fichier précédent, ce fichier de configuration sera lu uniquement lors d'un démarrage de Bash par un humain. Ainsi la configuration que vous réalisez ici ne perturbera jamais aucun scripte.
 
@@ -50,7 +50,7 @@ N'hésitez pas à placer des alias ici. Par exemple:
     alias vi='vim'
     alias config='vi ~/.bashrc'
 
-## ~/.vimrc 
+### ~/.vimrc 
 
 C'est le fichier de configuration de Vim. De nombreuses personnes partagent leur configuration de Vim sur Internet. Je ne vais donner ici que quelques options courantes.
 
@@ -94,11 +94,11 @@ C'est le fichier de configuration de Vim. De nombreuses personnes partagent leur
     set incsearch
     set smartcase
 
-## Les autres dot-files 
+### Les autres dot-files 
 
-# Le repertoire etc 
+## Le repertoire etc 
 
-## /etc/fstab 
+### /etc/fstab 
 
 C'est ici que se configurent les points de montage des partitions du système.
 
@@ -122,19 +122,19 @@ Pour en savoir plus:
 
     $ man fstab
 
-## /etc/profile 
+### /etc/profile 
 
 C'est le fichier de configuration de Bash. C'est un scripte qui définit les options essentielles du système.
 
 Ce fichier est lu lorsque Bash est utilisé par **un humain** qui se connecte à lui. On parle de lancement interactif.
 
-## /etc/bash.bashrc 
+### /etc/bash.bashrc 
 
 C'est le fichier de configuration de Bash. C'est un scripte qui définit les options essentielles du système.
 
 Ce fichier est lu lorsque Bash est utilisé par un humain **ou un programme** qui se connecte à lui.
 
-## /etc/locale.conf 
+### /etc/locale.conf 
 
 Définit la locale de votre système. C'est à dire la langue, le format d'affichage de la date, et de l'heure, le symbole monétaire en vigueur, et tout un tas de paramètres linguistiques et culturels. Les programmes doivent avoir accès à cette information pour agir en accord avec celle-ci, et donc être portable!
 
@@ -152,9 +152,9 @@ Vous pouvez prendre des renseignement sur votre configuration en entrant simplem
 
     $ locale
 
-# Le réseau 
+## Le réseau 
 
-## /etc/resolv.conf 
+### /etc/resolv.conf 
 
 Déjà évoque dans le paragraphe sur les dns .
 
@@ -178,15 +178,15 @@ Attention ! Les services chargées du réseau vont mettre à jour ce fichier si 
 L'attribut `i` signifie immuable. Et interdit toute modification du fichier... Seul le super-utilisateur peut changer cet attribut.
 Remarquez que j'ai symbolisé la prompte avec un `#` pour indiquer que cette action doit être effectuée en mode administrateur.
 
-## /etc/hosts 
+### /etc/hosts 
 
-## /etc/hostname 
+### /etc/hostname 
 
 Ce fichier permet de définir le nom d'hôte du système, c'est-à-dire le nom de l'ordinateur tel qu'il est perçu depuis le réseau.
 
-# Geekeries inutiles 
+## Geekeries inutiles 
 
-## /etc/issue 
+### /etc/issue 
 
 Lors d'une connexion à la console depuis l'interface texte (donc pas avec un émulateur de terminal depuis l'interface graphique), apparait un message qui vous indique l'heure ou le nom de l'ordinateur, ce comportement se configure ici.
 
@@ -219,11 +219,11 @@ Lors d'une connexion à la console depuis l'interface texte (donc pas avec un é
                              (_/
     
 
-## /etc/motd 
+### /etc/motd 
 
 C'est le petit message qui s'affiche lors de votre connexion à un tty.
 
-## Les autres 
+### Les autres 
 
 Il en reste bien d'autre, cette liste n'est donc pas exhaustive!
 

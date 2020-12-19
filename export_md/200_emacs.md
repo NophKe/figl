@@ -1,11 +1,11 @@
-Emacs
+# Emacs
 
 
 Emacs est d'un autre gabarit. C'est un environnement de développement complet.
 
 Vous pouvez consulter vos mail, lire une page de manuel, tout en faisant des "copier-coller" depuis chacun vers les autres! Tout avec un clavier seulement!
 
-Emacs intègre un interpréteur de commande en langage lisp. Il peut donc tout à fait remplacer votre shell.
+Emacs intègre un **interpréteur de commande en langage lisp**. Il peut donc tout à fait remplacer votre shell.
 
 Emacs intègre un navigateur internet et même des jeux...
 

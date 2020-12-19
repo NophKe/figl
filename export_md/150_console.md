@@ -1,22 +1,20 @@
-Les commandes de base
+# Les commandes de base
 
-
-# Et maintenant? 
 
 Encore une fois je vous conseille de réaliser cette page pour de vrai dans votre console et de vous entrainer ainsi à réaliser les choses. Vous verrez que la pratique vient plus vite qu'on ne le pense!
 
 Vous avez suivi la page précédente sur le shell et il ne vous manque plus que quelques connaissances pour commencer à utiliser pleinement le shell! Vous avez la grammaire, maintenant passons au vocabulaire.
 
-# Se déplacer parmis les dossiers 
+## Se déplacer parmis les dossiers 
 
-## Rappel 
+### Rappel 
 
  * Sur les systèmes basés sur Unix, on « monte » les partitions de disques dans des dossiers.
  * On peut monter une partition dans un dossier qui lui mêmes se trouve dans une partition.
  * Il existe une partition racine, qui contient le système, `/` à l'intérieur de laquelle vient se greffer toutes les autres.
  * Chaque fichier possède des droits d'accès/écriture et d'éxécution 
 
-## pwd  =Print Working Directory 
+### pwd  =Print Working Directory 
 
 Il affiche le répertoire courant ainsi:
 
@@ -24,7 +22,7 @@ Il affiche le répertoire courant ainsi:
     /home/nono
     $ _
 
-## cd =Change Directory 
+### cd =Change Directory 
 
 Il permet de changer de répertoire courant!
 
@@ -42,7 +40,7 @@ Sans argument il vous replace dans votre répertoire utilisateur.
     $ pwd
     /home/nono
 
-## slash, . et .. 
+### slash, . et .. 
 
 : Le `symbole slash `/`
 délimite, les dossiers entre eux.
@@ -65,7 +63,7 @@ Illustration:
 
 Vous ne pourrez pas aller plus haut.
 
-## ps =Print Services 
+### ps =Print Services 
 
 Affiche les programmes en cours d'exécution
 
@@ -78,7 +76,7 @@ Affiche les programmes en cours d'exécution
      2075 pts/1    00:00:00 ps
     $ _
 
-## du =Disk Used 
+### du =Disk Used 
 
 Donne la taille des fichiers
 
@@ -94,7 +92,7 @@ Remarquez que `du` ne précise pas 4 de quelle unité. L'option -h permet d'avoi
 
 Cette fois-ci il précise que ce sont des kilo-octets!
 
-## df =Disk Free 
+### df =Disk Free 
 
 Pareil que précédemment...
 
@@ -124,9 +122,9 @@ Pareil que précédemment...
     /dev/sdb6          290G    259G   31G  90% /home/nono/DOCS
     tmpfs              370M     12K  370M   1% /run/user/1000
 
-# Autres programmes importants 
+## Autres programmes importants 
 
-## less et more 
+### less et more 
 
 Ce sont des paginateurs, vous avez du les rencontrer au chapitre précédent. Les paginateurs sont des programmes assez spéciaux car il prennent le contrôle de l'écran et du clavier et ne le rendent au shell qu'a la fin de leur propre éjection.
 
@@ -143,7 +141,7 @@ entrainez-vous en faisant:
 
 Notez que les espaces avant et après la pipe sont facultatifs.
 
-## man =le MANuel 
+### man =le MANuel 
 
 Vous retrouverez avec le programme man, les touches qui ont été utilisées dans le paragraphe précédent, pour utiliser la pagination.
 
@@ -171,9 +169,9 @@ Dans la page de manuel, vous trouverez:
  * une description du programme
  * et bien d'autres choses...
 
-# ls* 
+## ls* 
 
-## ls 
+### ls 
 
 On a déja vu ls, il liste les fichiers, on en profite pour donner quelques options utiles:
 
@@ -201,7 +199,7 @@ ou encore
 
     $ man ls
 
-## lsblk 
+### lsblk 
 
 Liste les disques, et affiche les partitions sous forme d'arbre!
 
@@ -223,7 +221,7 @@ Liste les disques, et affiche les partitions sous forme d'arbre!
     
     $ _
 
-## lscpu 
+### lscpu 
 
 Affiche les informations relatives au processeur.
 
@@ -244,7 +242,7 @@ Affiche les informations relatives au processeur.
     Cache L1i :                             64K
     Cache L2 :                              512K
 
-## lslogins 
+### lslogins 
 
 Affiche les connexions des utilisateurs.
 
@@ -261,7 +259,7 @@ Vous remarquerez, qu'en plus de vous même de du compte Administrateur (root), i
 
 L'option `-u` permettra de n'afficher que les utilisateurs.
 
-# rm =ReMove 
+## rm =ReMove 
 
 Supprime des fichiers. A utiliser avec prudence, surtout si on utilise des jokers !!!!
 
@@ -273,7 +271,7 @@ Supprime des fichiers. A utiliser avec prudence, surtout si on utilise des joker
     ls: erreur: aucun fichier de ce type (*.txt)
     $ _
 
-# Les commandes qui vont d'elle même 
+## Les commandes qui vont d'elle même 
 
 : exit
 Quitter le shell en cours d'utilisation

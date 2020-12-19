@@ -1,7 +1,7 @@
-Les différents éditeurs
+# Les différents éditeurs
 
 
-## ex 
+### ex 
 
 Le mode d'édition que l'on vient de décrire avec la commande `cat` convient très bien à des téléscripteurs munis uniquement d'une imprimante! `ex` est un très vieil éditeur de texte en mode ligne de commande qui repose sur ce genre de principe.
 
@@ -58,7 +58,7 @@ Et le point d'exclamation pour passer outre les avertissements! Et revenir à la
     : q!
     $ _
 
-## Vi 
+### Vi 
 
 C'est un programme qui fait partie du standard POSIX. A priori, vous devriez donc le trouver sur n'importe quelle distribution Gnu-Linux.
 
@@ -96,7 +96,7 @@ Vim reprend l'essentiel du comportement de vi et le porte beaucoup plus au loin!
 
 Apprendre à utiliser Vim (même un peu) vous suffira pour utiliser vi s'il est le seul éditeur disponible sur le système.
 
-## Nano 
+### Nano 
 
 C'est un petit éditeur moderne, et assez intuitif. Il est fréquemment installé par défaut et il s'intègre bien avec systemd.
 

@@ -7,6 +7,7 @@ Bienvenue dans la version Béta de ce site ....
 Depuis la version alpha, il manque le système qui générait automatiquement des liens entre certains mots et la page qui donnait leur définition...
 
 Ce sera remis en place pour la version définitive...
+
 | ----------- |
 |  [La Préhistoire](010_prehistoire.md)  |
 | ----------- |
@@ -65,6 +66,7 @@ Ce sera remis en place pour la version définitive...
 |  [La partie bio](author.md)  |
 | ----------- |
 |  [Les Fondamentaux de l'informatique](index.md)  |
+| ----------- |
 
 ---
 

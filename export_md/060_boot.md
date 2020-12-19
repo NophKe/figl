@@ -1,7 +1,7 @@
-Le Boot
+# Le Boot
 
 
-# L'art d'enfiler ses chaussure 
+## L'art d'enfiler ses chaussure 
 
 L'ordinateur est mis sous-tension, il s'allume! Dans une **puce électronique**, un programme (appelé le micro-logiciel) analyse l'ordinateur, trouve le/les disques durs, lit le disque qui sera désigné comme disque de boot, et trouve un autre programme inscrit sur ce disque. Ce dernier, sur le disque, se nomme **le gestionnaire de démarrage**.
 
@@ -25,7 +25,7 @@ Réussir tout cela, et dans le bon ordre, c'est comme enfiler ses chaussure! Fau
 
 Aussi démarrer un ordinateur, c'est *booter*! (En bon fraçais ...)
 
-# Le Micrologiciel 
+## Le Micrologiciel 
 
 ---
 
@@ -60,7 +60,7 @@ C'est même recommandé si vous avez des doutes, et que vous voulez pouvoir traf
 
 Pour fonctionner l'Uefi réclame une partition à lui formatée en format fat32 que l'on appelle la partition **EFI**. *(sans u)*
 
-# Le rôle du noyau 
+## Le rôle du noyau 
 
 Si votre ordinateur sait se débrouiller à peu près avec vos différents périphériques, C'est par ce qu'il existe des interfaces de contrôles élémentaires entre les différents composants. Ainsi dès que vous mettez sous tension votre ordinateur, celui ci sait utiliser l'écran, par exemple. Vous remarquerez cependant que lors des premières phases du boot, l'écran n'affiche que du texte, ou une image en seize couleurs... Pourquoi? Les contrôleurs savent se mettre à disposition pour les opérations de base (Vesa par exemple est un standard de contrôleur graphique)...  Mais il faut connaitre intimement le contrôleur pour aller plus loin.
 
@@ -74,7 +74,7 @@ Cependant certains processus sont autorisés à contourner cela, généralement 
 
 En fait, les processus utilisateurs, doivent faire une requête au noyau quand ils veulent obtenir les événements relatifs à votre clavier, afficher à l'écran, lire et écrire les disques, ou juste faire n'importe quoi d'autre que de balancer des bits dans la mémoire. Ces requêtes sont connues aussi le nom de system calls (appel systèmes).
 
-# Le Chargeur de Démarrage 
+## Le Chargeur de Démarrage 
 
 Le micro-logiciel, recherche à un emplacement déterminé qu'on appelle la table de partitions. Cette dernière est une section du disque dur située immédiatement à son début. La table des partitions est normalisée, elle indique l'adresse du disque ou trouver le chargeur de démarrage.
 
@@ -88,9 +88,9 @@ Dans la pratique, un chargeur de démarrage est souvent plus simple à configure
 
 Sachant alors que de nos jours, les besoin de ressources d'un chargeur de démarrage sont faibles (une voir deux secondes lors du boot, et quelques mégaoctets d'espace disque), par commodité, on en installe un.
 
-# Le Gestionnaire d'initialisation 
+## Le Gestionnaire d'initialisation 
 
-## Init 
+### Init 
 
 Une fois le noyau chargé, celui-ci démarre le programme `init` qui est le premier logiciel à être lancé après le noyau. Ce sera son travail que de terminer le boot jusqu'au login de l'utilisateur.
 
@@ -98,13 +98,13 @@ Il va se charger de lire les fichier de configuration. Il va rechercher les pér
 
 Et là encore, `init` ne va pas disparaitre, il restera en tache de fond, et sera le processus père de tous les autres... Le Tuer revient à arrêter le système (mais nous reviendrons là dessus). Il va ainsi rester en tâche de fond, et prendre soins de différents *services*.
 
-## Systemd 
+### Systemd 
 
 Init est le nom historique de ce programme, mais il existe de nombreux gestionnaire d'initialisation. Comme cependant, il ne peut y avoir qu'un seul gestionnaire d'initialisation par système d'exploitation, ce programme se placera toujours en `/bin/init`.
 
 Je parlerai par la suite de Systemd car c'est le gestionnaire d'initialisation le plus courant. *(les spécialistes vont me clouer au pilori...)*
 
-### Les Services 
+#### Les Services 
 
 Une fois que Systemd s'est initialisé lui même, il va lire ses différents fichiers de configuration, et, grâce à ces derniers, va lancer les différents services qui sont actifs sur la machine. Les services sont de programmes qui ont une tache précise et qui fournissent des interfaces pour faciliter ces dernières.
 
@@ -116,7 +116,7 @@ On voudra enfin que ce programme fournisse une interface pratique, afin que d'au
 
 C'est le rôle des services, ils fournissent des couches d'abstraction qui rendent la gestion des différent programmes qui composent le système d'exploitation plus agréable... Plus *administrable*
 
-### Les Targets 
+#### Les Targets 
 
 Désolé pour l'anglicisme, mais cette fois ci, y'a pas mieux... (çà veut dire «cible», mais çà ne se dit pas... je crois...)
 
@@ -132,7 +132,7 @@ Puis target par target il lance tous les services nécessaire, *(et les services
 
 Alors Systemd se range dans son coin et surveille que tout se passe bien. Parfois Systemd doit remettre l'ordre. Parfois, on demande à Systemd une nouvelle target qui peut être le redémarrage, l'arrêt, (ou autre). Mais dans tous les cas Systemd sera le dernier à quitter le navire, veillant tout arrêter dans le bon ordre.
 
-### Les Sockets 
+#### Les Sockets 
 
 On ne peut pas encore entrer dans les sockets, car il n'y a pas lieu dans la section des fondamentaux. Il est cependant à savoir que les sockets sont les interfaces de communication des processus/programmes/services entre eux.
 

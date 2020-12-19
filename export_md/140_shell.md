@@ -1,7 +1,7 @@
-A l'origine était sh...
+# A l'origine était sh...
 
 
-# L'histoire du shell 
+## L'histoire du shell 
 
 Le shell c'est l'interface entre la machine et l'utilisateur. Ce qui interprète vos commandes.
 
@@ -11,7 +11,7 @@ Puis chacun a voulu aller dans son sens pour améliorer le truc, mais on a jamai
 
 Du coup avec le temps `sh` est devenu part du standard POSIX....
 
-## Bash 
+### Bash 
 
 Bash (acronyme de Bourne-Again shell) est un interpréteur en ligne de commande de type script. C'est le shell Unix du projet GNU, mais il est aussi devenu avec le temps une espèce de *lingua franca* utilisé sur de nombreuses plateformes.
 
@@ -21,7 +21,7 @@ Basé sur sh, Bash l'améliore et l'étends tout en sachant se mettre en mode de
 
 Si le programme `sh` le shell originel, est devenu une part du standard POSIX que doivent comporter tout les Unix/Linux, c'est souvent Bash qui est installé à sa place. Et quand bash est invoqué par un lien en `/bin/sh`qui pointe vers `/bin/bash`, ce dernier devienne qu'il doit se mettre en mode posix.
 
-## Zsh, le Shell du //Futur// 
+### Zsh, le Shell du //Futur// 
 
 C'est un shell puissant qui n'est plus compatible avec `sh` il n'est donc que rarement utilisé, mais il vaut vraiment la peine de s'y intéresser! Il possède des capacités avancée d'autocomplétion et des jokers très pratiques...
 
@@ -29,7 +29,7 @@ Les distributions de Gnu-Linux fournissent un shell fonctionnel mais généralem
 
 Il est le shell de l'installateur d'Arch Linux.
 
-# Interpréteur de commandes 
+## Interpréteur de commandes 
 
 Un système d'exploitation est un **ensemble** de programmes/logiciels qui permettent une utilisation complète d'un ordinateur (et non un seul programme), ET, dans cet ensemble, chacun des programmes possèdent sa propre interface utilisateur.
 
@@ -53,7 +53,7 @@ Selon son interprétation, les événements du clavier et de la souris seront co
 
 On détaillera dans les paragraphes qui suivent.
 
-## la prompte 
+### la prompte 
 
 La chose est la plus importante, est sûrement que l'on ne peut pas apprendre à utiliser l'interface texte, sans s'y confronter pour de vrai... Ouvrez donc un émulateur de terminal, vous avez surement une interface graphique qui tourne donc démmarez la console.
 
@@ -83,7 +83,7 @@ Pigé? Maintenant tapez:
 
 pour savoir qui vous êtes !
 
-## Invocation 
+### Invocation 
 
 Invoquer un programme, c'est l'appeler (avec l'aide du shell) à s'exécuter.
 
@@ -129,7 +129,7 @@ Les options longues sont précédées de deux tirets, elles possèdent souvent u
 
     $ mon_programme -O argument
 
-## L'auto complétion 
+### L'auto complétion 
 
 Revenez vers votre terminal, et créez un fichier texte. Et affichez ce qu'il contient! tapez:
 
@@ -149,7 +149,7 @@ Maintenant si vous appuyez sur la touche ENTER, Rien ne s'affichera, et vous ret
 
 Cat sert en effet à afficher le contenu du fichier! En cas de fichier vide, rien ne s'affiche. Alors, maintenant, on va le remplir...
 
-## Les redirections 
+### Les redirections 
 
 On peut afficher à l'écran les fichier qui sont dans le répertoire courant avec le programme ls tapez:
 
@@ -206,7 +206,7 @@ On a affiché " Hello " à l'écran (sur la sortie standard) que l'on redirige t
 
 Vous savez créer un fichier qui contient du texte, cela vous servira bientôt. Aussi, vous en savez assez sur les redirection passons aux tuyaux...
 
-## Les pipes 
+### Les pipes 
 
 Une pipe (à l'anglaise païpe !), c'est un tuyau! C'est aussi le symbole auquel on accède par la combinaison de touches AltGr + 6 , c_à_d le symbole |
 
@@ -237,7 +237,7 @@ Ainsi pas besoin de passer par un fichier texte qui sert d'intermédiaire!
 
 En dessus il y a une pipe qui ne sert à rien. *(Une petite pipe juste pour le plaisir.)*
 
-## Les alias 
+### Les alias 
 
 Un alias permet de ne pas retaper une commande trop compliquée... Par exemple:
 
@@ -251,13 +251,13 @@ Remarquez aussi que la nouvelle commande est entre guillemets! C'est par ce qu'e
 
 On illustre tout de suite!
 
-# Un peu de grammaire 
+## Un peu de grammaire 
 
 Le shell en a besoin de pouvoir délimiter les programmes et les options pour comprendre nos instructions. Un espace entre eux est donc nécessaire.
 
 Mais comment faire comprendre au shell qu'un espace **fait parti** d'un argument?
 
-## mkdir 
+### mkdir 
 
 Cette commande crée un répertoire.
 
@@ -285,7 +285,7 @@ C'est l'apostrophe de la touche 4 dont il est question ! Attention! Cette apostr
 
 Elle lui indique que ce qui suit devra être considéré comme un argument unique jusqu'à la prochaine apostrophe!
 
-## Caractères d'échapement 
+### Caractères d'échapement 
 
 Si vous souhaitez créer un fichier nommé `l'embrouille` ..
 
@@ -323,7 +323,7 @@ Tandis que Control+ C crée un caractère de contrôle l'attention du shell et q
 
 Enfin apprenez que le symbole `'` se nomme quote en informatique (d'où la prompte...)
 
-## Joker 
+### Joker 
 
 Si vous faites:
 
@@ -343,7 +343,7 @@ Remarquez qu'une backslash suivie d'un espace est un caractère d'échappement p
 
 **REMARQUEZ AUSSI QU'UTILISER DES JOKERS C'EST PRATIQUE PUISSANT ET DANGEREUX POUR VOS FICHIERS**
 
-## foo bar et baz 
+### foo bar et baz 
 
 A ce stade vous devez avoir un certain nombre de dossier, et de fichiers au noms bizarres. On va y remédier bientôt!
 

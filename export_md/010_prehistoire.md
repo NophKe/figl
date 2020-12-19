@@ -1,11 +1,11 @@
-La Préhistoire
+# La Préhistoire
 
 
 La Préhistoire c'est *grosso modo*, avant le 01 Janvier 1970...
 
 On appelle cette date «l'epoch» (époque en français). Et depuis celle-ci, tous les ordinateurs qui fonctionnent sous un système d'exploitation de type Unix, battent la seconde à l'unisson...
 
-# Vocabulaire Inutile 
+## Vocabulaire Inutile 
 
 **Réaliser une action** c'est agir pour changer la **situation actuelle** en une **nouvelle situation**.
 
@@ -15,7 +15,7 @@ L'ordre et la manière de réaliser ces calculs (ces instructions) est nommé **
 
 On va éclaircir par la suite...
 
-# Le Boulier 
+## Le Boulier 
 
 On a inventé le boulier de calcul, et on peut faire plein de choses avec un boulier (addition, soustraction, noter un nombre...)
 
@@ -31,7 +31,7 @@ L'exemple du boulier fait bien ressortir la distinction qu'il existe **entre** l
 
 On a aussi inventé le métier à tisser le fil... Avec, on fait des tapis, même si cela ne parait avoir que très peu à voir avec le boulier...
 
-# La Machine À Calculer 
+## La Machine À Calculer 
 
 Plus fort que les bouliers, on a inventé la machine à calculer. Un objet bien plus efficace que le boulier... On lui entre des nombres qui font bouger des mécanismes dans la machine. Et le mouvement des roues dentées, des machins et des bidules mécaniques font qu'on peut lire un résultat!
 
@@ -49,7 +49,7 @@ Et une machine qui savait réaliser deux algorithmes différents, c'était *à p
 
 Historiquement c'est peu de temps plus tard que l'on a commencer à programmer des métiers à tisser avec des cartes perforées. Ces cartes perforées, c'était la suite des instructions à réaliser pour obtenir tel ou tel motif sur le tissus. Vous faites le lien?
 
-# La Machine de Turing 
+## La Machine de Turing 
 
 On commence à se dire qu'un boulier multifonction programmable à la carte perforée...
 

@@ -1,7 +1,7 @@
-Les Disques
+# Les Disques
 
 
-# Quelques définitions 
+## Quelques définitions 
 
 : Fichier
 Des données auxquelles on peut avoir accès dans un système de fichiers
@@ -23,15 +23,15 @@ A l'inverse, le disque (une fois correctement installé/branché/monté), s'int�
 
 L'homonymie fonctionne pareil en anglais (filesystem), alors faites attention!
 
-# Les Partitions 
+## Les Partitions 
 
-## Principes 
+### Principes 
 
 Partitionner un disque dur, c'est schématiquement, le découper, pour recréer virtuellement le fonctionnement de plusieurs disques.
 
 Mais cela permet aussi à l'inverse de rassembler plusieurs partitions (ou plusieurs disques) en un seul disque virtuel. *(et c'est franchement pas commun pour un ordinateur personnel)*
 
-## A la mode Microsoft 
+### A la mode Microsoft 
 
 Les utilisateurs de Windows sont généralement habitués à ce que chacun de leur disque dur soit représenté de façon unique et équivoque, sous la petite icône " ordinateur " ou " poste de travail"!
 
@@ -39,7 +39,7 @@ Sous Windows chaque partition d'un disque se voit attribuer une lettre. La parti
 
 Toutefois, si l'on remonte au répertoire parent jusqu'en haut, alors, on aboutit à un moment singulier, on arrive dans "l'ordinateur", le "poste de travail". Quand vous êtes précisément dans votre poste de travail, vous ne pouvez pas créer de dossiers à cet endroit là. Vous n'êtes pas dans un véritable dossier, vous êtes dans un programme qui vous donne accès aux différents lecteurs. Windows présente donc chaque lecteur comme une arborescence séparée des autres.
 
-## The Unix_ Way 
+### The Unix_ Way 
 
 Sous Linux, vous avez une première partition qui est la partition racine (`/`). Elle est le sommet de l'arborescence (comme le Poste De Travail), mais elle est aussi une partition tout à fait ordinaire. (même si elle contient des fichiers importants)
 
@@ -47,13 +47,13 @@ Et c'est à l'intérieur de cette partition, que vous créez des dossiers dans l
 
 Sous Linux, il n'existe donc qu'une seule arborescence, et vous décidez de l'endroit où vous **montez** vos partitions à l'intérieur de celle-ci... Cela est beaucoup plus astucieux car on peut ainsi rajouter de l'espace disque à une partition saturée en **montant** un nouveau disque à l'intérieur de celle-ci.
 
-## Pourquoi partitionner? 
+### Pourquoi partitionner? 
 
 Sous Gnu-Linux on privilégiera une installation sur plusieurs partitions.
 
 C'est comme si Windows insistait pendant son installation pour que votre répertoire "Mes Documents" votre "Bureau" et toute votre configuration ne soit surtout pas sur le même disque que lui... (gentil !)
 
-## Un partitionnement classique 
+### Un partitionnement classique 
 
 Un schéma de partitionnement classique pour les ordinateurs de bureau, serait le suivant :
 
@@ -65,7 +65,7 @@ Ce schéma de partitionnement à l'avantage de séparer les données de l'utilis
 
 On pourra ensuite réinstaller un système d'exploitation dessus. On remontera la partition des utilisateurs au même endroit, et ces derniers n'auront rien vu (ils retrouverons leur configuration).
 
-### Autres partitionements 
+#### Autres partitionements 
 
 Une partition de sauvegarde de vos fichiers (pas la `/home` mais plutôt `/home/nono/SAUVEGARDE` ou pour la mettre un peu à l'écart `/sauvegardes`) peut vous sauver la mise parfois (Éventuellement dans un format lisible depuis Windows...).
 
@@ -73,9 +73,9 @@ Dans le cas d'un multi-boot avec Windows, et si votre bios fonctionne en Uefi, v
 
 On peut également vouloir créer des partitions pour d'autres dossiers comme `/etc` pour restaurer aussi la configuration globale du système d'exploitation! Mais si vous n'installez pas la même distribution de Gnu-Linux pour votre prochaine installation, il faudra faire le ménage! (fichiers devenus inutiles, config incompatibles avec la nouvelle distribution...) Aussi, au début, on préfèrera le limiter à des schémas classiques, et sauvegarder les fichiers de configuration que l'on connait, ou qu'on a modifié soi même. Plus vous serez à l'aise avec les partitions et les différents dossiers de l'arborescence, plus vous personnaliserez en fonction de vos gout et de votre configuration matérielle.
 
-# Les systèmes de fichiers 
+## Les systèmes de fichiers 
 
-## Généralités 
+### Généralités 
 
 Un disque dur n'est rien qu'un grand espace dans lequel vous pouvez écrire de ZÉROs et des UN. C'est le système de fichier qui permet de lui donner une structure, et qui nous le fait apparaitre comme des fichiers organisés dans une arborescence de dossiers... Mais le disque en lui même ne contient ni case, ni index.
 
@@ -89,7 +89,7 @@ On utilise la commande `mount` pour monter les partitions sur la hiérarchie des
 
 Au démarrage le noyau monte la partition root au sommet de l'arborescence mais en lecture seulement. La commande `fsck` est utilisée pour vérifier que le disque n'a pas été endommagé. Ensuite seulement, le noyau remonte la partition racine en lecture/écriture.
 
-### Format de partition 
+#### Format de partition 
 
 Le système de fichier est ce qui définit comment l'ordinateur doit consigner les données (comment séparer la fin d'un fichier du début du prochain, ou se situe l'index...)
 
@@ -97,7 +97,7 @@ Chaque système de fichier présente des avantages et inconvénients. Certains n
 
 Windows sait lire les partitions au format Fat32 et Ntfs (J'exclue certes cd, dvd, et autres disques en lecture seule). Linux sait lire des dizaines de formats.
 
-### La table de partitionnement 
+#### La table de partitionnement 
 
 Une section immédiatement au début de chaque disque est normalisée, elle contient la table de partitionnement. Celle-ci décrit le nombre de partitions, leur taille, leur format et leurs places respectives sur le disque.
 
@@ -116,7 +116,7 @@ Si votre carte mère possède un Micrologiciel UEFI, elle s'attend à une table 
 
 Faites attention avec les logiciels de partitionnement! Mal les utiliser peut conduire à une destruction de toutes vos données.
 
-## Les principaux formats 
+### Les principaux formats 
 
 Ce qui est à peu près commun pour tous les systèmes de fichier, c'est qu'il découpent l'espace du disque en adresses, et qu'il identifient les fichiers par des inodes, et que ces inodes décrivent les fichiers et les informations qui leur sont relatives.
 
@@ -126,7 +126,7 @@ Quand le système d'exploitation essaie de lire `/home/nono/grololo.jpeg`. Il ch
 
 Si l'on ajoute des données sur un disque, il peut arriver que les données soient écrites avant que l'inode n'ait été mis à jour. Si le courant coupe au mauvais moment, perdre un inode, c'est parfois perdre un répertoire majeur de l'arborescence! Ce problème a mené à l'invention des systèmes de fichier journalisés.
 
-### Le format ext (ext2, ext3, ext4) 
+#### Le format ext (ext2, ext3, ext4) 
 
 Dans ce format, l'inode, de chaque fichier indique:
 
@@ -151,7 +151,7 @@ On peut aussi donner des attributs au fichiers et aux répertoires comme:
 
 Le fait de pouvoir définir des droits d'accès spécifiques fichiers par fichiers est un des point fondamental de la gestion de la sécurité sous Gnu-Linux. Nous reverrons plus loin comment l'on gère ces attributs.
 
-### SWAP 
+#### SWAP 
 
 Sous les environnements Windows, on dit que la mémoire est libre quand elle n'est utilisée par aucune application. Les applications réclament de l'espace mémoire, Windows leur alloue une partie de cet espace, et quand l'espace est entièrement saturé, Windows utilise un fichier qu'il appelle « le fichier d'échange » dans lequel il se défausse d'une partie de la mémoire. Le fichier d'échange est ainsi beaucoup moins rapide que la mémoire vive.
 
@@ -161,7 +161,7 @@ En effet sous Gnu-Linux, on prévoit une partition entièrement dédiée à cela
 
 C'est aussi à cet endroit que le système copiera la mémoire sur le disque en cas d'hibernation/mise en veille prolongée! Ainsi elle doit toujours être au moins de la taille de la ram.
 
-### Fat et Ntfs 
+#### Fat et Ntfs 
 
 Vous n'avez pas le choix si vous voulez que Microsoft Windows lise un disque-dure, ce sera l'un de ces deux formats que vous devrez utiliser.
 

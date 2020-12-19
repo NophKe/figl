@@ -1,4 +1,4 @@
-Éditer du texte avec la console... 
+# Éditer du texte avec la console... 
 
 
 Pour administrer correctement une distribution Gnu-Linux, vous aurez parfois à modifier des fichiers de configuration!
@@ -7,9 +7,9 @@ De la même façon, pour dépanner votre système, vous n'aurez parfois pas d'au
 
 Nous allons donc voir différents moyens d'éditer un texte depuis une console.
 
-# Les Outils du shell 
+## Les Outils du shell 
 
-## cat 
+### cat 
 
 Un moyen simple et pas du tout efficace de créer un fichier texte est d'utiliser la commande `cat`.
 

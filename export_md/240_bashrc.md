@@ -1,7 +1,7 @@
 Un joli bashrc
 
 
-# Run Command 
+## Run Command 
 
 Rappel N°1:
 Un RunCommand, est un fichier qui est lu au démarrage d'un programme. Celui ci consiste en une liste de commandes, qui seront éxecutées comme si l'utilisateur les avait entré au clavier lors du démarrage du programme.
@@ -12,7 +12,7 @@ Rappel N°2: On ne touche pas à cette ligne qui doit se situer tout en haut du 
 
 D'ailleurs, on se rapproche du jour ou l'on pourra la décortiquer...
 
-## Les Redirections standards 
+### Les Redirections standards 
 
 On a déjà parlé des redirections. Il éxiste trois fichiers standards:
 
@@ -36,7 +36,7 @@ Donc:
     /bin/numlockx 2>/dev/null
     
 
-## Les Alias 
+### Les Alias 
 
     
     alias ls='ls --color=auto'
@@ -44,7 +44,7 @@ Donc:
     alias i3='startx /bin/i3'
     alias gnome='startx /bin/gnome-session'
 
-## Les variables d'environnement 
+### Les variables d'environnement 
 
 Lors du boot, un certain nombre de variables sont créées par le système d'exploitation. Ces dernières permettent à chacun des programmes de savoir quelles sont les conventions en vigueur.
 
@@ -61,7 +61,7 @@ Le répertoire courant
 Ma prompte ressemble donc à cela:
     [nono@ACER /usr/share/doc/]$
 
-# L'algorithme 
+## L'algorithme 
 
 Alors Voici, l'algorithme que je voudrai implémenter dans au démarrage de chaque session Bash.
 
@@ -69,7 +69,7 @@ Alors Voici, l'algorithme que je voudrai implémenter dans au démarrage de chaq
  * Je veux que l'interface texte me connecte à mon interface graphique.
  * Ainsi, je veux qu'à chaque démarrage depuis la Console `tty1`, à la console Clavier
 
-## La déclaration des variables 
+### La déclaration des variables 
 
     YdefautPTS="/dev/pts/*"
     YdefautPTS_action="zsh"
@@ -79,7 +79,7 @@ Alors Voici, l'algorithme que je voudrai implémenter dans au démarrage de chaq
     
     YconsoleCourante=`tty`
 
-## On implémente l'algorithme 
+### On implémente l'algorithme 
 
     case $YconsoleCourante in
     	
@@ -90,7 +90,7 @@ Alors Voici, l'algorithme que je voudrai implémenter dans au démarrage de chaq
     	$YdefautTTY )			Ymenu 				;;
     esac
 
-# La déclarations des fonctions 
+## La déclarations des fonctions 
 
 Le shell est un outils assez stupide, quand il exécute un scripte, il commence la lecture de ce fichier, et l'exécute ligne par ligne. Ainsi, si ce scripte contient le code d'une fonction, celle ci doit être déclarée avant d'être appelée. On ne peut donc pas appelle une fonction dont le code se trouve à la fin du fichier.
 
@@ -102,9 +102,9 @@ Comme on voudra décomposer le programmes en fonctions élémentaires et appeler
 1. Une fonction `Yinit` dont on reparle plus tard.
 1. Une fonction `YsuRoot` propose  de se connecter sur le compte Administrateur
 
-## YasciiArt 
+### YasciiArt 
 
-### Mettre de la couleur 
+#### Mettre de la couleur 
 
 `tput` est un programme qui vous permet de modifier les paramètres d'affichage du terminal.
 
@@ -128,7 +128,7 @@ Ceci étant dit, voici comment on passe en arrière-plan noir, avant plan bleu, 
     tput bold
     tput clear
 
-## Retour sur echo 
+### Retour sur echo 
 
 Le mot-clé `echo` sans argument *(c-à-d sans message à afficher...)* saute simplement une ligne.
 
@@ -160,7 +160,7 @@ Et on réinitialise les paramètres de l'affichage.
 
     tput sgr0
 
-## Yinit 
+### Yinit 
 
 On appelle notre fonction YasciiArt, qui va afficher le logo.
 
@@ -175,7 +175,7 @@ Enfin, on exécute le programme qui a été donné en premier paramètre.
 
     	exec $1
 
-## Ybienvenue 
+### Ybienvenue 
 
     	tput setaf 2
     	tput bold
@@ -189,7 +189,7 @@ Enfin, on exécute le programme qui a été donné en premier paramètre.
     	
     	tput sgr0
 
-## YsuRoot 
+### YsuRoot 
 
     {
     	Yinit
@@ -211,7 +211,7 @@ initialiser $CHOISIROOT avec la valeur "sans-reponse"
     }
     
 
-## Ywarning 
+### Ywarning 
 
     	{	YasciiArt
     		Ybienvenue
@@ -228,7 +228,7 @@ initialiser $CHOISIROOT avec la valeur "sans-reponse"
     		exec zsh
     }
 
-# Ymenu 
+## Ymenu 
 
     {
     	YasciiArt

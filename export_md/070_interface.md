@@ -1,9 +1,9 @@
-Les Interfaces
+# Les Interfaces
 
 
 Des couches et des couches...
 
-# Xerox, IBM, Microsoft, et Apple 
+## Xerox, IBM, Microsoft, et Apple 
 
 Xerox a inventé la souris et l'interface graphique (entre autres)... Mais a laisser d'autres sociétés commercialiser les premières interfaces graphiques... Aujourd'hui ils fabriquent des photocopieurs.
 
@@ -21,7 +21,7 @@ Mais revenons plus à la base des interfaces....
 
 |GNUstep 1995 ( credit Wikipedia )|
 
-# La carte perforée 
+## La carte perforée 
 
 Il y eut une époque lointaine ou on pouvait entrer directement un programme dans l'ordinateur **en actionnant des boutons**... Mais çà c'était la préhistoire... On pouvait à cette époque *en direct* demander à la machine de faire çà et çà....
 
@@ -37,7 +37,7 @@ On venait de passer d'une interface manuelle, à une interface logicielle. Depui
 
 |Carte perforée vierge ( credit Wikipedia )|
 
-# Niveau d'abstraction 
+## Niveau d'abstraction 
 
 Ce système d'exploitation chargera ensuite des programmes qui seront écrits **pour un système d'exploitation particulier** et pas pour un matériel. Se compliquer ainsi la tâche (une bonne fois pour toutes) d'un coté, pour nous permettre de les simplifier de l'autre coté, c'est ce que l'on appelle une couche d'abstraction.
 
@@ -50,13 +50,13 @@ Quand, on développe, et maintient des logiciels, et même du matériel, on se t
 
 Un autre exemple est X le serveur graphique de Gnu-Linux. Presque tous les environnement de bureau reposent dessus. Mais plus personne ne sait exactement quoi faire pour le maintenir! Depuis longtemps, on a écrit des librairies qui communiquent avec lui, et peu de programme communiquent directement avec lui. Et maintenant que l'étage du bas commence à fissurer, c'est la panique!
 
-# Qui est X? 
+## Qui est X? 
 
 X est un serveur graphique. Il n'est pas forcément évident de penser un écran comme une ressource qui est **partagée**...
 
 Pourtant plusieurs programmes peuvent s'afficher simultanément à l'écran...
 
-## Une Architecture Client/Serveur 
+### Une Architecture Client/Serveur 
 
 X est un serveur, c'est à dire, qu'il est supposé faire tout le boulot pour ses clients... Les clients de X, ce sont les programmes dotés d'interfaces graphiques.
 
@@ -76,7 +76,7 @@ En gros, les programmes disent à X  leur bout d'image à produire, mais seul le
 
 Comme toujours en informatique quand quelque chose est compliqué, on lui ajoute une couche d'abstraction...
 
-## Le problème avec X 
+### Le problème avec X 
 
 Le problème de X c'est qu'il est très vieux, et basé sur une conception qui le rend difficile à entretenir, pourtant après 3O ans de bons et loyaux services, il est encore là.
 
@@ -88,7 +88,7 @@ Aussi, si le gestionnaire de fenêtre vous dispense de communiquer avec X, le ca
 
 Le successeur sera probablement Wayland qui est *presque* prêt depuis *presque* longtemps...
 
-# L'interface Utilisateur 
+## L'interface Utilisateur 
 
 Que ce soit un interpréteur de commande, un vrai shell, une interface graphique de base, ou un environnement graphique complet, une interface utilisateur c'est bien là où s'établit la relation entre l'homme et la machine.
 
@@ -101,7 +101,7 @@ De nombreux programmes sont séparés entre:
 
 Ainsi plusieurs programmes peuvent utiliser le même engin, et l'interface peut évoluer librement, plusieurs interfaces sont parfois disponibles pour le même engin.
 
-# Les Protocoles 
+## Les Protocoles 
 
 Les protocoles sont les interfaces entre différents systèmes informatiques, de la même façon que les programmes sont les interfaces entre l'homme et la machine.
 

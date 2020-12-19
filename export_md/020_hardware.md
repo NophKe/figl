@@ -1,7 +1,7 @@
-Anatomie d'un Ordinateur
+# Anatomie d'un Ordinateur
 
 
-# L'Architecture De Von Neumann 
+## L'Architecture De Von Neumann 
 
 Comme la machine de Turing est une machine purement théorique, pour ce qui est de la réalisation pratique, l’architecture matérielle des ordinateurs modernes est basée sur ce que l'on appelle l'architecture de Von Neumann qui décompose l’ordinateur ainsi:
 
@@ -20,7 +20,7 @@ Comme la machine de Turing est une machine purement théorique, pour ce qui est 
 
 |Schémas de principe de l'architecture de Von Neumann ( credit Wikipedia )|
 
-# Une Architecture Matérielle 
+## Une Architecture Matérielle 
 
 Il existe un algorithme capable de réaliser des additions *de tête*, comme il existe un algorithme pour faire des additions sur un boulier! Dans les deux cas le résultat est le même, pour ce qui est du résultat! Mais la réalisation pratique pour y parvenir est très différente!
 
@@ -32,7 +32,7 @@ Oui! Bien sur, mais pas en suivant le même programme! De la même façon qu'un 
 
 On va y revenir...
 
-# Les Ports 
+## Les Ports 
 
 Votre ordinateur possède à l'intérieur de lui un processeur qui réalise des instructions. Il possède une mémoire interne, appelée mémoire vive (ou juste ram). Le processeur et la mémoire vive se trouvent **physiquement** sur une carte électronique appelée "carte mère" qui est le cœur de votre ordinateur.
 
@@ -40,7 +40,7 @@ Votre ordinateur possède un écran et un clavier, il possède un disque dur, un
 
 Les différentes pièces de votre ordinateur sont toutes connectées par un port. Un port, c'est physiquement ce qui "porte" la connectique de l'appareil en question! Physiquement, c'est donc, ce dans quoi vous branchez vos périphériques. Les ports sont les autoroutes matérielles des données entre votre processeur, votre écran, votre disques et tout le reste.
 
-# Un Bus 
+## Un Bus 
 
 Le processeur, qui orchestre tout cela ne peut donc voir aucun des composants de l'ordinateur directement, il voit un **bus** qui peut prendre différentes valeurs numériques!
 
@@ -51,7 +51,7 @@ Imaginez un appareil simplisme! Le câble pour le brancher à l'ordinateur ne po
 > - COURANT ou PAS DE COURANT, sont les états *physique* de ce port.
 > - ZÉRO et UN, sont les valeurs numériques du bus.
 
-# Ce Qui Est Vrai Quelque Soit L'Architecture 
+## Ce Qui Est Vrai Quelque Soit L'Architecture 
 
 Le seul composant dont la vitesse de fonctionnement est comparable à celle du processeur est la mémoire vive. Pour que les programmes puissent fonctionner, il faut qu'ils soient en mémoire.
 
@@ -61,7 +61,7 @@ Quand votre ordinateur lit un programme ou une donnée depuis le disque, ce qui 
 
 Votre clavier et votre écran communique également avec le processeur moyen d'un bus, mais d'une façon plus simple. Nous en discuterons plus tard. Pour le moment nous en savons assez pour poursuivre.
 
-# Les Architechtures Modernes 
+## Les Architechtures Modernes 
 
 Quelques remarques:
 
