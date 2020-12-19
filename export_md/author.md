@@ -14,7 +14,7 @@ Cependant un grand nombre n'avaient toujours pas été traduites.
 Je me suis donc lancé dans une traduction du 'Unix And Internet_ Fundamentals' puis de fil en aiguille....
  
 -------------------------------------------
-| PREC: [A suivre](260_archlinux.md) |  | SUIV: [Les Fondamentaux de l'informatique](index.md) |
+| PREC: [Trouver de l'aide et progresser](220_help.md) |  | SUIV: [Les Fondamentaux de l'informatique](index.md) |
 | -------------  | ----- |  ----------         |
 |  | [Menu Principal](index.md) |  |
 -------------------------------------------

@@ -33,10 +33,6 @@ Ce sera remis en place pour la version définitive...
    > [Emacs](200_emacs.md) </br>
    > [Les fichiers de configuration](210_config.md) </br>
    > [Trouver de l'aide et progresser](220_help.md) </br>
-   > [Programmer](230_programming.md) </br>
-   > [Un joli bashrc](240_bashrc.md) </br>
-   > [Programmez en C !](250_c-langage.md) </br>
-   > [A suivre](260_archlinux.md) </br>
    > [La partie bio](author.md) </br>
    > [Les Fondamentaux de l'informatique](index.md) </br>
  
