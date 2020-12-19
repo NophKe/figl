@@ -9,7 +9,6 @@ Depuis la version alpha, il manque le système qui générait automatiquement de
 
 Ce sera remis en place pour la version définitive...
  
-| ----------- |
 |  [La Préhistoire](010_prehistoire.md)  |
 |  [Anatomie d'un Ordinateur](020_hardware.md)  |
 |  [Les Périphériques](030_periph.md)  |
@@ -45,5 +44,3 @@ Ce sera remis en place pour la version définitive...
 | -------------  | ----- |  ----------         |
 |  | [Menu Principal](index.md) |  |
 -------------------------------------------
-|  [Feuille de route](roadmap.md)  |
-| ----------- |
