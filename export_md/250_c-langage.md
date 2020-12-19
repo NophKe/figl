@@ -1,7 +1,7 @@
-Programmez en C !
+# Programmez en C !
 
 
-# Hello_World.c 
+## Hello_World.c 
 
 Commençons donc par le classique Hello World.... Que voici donc!
 
@@ -30,7 +30,7 @@ Tous les programmes écrits en C possèdent une fonction qui porte ce nom de `ma
     	{
     	}
 
-# Réécrivons Notre .bashrc en C 
+## Réécrivons Notre .bashrc en C 
 
 Les 
 Pour se faire passer des variables entre fonctions, nous aurons besoin de cases mémoire,
@@ -41,7 +41,7 @@ on va donc créer trois variables dont dépendent notre programme,
     char heur[100];
     char choi;
 
-## La Fonction main() 
+### La Fonction main() 
 
  Récupérons la date l'heure, et surtout le terminal utilisé par une petite fonction maison que l' on trouvera plus loin dans le code.
 
@@ -115,7 +115,7 @@ Maintenant suivant le choix, on va réaliser différentes actions...
     	return 0;
     }
 
-## Notre Ascii-art 
+### Notre Ascii-art 
 
     
     void ascii_art (void){
@@ -264,3 +264,8 @@ Maintenant suivant le choix, on va réaliser différentes actions...
 
 ---
 
+-------------------------------------------
+| PREC: [Un joli bashrc](240_bashrc.md) |  | SUIV: [A suivre](260_archlinux.md) |
+| -------------  | ----- |  ----------         |
+|  | [Menu Principal](index.md) |  |
+-------------------------------------------

@@ -170,12 +170,8 @@ Fat16 est archaïque. Fat32 a l'avantage d'être très lisible notamment pour le
 Pas de disque de plus de 2 tera-octets, ni de fichier de plus de 4 giga-octet en Fat32.
 
 Ntfs est beaucoup moins limité, et il est journalisé.
-
----
-
+-------------------------------------------
 | PREC: [Unix...](100_unix.md) |  | SUIV: [L'arborescence](120_arborescence.md) |
 | -------------  | ----- |  ----------         |
 |  | [Menu Principal](index.md) |  |
-
----
-
+-------------------------------------------

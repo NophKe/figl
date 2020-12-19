@@ -300,12 +300,8 @@ Une des attributions noyau est de gérer le temps partagé. Un de ces composants
 Dans la pratique, un programme peut ne pas bénéficier de sa tranche temporelle entière. Si une interruption provient d'un des périphériques d'entrée de sortie le noyau pourrait arrêter la la tâche en cours d'exécution,
 
 En faits, la vitesse des programmes et très peu limités par la quantité de temps machine qu'ils obtiennent. Il existe quelques exceptions à cette règle, comme le vidéo,la 3D. La plupart du temps les délais sont causés quand un programme doit attendre des données depuis le disque dur ou la connexion réseau.
-
----
-
+-------------------------------------------
 | PREC: [Les Interfaces](070_interface.md) |  | SUIV: [Le réseau](090_network.md) |
 | -------------  | ----- |  ----------         |
 |  | [Menu Principal](index.md) |  |
-
----
-
+-------------------------------------------

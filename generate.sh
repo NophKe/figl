@@ -12,8 +12,8 @@ ext=md
 
 rm -rf temp/
 mkdir temp/
-cp src/*.t2t temp/
-cat inc/index > temp/index.t2t
+cp src/*.md temp/
+cat inc/index > temp/index.$ext
 
 liste=( temp/* )
 
@@ -21,30 +21,30 @@ for (( f=0 ; f != ${#liste[*]} ; f++ ))
 do
 	TITRE=`head -n1 ${liste[$f]}`
 	# on extrait la première ligne de chaque fichier
+	TITRE=${TITRE#\#\ }
 
 	FILE=${liste[$f]}
 	# On récupère le nom de chacun des fichiers de la liste
 
-	FILE=${FILE%%.t2t*}
-	# Et on enlève l'extension '.t2t' du nom du fichier.
-
 	FILE=${FILE#temp/}
 	# Et on enlève l'extension le suffix 'src/' du nom du fichier.
 
-	Menu[$f]="[$TITRE]($FILE.$ext)"
+	Menu[$f]="[$TITRE]($FILE)"
 done
 #
 #for item in "$Menu"
 #do
 #done
 #
-	echo ' ' >> temp/index.t2t
-	echo '""" | ----------- |'  >> temp/index.t2t
+
+echo ' ' >> temp/index.t2t
+echo '| ----------- |'  >> temp/index.t2t
+
+
 
 for (( f=0 ; f != ${#liste[*]} ; f++ )) ; do
 
-	echo '""" | ' ${Menu[$f]} ' |'  >> temp/index.t2t
-	echo '""" | ----------- |'  >> temp/index.t2t
+	echo '| ' ${Menu[$f]} ' |'  >> temp/index.t2t
 
 	# S'il s'agit du premier élément de la liste on définit $e comme 
 	# la taille de la liste. Ainsi le lien vers le fichier précédent mènera au
@@ -67,16 +67,19 @@ for (( f=0 ; f != ${#liste[*]} ; f++ )) ; do
 	fi
 
 	# ajoute le Menu
-	echo '===========================================' 		>> ${liste[$f]}
-	echo '""" | PREC: '${Menu[$e]}' |  | SUIV: '${Menu[$g]}' |'  	>> ${liste[$f]}
-	echo '""" | -------------  | ----- |  ----------         |'  	>> ${liste[$f]}
-	echo '""" |  | [Menu Principal](index.'$ext') |  |' 		>> ${liste[$f]}
-	echo '===========================================' 		>> ${liste[$f]}
+	echo '-------------------------------------------' 		>> ${liste[$f]}
+	echo '| PREC: '${Menu[$e]}' |  | SUIV: '${Menu[$g]}' |'  	>> ${liste[$f]}
+	echo '| -------------  | ----- |  ----------         |'  	>> ${liste[$f]}
+	echo '|  | [Menu Principal](index.'$ext') |  |' 		>> ${liste[$f]}
+	echo '-------------------------------------------' 		>> ${liste[$f]}
 
-
-	txt2tags --target=$ext --infile=${liste[$f]}
-	
 done
+
+
+echo '| ----------- |'  >> temp/index.t2t
+
+
+
 
 echo DOING:  rm -rf export_$ext
 rm -rf export_$ext

@@ -126,13 +126,8 @@ Protocole de communication des périphériques entre eux
 
 : MTP
 Le !?#x de protocole inventé par Microsoft qui fait vous pouvez pas (plus) utiliser votre téléphone (ou autre) comme d'un disque usb, et qui fait que votre pc voit un appareil photo, plutôt qu'un téléphone, ou juste un disque! (bref!)
-
-
----
-
-| PREC: [Une fois connecté](067_connected.md) |  | SUIV: [Le Logiciel](080_software.md) |
+-------------------------------------------
+| PREC: [Une fois connecté](067_connected.md) |  | SUIV: [Introduction au logiciel ](080_software.md) |
 | -------------  | ----- |  ----------         |
 |  | [Menu Principal](index.md) |  |
-
----
-
+-------------------------------------------

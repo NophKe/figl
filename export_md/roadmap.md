@@ -22,12 +22,8 @@ Et au bout d'un moment, il faut bien publier... non?
  * Possibilité d' Ajouts des commentaires sur la page.
 
  * Le stade bêta globalement sera le moment où le texte aura une organisation suffisante pour couvrir un panel des connaissance nécessaire pour une utilisation courante de Gnu-Linux, ainsi que les tenant et aboutissant de la pensée libriste.
-
----
-
+-------------------------------------------
 | PREC: [Les Fondamentaux de l'informatique](index.md) |  | SUIV:  |
 | -------------  | ----- |  ----------         |
 |  | [Menu Principal](index.md) |  |
-
----
-
+-------------------------------------------

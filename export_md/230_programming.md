@@ -129,12 +129,8 @@ Bien-entendu, si l'on entre cette commande dans un scripte, la question de la st
     fi
     
     echo "baz"
-
----
-
+-------------------------------------------
 | PREC: [Trouver de l'aide et progresser](220_help.md) |  | SUIV: [Un joli bashrc](240_bashrc.md) |
 | -------------  | ----- |  ----------         |
 |  | [Menu Principal](index.md) |  |
-
----
-
+-------------------------------------------

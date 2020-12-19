@@ -51,12 +51,8 @@ Le programme `sudo` permet de lancer la prochaine commande en mode super-utilisa
 Au passage, notez que certaines distribution de Gnu-Linux interdisent purement et simplement la connexion en tant que super-utilisateur (*Ubuntu*). Cependant, par défaut, les utilisateurs ont automatiquement l'accès à `sudo`, vous ne pouvez donc pas faire `su -` . La solution est alors de faire `sudo bash` pour lancer un shell avec les privilèges super-utilisateur.
 
 Aussi ce compte ne devrait être utilisé que pour la maintenance du système.
-
----
-
+-------------------------------------------
 | PREC: [Le Boot](060_boot.md) |  | SUIV: [Une fois connecté](067_connected.md) |
 | -------------  | ----- |  ----------         |
 |  | [Menu Principal](index.md) |  |
-
----
-
+-------------------------------------------

@@ -1,7 +1,7 @@
-La partie bio
+# La partie bio
 
 
-# Pourquoi ce site? 
+## Pourquoi ce site? 
 
 Utilisateur d'Arch Linux depuis quelques années, j'ai été surpris de voir comment le respect des principe du KISS ont pu me réconcilier avec mon ordinateur. (Un sentiment de maitrise de ce que la machine fait)
 
@@ -12,12 +12,8 @@ Un certains nombre d'entre elles restaient cependant fiable et toujours disponib
 Cependant un grand nombre n'avaient toujours pas été traduites.
 
 Je me suis donc lancé dans une traduction du 'Unix And Internet_ Fundamentals' puis de fil en aiguille....
-
----
-
-| PREC: [Cas pratique: Installer Arch-Linux](260_archlinux.md) |  | SUIV: [Les Fondamentaux de l'informatique](index.md) |
+-------------------------------------------
+| PREC: [A suivre](260_archlinux.md) |  | SUIV: [Les Fondamentaux de l'informatique](index.md) |
 | -------------  | ----- |  ----------         |
 |  | [Menu Principal](index.md) |  |
-
----
-
+-------------------------------------------

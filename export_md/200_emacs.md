@@ -19,12 +19,8 @@ Voici donc une sélection de liens utiles.
 Si vous envisagez de vous investir à fond dans l'informatique ( ou d'en faire votre métier... ) Intéressez vous à Emacs. C'est un logiciel d'une richesse inouïe!
 
 |[Le Manuel d'Emacs en français](https://emacs.traduc.org/emacs_fr/emacs/emacs.html)|
-
----
-
+-------------------------------------------
 | PREC: [Vim](190_vim.md) |  | SUIV: [Les fichiers de configuration](210_config.md) |
 | -------------  | ----- |  ----------         |
 |  | [Menu Principal](index.md) |  |
-
----
-
+-------------------------------------------
