@@ -34,12 +34,12 @@ done
 
 
 echo ' ' >> temp/index.$ext
-echo '| ----------- |'  >> temp/index.$ext
+echo '-----------'  >> temp/index.$ext
 
 
 for (( f=0 ; f != ${#liste[*]} ; f++ )) ; do
 
-	echo '| ' ${Menu[$f]} ' |'  >> temp/index.$ext
+	echo '   >' ${Menu[$f]} ' |'  >> temp/index.$ext
 
 	# S'il s'agit du premier élément de la liste on définit $e comme 
 	# la taille de la liste. Ainsi le lien vers le fichier précédent mènera au
@@ -69,7 +69,7 @@ for (( f=0 ; f != ${#liste[*]} ; f++ )) ; do
 done
 
 
-echo '| ----------- |'  >> temp/index.$ext
+echo '-----------'  >> temp/index.$ext
 
 
 
