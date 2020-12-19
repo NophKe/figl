@@ -25,8 +25,9 @@ Et au bout d'un moment, il faut bien publier... non?
 
 ---
 
-|PREC: [Les Fondamentaux de l'informatique](index.md) | |SUIV:|
-| |[Menu Principal](index.md) ||
+| PREC: [Les Fondamentaux de l'informatique](index.md) |  | SUIV:  |
+| -------------  | ----- |  ----------         |
+|  | [Menu Principal index.md] |  |
 
 ---
 

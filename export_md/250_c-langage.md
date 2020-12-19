@@ -258,8 +258,9 @@ Maintenant suivant le choix, on va réaliser différentes actions...
 
 ---
 
-|PREC: [Un joli bashrc](240_bashrc.md) | |SUIV: [Cas pratique: Installer Arch-Linux](260_archlinux.md)|
-| |[Menu Principal](index.md) ||
+| PREC: [Un joli bashrc](240_bashrc.md) |  | SUIV: [Cas pratique: Installer Arch-Linux](260_archlinux.md) |
+| -------------  | ----- |  ----------         |
+|  | [Menu Principal index.md] |  |
 
 ---
 

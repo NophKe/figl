@@ -15,8 +15,9 @@ Je me suis donc lancé dans une traduction du 'Unix And Internet_ Fundamentals' 
 
 ---
 
-|PREC: [Cas pratique: Installer Arch-Linux](260_archlinux.md) | |SUIV: [Les Fondamentaux de l'informatique](index.md)|
-| |[Menu Principal](index.md) ||
+| PREC: [Cas pratique: Installer Arch-Linux](260_archlinux.md) |  | SUIV: [Les Fondamentaux de l'informatique](index.md) |
+| -------------  | ----- |  ----------         |
+|  | [Menu Principal index.md] |  |
 
 ---
 

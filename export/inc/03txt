@@ -1,8 +1,0 @@
-while($row = mysqli_fetch_array($result)){
-
-echo "Pseudo: " . $row['pseudo'] . "<br>";
-echo "<p>" . nl2br($row['texte']) . "</p>";
-echo "<HR NOSHADE SIZE=2>";
-}
-
-?>

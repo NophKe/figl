@@ -140,8 +140,9 @@ Il est de la responsabilité de Systemd de gérer les sockets.
 
 ---
 
-|PREC: [Le Codage de l'information](050_coding.md) | |SUIV: [Le Login](065_login.md)|
-| |[Menu Principal](index.md) ||
+| PREC: [Le Codage de l'information](050_coding.md) |  | SUIV: [Le Login](065_login.md) |
+| -------------  | ----- |  ----------         |
+|  | [Menu Principal index.md] |  |
 
 ---
 

@@ -82,8 +82,9 @@ Les téléphones portables et les tablettes utilisent des processeur ARM (64 bit
 
 ---
 
-|PREC: [La Préhistoire](010_prehistoire.md) | |SUIV: [Les Périphériques](030_periph.md)|
-| |[Menu Principal](index.md) ||
+| PREC: [La Préhistoire](010_prehistoire.md) |  | SUIV: [Les Périphériques](030_periph.md) |
+| -------------  | ----- |  ----------         |
+|  | [Menu Principal index.md] |  |
 
 ---
 

@@ -362,8 +362,9 @@ Avec cette façon de faire, vous comprenez que `alias` et `=` ne peuvent ommis, 
 
 ---
 
-|PREC: [La philosophie du Libre](130_libre.md) | |SUIV: [Les commandes de base](150_console.md)|
-| |[Menu Principal](index.md) ||
+| PREC: [La philosophie du Libre](130_libre.md) |  | SUIV: [Les commandes de base](150_console.md) |
+| -------------  | ----- |  ----------         |
+|  | [Menu Principal index.md] |  |
 
 ---
 

@@ -155,8 +155,9 @@ Au passage on parle d'un acronyme récursif! ( Une blague d'informaticien... )
 
 ---
 
-|PREC: [Le réseau](090_network.md) | |SUIV: [Les Disques](110_disks.md)|
-| |[Menu Principal](index.md) ||
+| PREC: [Le réseau](090_network.md) |  | SUIV: [Les Disques](110_disks.md) |
+| -------------  | ----- |  ----------         |
+|  | [Menu Principal index.md] |  |
 
 ---
 

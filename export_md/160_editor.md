@@ -101,8 +101,9 @@ Magnifique! Vous vous souviendrez bien que Control + C quitte un programme en co
 
 ---
 
-|PREC: [Les commandes de base](150_console.md) | |SUIV: [Les différents éditeurs](170_shell-tools.md)|
-| |[Menu Principal](index.md) ||
+| PREC: [Les commandes de base](150_console.md) |  | SUIV: [Les différents éditeurs](170_shell-tools.md) |
+| -------------  | ----- |  ----------         |
+|  | [Menu Principal index.md] |  |
 
 ---
 

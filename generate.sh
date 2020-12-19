@@ -31,7 +31,7 @@ do
 	FILE=${FILE#temp/}
 	# Et on enlève l'extension le suffix 'src/' du nom du fichier.
 
-	Menu[$f]="[$TITRE $FILE.$ext]"
+	Menu[$f]="[$TITRE]($FILE.$ext)"
 done
 #
 #for item in "$Menu"
@@ -64,8 +64,9 @@ for (( f=0 ; f != ${#liste[*]} ; f++ )) ; do
 
 	# ajoute le Menu
 	echo '===========================================' 		>> ${liste[$f]}
-	echo ' | PREC: '${Menu[$e]}' |  | SUIV: '${Menu[$g]}' ||'  	>> ${liste[$f]}
-	echo ' |  | [Menu Principal index.'$ext'] |  |' 		>> ${liste[$f]}
+	echo '""" | PREC: '${Menu[$e]}' |  | SUIV: '${Menu[$g]}' |'  	>> ${liste[$f]}
+	echo '""" | -------------  | ----- |  ----------         |'  	>> ${liste[$f]}
+	echo '""" |  | [Menu Principal index.'$ext'] |  |' 		>> ${liste[$f]}
 	echo '===========================================' 		>> ${liste[$f]}
 
 
@@ -73,11 +74,16 @@ for (( f=0 ; f != ${#liste[*]} ; f++ )) ; do
 	
 done
 
+echo DOING:  rm -rf export_$ext
 rm -rf export_$ext
 mkdir export_$ext
+echo DOING: mkdir export_$ext
 
+echo
+echo DOING: mv temp/*.$ext export_$ext
 mv temp/*.$ext export_$ext
 
+echo DOING: rm -rf temp/
 rm -rf temp/
 
 # Et maintenant, on ajoute à chacun de nos fichiers temporaire, les liens qui ont

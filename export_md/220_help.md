@@ -184,8 +184,9 @@ Sinon, vous pouvez aussi passez à la page suivante. (^_^)
 
 ---
 
-|PREC: [Les fichiers de configuration](210_config.md) | |SUIV: [Programmer](230_programming.md)|
-| |[Menu Principal](index.md) ||
+| PREC: [Les fichiers de configuration](210_config.md) |  | SUIV: [Programmer](230_programming.md) |
+| -------------  | ----- |  ----------         |
+|  | [Menu Principal index.md] |  |
 
 ---
 

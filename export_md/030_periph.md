@@ -161,8 +161,9 @@ Vous êtes en principe armé pour passer à la suite....
 
 ---
 
-|PREC: [Anatomie d'un Ordinateur](020_hardware.md) | |SUIV: [Le clavier](040_clavier.md)|
-| |[Menu Principal](index.md) ||
+| PREC: [Anatomie d'un Ordinateur](020_hardware.md) |  | SUIV: [Le clavier](040_clavier.md) |
+| -------------  | ----- |  ----------         |
+|  | [Menu Principal index.md] |  |
 
 ---
 

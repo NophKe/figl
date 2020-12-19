@@ -304,8 +304,9 @@ En faits, la vitesse des programmes et très peu limités par la quantité de te
 
 ---
 
-|PREC: [Les Interfaces](070_interface.md) | |SUIV: [Le réseau](090_network.md)|
-| |[Menu Principal](index.md) ||
+| PREC: [Les Interfaces](070_interface.md) |  | SUIV: [Le réseau](090_network.md) |
+| -------------  | ----- |  ----------         |
+|  | [Menu Principal index.md] |  |
 
 ---
 

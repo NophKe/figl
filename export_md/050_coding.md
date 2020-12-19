@@ -165,8 +165,9 @@ D'autres vendeurs jouent sur la parenté entre bit et Byte (octet en anglais) po
 
 ---
 
-|PREC: [Le clavier](040_clavier.md) | |SUIV: [Le Boot](060_boot.md)|
-| |[Menu Principal](index.md) ||
+| PREC: [Le clavier](040_clavier.md) |  | SUIV: [Le Boot](060_boot.md) |
+| -------------  | ----- |  ----------         |
+|  | [Menu Principal index.md] |  |
 
 ---
 
