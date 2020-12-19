@@ -27,30 +27,23 @@ do
 	# On récupère le nom de chacun des fichiers de la liste
 
 	FILE=${FILE#temp/}
-	# Et on enlève l'extension le suffix 'src/' du nom du fichier.
+	# Et on enlève l'extension le suffix 'temp/' du nom du fichier.
 
 	Menu[$f]="[$TITRE]($FILE)"
 done
-#
-#for item in "$Menu"
-#do
-#done
-#
 
-echo ' ' >> temp/index.t2t
-echo '| ----------- |'  >> temp/index.t2t
 
+echo ' ' >> temp/index.$ext
+echo '| ----------- |'  >> temp/index.$ext
 
 
 for (( f=0 ; f != ${#liste[*]} ; f++ )) ; do
 
-	echo '| ' ${Menu[$f]} ' |'  >> temp/index.t2t
+	echo '| ' ${Menu[$f]} ' |'  >> temp/index.$ext
 
 	# S'il s'agit du premier élément de la liste on définit $e comme 
 	# la taille de la liste. Ainsi le lien vers le fichier précédent mènera au
 	# dernier fichier de la liste.
-	
-	
 	if [[ $f == 0 ]] ; then
 		e=${#liste[*]}
 	else
@@ -58,10 +51,9 @@ for (( f=0 ; f != ${#liste[*]} ; f++ )) ; do
 	fi
 
 	# Et si c'est le dernier fichier, boucler vers le premier afin que le menu soit circulaire
-
-	if [[ $f == ${#liste[*]} ]] ; then
+	if [[ $f == ${#liste[*]} ]]
+	then
 		g=0
-
 	else
 		g=$f+1
 	fi
@@ -77,7 +69,7 @@ for (( f=0 ; f != ${#liste[*]} ; f++ )) ; do
 done
 
 
-echo '| ----------- |'  >> temp/index.t2t
+echo '| ----------- |'  >> temp/index.$ext
 
 
 
@@ -135,7 +127,7 @@ rm -rf temp/
 #		cat ./inc/03txt >> $FILE
 #
 #		echo '$result = mysqli_query($conn,"SELECT * FROM _01 WHERE page = '$PAGE'");' >> $FILE
-#	
+#
 #		cat ./inc/04txt >> $FILE
 #	
 #		echo '</div></BODY></HTML>' >> $FILE
