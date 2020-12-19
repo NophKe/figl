@@ -359,6 +359,7 @@ Aussi comme vous avez compris comment on crée des alias, je vous redonne sa syn
     alias foo=bar
 
 Avec cette façon de faire, vous comprenez que `alias` et `=` ne peuvent ommis, et que foo et bar sont des valeurs de votre choix.
+ 
 -------------------------------------------
 | PREC: [La philosophie du Libre](130_libre.md) |  | SUIV: [Les commandes de base](150_console.md) |
 | -------------  | ----- |  ----------         |

@@ -110,6 +110,7 @@ Le carnet de maintenance en somme! Si vous ne voulez pas faire tournez un serveu
 Parfois le système ne sait plus à quel fichier correspond un cluster d'un disque. À la racine de chacune des partition au format ext, il y aura ce répertoire.
 
 C'est le système qui gère cela, ne vous en préoccupez pas trop, et éteignez votre ordinateur proprement.
+ 
 -------------------------------------------
 | PREC: [Les Disques](110_disks.md) |  | SUIV: [La philosophie du Libre](130_libre.md) |
 | -------------  | ----- |  ----------         |

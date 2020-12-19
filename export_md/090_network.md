@@ -215,6 +215,7 @@ Remarque: Cela signifie que même les tous les sites (même ceux qui ne cherchen
 Dans cette section les navigateurs vont indiquer votre langue, votre matériel, et plein d'autres détails qui permettrons de vous offrir une expérience *personnalisée*.
 
 Même remarque que précédemment, il est parfois plus simple de changer de navigateur que de vouloir l'empêcher de frimer.
+ 
 -------------------------------------------
 | PREC: [Introduction au logiciel ](080_software.md) |  | SUIV: [Unix...](100_unix.md) |
 | -------------  | ----- |  ----------         |

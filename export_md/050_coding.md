@@ -162,6 +162,7 @@ est aussi un Kilo-octet en français ( abrégé Ko et KB en anglais )
  * Remarquez l'absence du petit  « i » !
 
 D'autres vendeurs jouent sur la parenté entre bit et Byte (octet en anglais) pour parler de débits en bits/seconde et mégabits/seconde (Mbit/s) plutôt que de Kilo-octet/seconde !
+ 
 -------------------------------------------
 | PREC: [Le clavier](040_clavier.md) |  | SUIV: [Le Boot](060_boot.md) |
 | -------------  | ----- |  ----------         |

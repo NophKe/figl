@@ -79,6 +79,7 @@ Les téléphones portables et les tablettes utilisent des processeur ARM (64 bit
 [![](img/architecture.png)](https://fr.wikipedia.org/wiki/Carte_m%C3%A8re)
 
 |Architecture "classique" d'une carte mère. ( credit Wikipedia )|
+ 
 -------------------------------------------
 | PREC: [La Préhistoire](010_prehistoire.md) |  | SUIV: [Les Périphériques](030_periph.md) |
 | -------------  | ----- |  ----------         |

@@ -67,6 +67,7 @@ for (( f=0 ; f != ${#liste[*]} ; f++ )) ; do
 	fi
 
 	# ajoute le Menu
+	echo ' ' >> ${liste[$f]}
 	echo '-------------------------------------------' 		>> ${liste[$f]}
 	echo '| PREC: '${Menu[$e]}' |  | SUIV: '${Menu[$g]}' |'  	>> ${liste[$f]}
 	echo '| -------------  | ----- |  ----------         |'  	>> ${liste[$f]}

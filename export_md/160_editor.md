@@ -98,6 +98,7 @@ On vérifie une dernière fois ce qui a été inscrit dans le fichier...
 Magnifique! Vous vous souviendrez bien que Control + C quitte un programme en cours. Et les puristes vont me jeter des pierres....
 
 *(Mais promis on parlera de EOF un de ces jours...)*
+ 
 -------------------------------------------
 | PREC: [Les commandes de base](150_console.md) |  | SUIV: [Les différents éditeurs](170_shell-tools.md) |
 | -------------  | ----- |  ----------         |

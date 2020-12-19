@@ -264,6 +264,7 @@ Maintenant suivant le choix, on va réaliser différentes actions...
 
 ---
 
+ 
 -------------------------------------------
 | PREC: [Un joli bashrc](240_bashrc.md) |  | SUIV: [A suivre](260_archlinux.md) |
 | -------------  | ----- |  ----------         |

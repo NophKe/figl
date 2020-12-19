@@ -68,6 +68,7 @@ La touche Fn donne accès aux fonctions multimédia des claviers modernes (Régl
 : la touche Menu
 
 Elle simule un clique droit de la souris.
+ 
 -------------------------------------------
 | PREC: [Les Périphériques](030_periph.md) |  | SUIV: [Le Codage de l'information](050_coding.md) |
 | -------------  | ----- |  ----------         |

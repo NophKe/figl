@@ -226,6 +226,7 @@ C'est le petit message qui s'affiche lors de votre connexion à un tty.
 ### Les autres 
 
 Il en reste bien d'autre, cette liste n'est donc pas exhaustive!
+ 
 -------------------------------------------
 | PREC: [Emacs](200_emacs.md) |  | SUIV: [Trouver de l'aide et progresser](220_help.md) |
 | -------------  | ----- |  ----------         |

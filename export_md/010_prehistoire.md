@@ -68,6 +68,7 @@ Alan Turing a été l'homme qui fait passer l'informatique de la recherche théo
 ![](img/turing.jpg)(https://fr.wikipedia.org/wiki/Alan_Turing):
 
 |Alan Turing, ( credit Wikipedia )|
+ 
 -------------------------------------------
 | PREC:  |  | SUIV: [Anatomie d'un Ordinateur](020_hardware.md) |
 | -------------  | ----- |  ----------         |

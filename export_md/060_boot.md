@@ -137,6 +137,7 @@ Alors Systemd se range dans son coin et surveille que tout se passe bien. Parfoi
 On ne peut pas encore entrer dans les sockets, car il n'y a pas lieu dans la section des fondamentaux. Il est cependant à savoir que les sockets sont les interfaces de communication des processus/programmes/services entre eux.
 
 Il est de la responsabilité de Systemd de gérer les sockets.
+ 
 -------------------------------------------
 | PREC: [Le Codage de l'information](050_coding.md) |  | SUIV: [Le Login](065_login.md) |
 | -------------  | ----- |  ----------         |

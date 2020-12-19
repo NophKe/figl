@@ -113,6 +113,7 @@ Les combinaisons de touches permettent d'accéder aux fonction du logiciel. Ctrl
 |GNU nano, un éditeur pour la nouvelle génération ( credit Wikipedia)|
 
 Remarque: Notez au passage que les couleurs de l'image ne sont pas dans le fichier texte, il s'agit bien d'un fichier texte pur. (Aucun logiciel de traitement de texte n'est passé par là...) Ces couleurs sont la coloration syntaxique. Tous les bons éditeurs offrent une coloration syntaxique qui permet de rendre la programmation, et l'écriture de fichiers de configuration plus agréable.
+ 
 -------------------------------------------
 | PREC: [Éditer du texte avec la console... ](160_editor.md) |  | SUIV: [Vim](190_vim.md) |
 | -------------  | ----- |  ----------         |

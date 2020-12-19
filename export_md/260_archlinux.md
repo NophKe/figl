@@ -5,6 +5,7 @@ Désolé, la fin est brutale. Mais c'est parceque le texte n'aurait pas du prend
 Donc voilà, on en est là...
 
 
+ 
 -------------------------------------------
 | PREC: [Programmez en C !](250_c-langage.md) |  | SUIV: [La partie bio](author.md) |
 | -------------  | ----- |  ----------         |

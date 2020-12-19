@@ -158,6 +158,7 @@ C'est l'intérêt des **niveaux d'abstraction**. Une notion fondamentale pour la
 Pour charger tous ces niveaux d'abstraction, et passer du tas inerte d'électronique à l'ordinateur fonctionnel, on procède au boot. Le démarrage de l'ordinateur!
 
 Vous êtes en principe armé pour passer à la suite....
+ 
 -------------------------------------------
 | PREC: [Anatomie d'un Ordinateur](020_hardware.md) |  | SUIV: [Le clavier](040_clavier.md) |
 | -------------  | ----- |  ----------         |

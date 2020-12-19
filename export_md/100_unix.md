@@ -152,6 +152,7 @@ C'est une définition auto référentielle! Dans cette définition que signifie 
 C'est bien compris? GNU ce n'est pas Unix! **Gnu est un logiciel libre**, et c'est toute la différence!
 
 Au passage on parle d'un acronyme récursif! ( Une blague d'informaticien... )
+ 
 -------------------------------------------
 | PREC: [Le réseau](090_network.md) |  | SUIV: [Les Disques](110_disks.md) |
 | -------------  | ----- |  ----------         |

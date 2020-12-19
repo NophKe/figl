@@ -165,6 +165,7 @@ Dans la pratique vous avez besoin de:
 Une fois que le noyau du système est chargé en mémoire, il cherche un programme d'initialisation (Systemd ou SysInitV) mais s'il ne trouve rien, il supposera que le système est *au moins un peu* posix et lancera `/bin/sh` et votre système sera initialisé (ni configuré, ni correctement booté, mais initialisé).
 
 S'il ne trouve même pas `/bin/sh`, bein je ne sais pas comment vous en êtes arrivé là... Mais vous l'avez surement bien cherché!
+ 
 -------------------------------------------
 | PREC: [L'arborescence](120_arborescence.md) |  | SUIV: [A l'origine était sh...](140_shell.md) |
 | -------------  | ----- |  ----------         |
