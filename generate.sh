@@ -40,8 +40,8 @@ done
 #
 for (( f=0 ; f != ${#liste[*]} ; f++ )) ; do
 
-	echo " | ----------- | " >> temp/index.t2t
-	echo " | ${Menu[$f]} | " >> temp/index.t2t
+	echo '""" | ----------- |'  >> temp/index.t2t
+	echo '""" | ' ${Menu[$f]} ' |'  >> temp/index.t2t
 
 	# S'il s'agit du premier élément de la liste on définit $e comme 
 	# la taille de la liste. Ainsi le lien vers le fichier précédent mènera au
