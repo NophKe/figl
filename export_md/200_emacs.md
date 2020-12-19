@@ -24,7 +24,7 @@ Si vous envisagez de vous investir à fond dans l'informatique ( ou d'en faire v
 
 | PREC: [Vim](190_vim.md) |  | SUIV: [Les fichiers de configuration](210_config.md) |
 | -------------  | ----- |  ----------         |
-|  | [Menu Principal index.md] |  |
+|  | [Menu Principal](index.md) |  |
 
 ---
 

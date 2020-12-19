@@ -115,7 +115,7 @@ C'est le système qui gère cela, ne vous en préoccupez pas trop, et éteignez 
 
 | PREC: [Les Disques](110_disks.md) |  | SUIV: [La philosophie du Libre](130_libre.md) |
 | -------------  | ----- |  ----------         |
-|  | [Menu Principal index.md] |  |
+|  | [Menu Principal](index.md) |  |
 
 ---
 

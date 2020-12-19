@@ -275,7 +275,7 @@ initialiser $CHOISIROOT avec la valeur "sans-reponse"
 
 | PREC: [Programmer](230_programming.md) |  | SUIV: [Programmez en C !](250_c-langage.md) |
 | -------------  | ----- |  ----------         |
-|  | [Menu Principal index.md] |  |
+|  | [Menu Principal](index.md) |  |
 
 ---
 

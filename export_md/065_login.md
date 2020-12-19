@@ -56,7 +56,7 @@ Aussi ce compte ne devrait être utilisé que pour la maintenance du système.
 
 | PREC: [Le Boot](060_boot.md) |  | SUIV: [Une fois connecté](067_connected.md) |
 | -------------  | ----- |  ----------         |
-|  | [Menu Principal index.md] |  |
+|  | [Menu Principal](index.md) |  |
 
 ---
 

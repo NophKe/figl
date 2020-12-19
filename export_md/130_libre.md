@@ -170,7 +170,7 @@ S'il ne trouve même pas `/bin/sh`, bein je ne sais pas comment vous en êtes ar
 
 | PREC: [L'arborescence](120_arborescence.md) |  | SUIV: [A l'origine était sh...](140_shell.md) |
 | -------------  | ----- |  ----------         |
-|  | [Menu Principal index.md] |  |
+|  | [Menu Principal](index.md) |  |
 
 ---
 

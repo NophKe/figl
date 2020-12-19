@@ -73,7 +73,7 @@ Elle simule un clique droit de la souris.
 
 | PREC: [Les Périphériques](030_periph.md) |  | SUIV: [Le Codage de l'information](050_coding.md) |
 | -------------  | ----- |  ----------         |
-|  | [Menu Principal index.md] |  |
+|  | [Menu Principal](index.md) |  |
 
 ---
 

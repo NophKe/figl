@@ -73,7 +73,7 @@ Alan Turing a été l'homme qui fait passer l'informatique de la recherche théo
 
 | PREC:  |  | SUIV: [Anatomie d'un Ordinateur](020_hardware.md) |
 | -------------  | ----- |  ----------         |
-|  | [Menu Principal index.md] |  |
+|  | [Menu Principal](index.md) |  |
 
 ---
 

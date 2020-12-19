@@ -40,6 +40,7 @@ done
 #
 for (( f=0 ; f != ${#liste[*]} ; f++ )) ; do
 
+	echo " | ----------- | " >> temp/index.t2t
 	echo " | ${Menu[$f]} | " >> temp/index.t2t
 
 	# S'il s'agit du premier élément de la liste on définit $e comme 
@@ -66,7 +67,7 @@ for (( f=0 ; f != ${#liste[*]} ; f++ )) ; do
 	echo '===========================================' 		>> ${liste[$f]}
 	echo '""" | PREC: '${Menu[$e]}' |  | SUIV: '${Menu[$g]}' |'  	>> ${liste[$f]}
 	echo '""" | -------------  | ----- |  ----------         |'  	>> ${liste[$f]}
-	echo '""" |  | [Menu Principal index.'$ext'] |  |' 		>> ${liste[$f]}
+	echo '""" |  | [Menu Principal](index.'$ext') |  |' 		>> ${liste[$f]}
 	echo '===========================================' 		>> ${liste[$f]}
 
 

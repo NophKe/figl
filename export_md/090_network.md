@@ -220,7 +220,7 @@ Même remarque que précédemment, il est parfois plus simple de changer de navi
 
 | PREC: [Le Logiciel](080_software.md) |  | SUIV: [Unix...](100_unix.md) |
 | -------------  | ----- |  ----------         |
-|  | [Menu Principal index.md] |  |
+|  | [Menu Principal](index.md) |  |
 
 ---
 

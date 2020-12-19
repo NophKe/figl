@@ -118,7 +118,7 @@ Remarque: Notez au passage que les couleurs de l'image ne sont pas dans le fichi
 
 | PREC: [Éditer du texte avec la console... ](160_editor.md) |  | SUIV: [Vim](190_vim.md) |
 | -------------  | ----- |  ----------         |
-|  | [Menu Principal index.md] |  |
+|  | [Menu Principal](index.md) |  |
 
 ---
 

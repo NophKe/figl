@@ -175,7 +175,7 @@ Ntfs est beaucoup moins limité, et il est journalisé.
 
 | PREC: [Unix...](100_unix.md) |  | SUIV: [L'arborescence](120_arborescence.md) |
 | -------------  | ----- |  ----------         |
-|  | [Menu Principal index.md] |  |
+|  | [Menu Principal](index.md) |  |
 
 ---
 
