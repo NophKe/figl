@@ -5,11 +5,11 @@
 
 Comme la machine de Turing est une machine purement théorique, pour ce qui est de la réalisation pratique, l’architecture matérielle des ordinateurs modernes est basée sur ce que l'on appelle l'architecture de Von Neumann qui décompose l’ordinateur ainsi:
 
- * Les **dispositifs d’entrées/sorties**, qui permettent de communiquer avec le monde extérieur.
+1. Les **dispositifs d’entrées/sorties**, qui permettent de communiquer avec le monde extérieur.
   * (clavier, écran, imprimante...) de façon plus moderne, on parlera de *périphériques*
 
- * L’**unité de contrôle**, qui est chargée du séquençage des opérations, du respect de l'algorithme
- * L’**unité arithmétique et logique** (UAL) ou unité de traitement, qui effectue les instructions de base
+1. L’**unité de contrôle**, qui est chargée du séquençage des opérations, du respect de l'algorithme
+1. L’**unité arithmétique et logique** (UAL) ou unité de traitement, qui effectue les instructions de base
   * Ces deux derniers correspondent à nos **processeurs** modernes.
 
  * La **mémoire** qui contient les programmes et les données
@@ -18,7 +18,7 @@ Comme la machine de Turing est une machine purement théorique, pour ce qui est 
 
 [![](img/arch_von_neumann.png)](https://fr.wikipedia.org/wiki/Architecture_de_von_Neumann)
 
-|Schémas de principe de l'architecture de Von Neumann ( credit Wikipedia )|
+Schémas de principe de l'architecture de Von Neumann ( credit Wikipedia )
 
 ## Une Architecture Matérielle 
 
