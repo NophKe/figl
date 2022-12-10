@@ -42,13 +42,13 @@ Quand une nouvelle imprimante fut offert à l'université Richard Stallman voulu
 
 Pourquoi ne voulait on pas laisser Stallman étudier le programme. Ce programme cachait-t-il quelque chose, un espion à l'université? Probablement pas, mais sans le code source impossible à dire! À l'époque de cette histoire, les ordinateurs n'étaient pas interconnectés comme aujourd'hui. Collecter des données, était une tâche difficile et la puissance de calcul n'était pas encore là. Mais de nos jours, on connait tellement ces pratiques qu'on leur a donné des noms.
 
-: Le Pistage
+#### Le Pistage
 C'est simple, vous êtes fliqué! Même des distribution Gnu-Linux comme Ubuntu (de la société Cannonical) se sont fait pincer à regarder dans les recherches (locales et Internet) que faisaient leur utilisateurs! Les agences gouvernementales peuvent *quasiment* tout savoir de ce que vous faites sur Internet.
 
-: Une Backdoor
+#### Une Backdoor
 La porte dérobée ou littéralement la porte de derrière, un accès délibérément laissé ouvert qui permets à un tiers (l'éditeur, un pirate, un client de l'éditeur, un espion...) depuis l'extérieur d'accéder au programme, de savoir ce que ce programme est en train de faire, et, en règle générale d'accéder à toutes les ressources dont ce programme à l'accès sur votre ordinateur
 
-: Une Backdoor Universelle
+#### Une Backdoor Universelle
 Pareil que précédemment, à la différence qu'elle permet à ce tiers de modifier le programme à distance. (La mise à jour automatique de Windows, se fait parfois sans aucune intervention de votre part! Cela signifie que Microsoft, ou d'autres, peuvent )
 
 Cette liste n'est pas exhaustive...
@@ -67,16 +67,16 @@ Sous license GPL, l'éditeur du logiciel reste propriétaire du code source bien
 
 Le code source ainsi que vos modifications doivent cependant rester sous license GPL. Ce système garantie plusieurs libertés:
 
-: Liberté Zéro
+#### Liberté Zéro
 Le droit d'exécuter le programme de la façon dont vous le souhaitez et sur la machine que vous souhaitez!
 
-: Liberté Numéro Un
+#### Liberté Numéro Un
 L'accès au code source du programme et à toutes les information nécessaires pour le compiler. Ainsi la liberté d'étudier le programme, de le modifier et de lui faire faire ce que vous souhaitez qu'il fasse.
 
-: Liberté Numéro Deux
+#### Liberté Numéro Deux
 La possibilité de redistribuer (donner ou vendre) des copies exactes du logiciel (et des sources).
 
-: Liberté Numéro Trois
+#### Liberté Numéro Trois
 La possibilité de redistribuer (donner ou vendre) des copies modifiées du logiciel (et des sources).
 
 [![](img/Carte_conceptuelle.png)](https://fr.wikipedia.org/wiki/Logiciel_libre)
@@ -95,19 +95,19 @@ Les deux dernières libertés nous assurent le contrôle collectif. Elles permet
 
 Si tout le monde a accès au code source, alors chacun va développer des versions personnelles, on parlera de:
 
-: Clone
+#### Clone
 Vous aimez un programme qui n'est pas libre, ou qui n'existe pas pour votre système d'exploitation. Réécrivez le vous même! Parfois la nouvelle implémentation supplante même l'ancienne l'ancienne car elle propose des fonctionnalités innovante ou supérieures... (de nombreux programmes ont commencé leur vie comme des clones)
 
-: Port
+#### Port
 Quand il s'agit de faire fonctionner un programme pour une architecture pour laquelle il n'est pas prévu.
 
-: Patch
+#### Patch
 Quand, une version modifiée d'un programme, évolue conjointement avec ce programme (en intégrant les mises-à-jours, et en se basant toujours sur la dernière version)
 
-: Branch
+#### Branch
 Quand dans deux versions concurrentes d'un même projet évoluent en se séparant... Il y a alors un dernier numéro de version commun qui leur est commun. Puis, comme le tronc d'un arbre donne plusieurs branches, chaque projet part dans sa direction. (Une branche peut être abandonné ou être réintégrée dans le tronc si elle apporte des innovations, ou des corrections intéressantes.)
 
-: Fork
+#### Fork
 Plus radical qu'une branche! Quand il y a désaccord technique ou/et désaccord humain, la communauté doit trancher (suivant ses règles internes). Ceux qui ne veulent pas suivre peuvent copier le code source, changer le nom du logiciel et partir de leur coté. (les râleurs, les génies, et les solitaires sont libres de *forker* quand ils le souhaitent sans attendre personne!) De nombreux projets naissent ainsi.
 
 Le développement d'un logiciel libre est un processus complexe (à la limite des phénomènes organiques...).
@@ -152,15 +152,11 @@ Il est une question très saine à se poser! En taillant dans le gras d'une dist
 
 Dans la pratique vous avez besoin de:
 
-1. Un chargeur de démarrage. ( lilo , grub, efistub... )
-  * (Mais vous pouvez vous en passer si votre bios gère l'Uefi)
-1. Un Noyau ( Linux, Linux-lts, Hurd )
-  * (Gnu devait au départ avoir pour noyau Hurd, mais ce dernier n'est toujours pas au point...)
-1. Un gestionnaire d'initialisation ( SysVinit, Systemd... )
-  * (Il va lancer les démons/services, démarrer les connexions réseau... Il aura donc besoin que vous installiez les programmes que vous voulez qu'il lance au démarrage)
-1. Un shell ( sh, bash,... )
-1. Coreutils et linux-util (voir busybox ou autres) sont des ensembles de petits programmes courants (ls, cat, mount....)
-  * Ce sont les programmes de base qui permettent d'utiliser le système... Un système qui ne possèderai pas d'interface pour ouvrir des dossiers, ou éditer des fichier serait *en pratique* inutilisable! On s'attend donc à ce que le shell puisse trouver certains classiques!
+1. Un chargeur de démarrage. *lilo , grub, efistub...* Mais vous pouvez vous en passer si votre bios gère l'Uefi
+1. Un Noyau *Linux, Linux-lts, Hurd* Gnu devait au départ avoir pour noyau Hurd, mais ce dernier n'est toujours pas au point...
+1. Un gestionnaire d'initialisation *SysVinit, Systemd...* Il va lancer les démons/services, démarrer les connexions réseau... Il aura donc besoin que vous installiez les programmes que vous voulez qu'il lance au démarrage
+1. Un shell *sh, bash,...*
+1. *Coreutils et linux-util (voir busybox ou autres)* sont des ensembles de petits programmes courants (ls, cat, mount....) Ce sont les programmes de base qui permettent d'utiliser le système... Un système qui ne possèderai pas d'interface pour ouvrir des dossiers, ou éditer des fichier serait *en pratique* inutilisable! On s'attend donc à ce que le shell puisse trouver certains classiques!
 
 Une fois que le noyau du système est chargé en mémoire, il cherche un programme d'initialisation (Systemd ou SysInitV) mais s'il ne trouve rien, il supposera que le système est *au moins un peu* posix et lancera `/bin/sh` et votre système sera initialisé (ni configuré, ni correctement booté, mais initialisé).
 

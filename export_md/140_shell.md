@@ -57,6 +57,8 @@ On détaillera dans les paragraphes qui suivent.
 
 La chose est la plus importante, est sûrement que l'on ne peut pas apprendre à utiliser l'interface texte, sans s'y confronter pour de vrai... Ouvrez donc un émulateur de terminal, vous avez surement une interface graphique qui tourne donc démmarez la console.
 
+Aussi si vous n'avez toujours pas pris le temps d'installer une distribution linux sur un de vos ordinateur, on dira que c'est le moment et qui si vous en êtes déjà là. Cela ne devrait en aucun ca vous effrayer.
+
 La première chose à savoir sur l'interface texte, c'est que ce petit morceau de texte s'affiche s'appelle la prompte, et doit ressembler à:
 
     $ _

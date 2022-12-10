@@ -154,7 +154,7 @@ Une page html est un fichier texte interprété par un navigateur Internet en fo
 
 Il affiche:
 
-Hello World !
+> Hello World !
 
 Mais s'il lit ceci:
 
@@ -162,7 +162,8 @@ Mais s'il lit ceci:
     <b>Hello</b> <i>World</i> sans fioriture...
 
 Il affichera:
-**Hello** *world* sans fioriture
+
+> **Hello** *world* sans fioriture
 
 Les parties entre crochets sont les balises, ainsi:
 
