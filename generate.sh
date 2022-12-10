@@ -36,7 +36,10 @@ done
 echo ' ' >> temp/index.$ext
 echo '-----------'  >> temp/index.$ext
 
-
+# Et maintenant, on ajoute à chacun de nos fichiers temporaire, les liens qui ont
+# été placé dans le tableau Menu[].
+# Pour chaque page on veut ajouter un lien vers la page précédente et vers la suivante
+# On définit idonc les variables $e et $g comme respectivement $f-1 et $f+1
 for (( f=0 ; f != ${#liste[*]} ; f++ )) ; do
 
 	echo '   >' ${Menu[$f]} '</br>' >> temp/index.$ext
@@ -86,14 +89,6 @@ mv temp/*.$ext export_$ext
 echo DOING: rm -rf temp/
 rm -rf temp/
 
-# Et maintenant, on ajoute à chacun de nos fichiers temporaire, les liens qui ont
-# été placé dans le tableau Menu[].
-# Pour chaque page on veut ajouter un lien vers la page précédente et vers la suivante
-# On définit idonc les variables $e et $g comme respectivement $f-1 et $f+1
-
-	# S'il s'agit du premier élément de la liste on définit $e comme 
-	# la taille de la liste. Ainsi le lien vers le fichier précédent mènera au
-	# dernier fichier de la liste.
 	
 	
 # On compile les fichiers temp

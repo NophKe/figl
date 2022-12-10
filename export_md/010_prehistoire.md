@@ -35,7 +35,7 @@ On a aussi inventé le métier à tisser le fil... Avec, on fait des tapis, mêm
 
 Plus fort que les bouliers, on a inventé la machine à calculer. Un objet bien plus efficace que le boulier... On lui entre des nombres qui font bouger des mécanismes dans la machine. Et le mouvement des roues dentées, des machins et des bidules mécaniques font qu'on peut lire un résultat!
 
-[![](img/Calculator.jpg)](https://fr.wikipedia.org/wiki/Calculatrice_m%C3%A9canique)
+[![](../img/Calculator.jpg)](https://fr.wikipedia.org/wiki/Calculatrice_m%C3%A9canique)
 
 |Machine à calculer Olivetti sans capot, 1964 ( credit Wikipedia )|
 
@@ -65,9 +65,10 @@ Aussi Turing a poursuivi son étude du sujet et a démontré qu'il existe des ma
 
 Alan Turing a été l'homme qui fait passer l'informatique de la recherche théorique sur les algorithmes, à de l'écriture de programmes.
 
-![](img/turing.jpg)(https://fr.wikipedia.org/wiki/Alan_Turing):
 
-|Alan Turing, ( credit Wikipedia )|
+![](../img/turing.jpg)(https://fr.wikipedia.org/wiki/Alan_Turing)
+
+Alan Turing, ( credit Wikipedia )
  
 -------------------------------------------
 | PREC:  |  | SUIV: [Anatomie d'un Ordinateur](020_hardware.md) |

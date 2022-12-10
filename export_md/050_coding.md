@@ -19,8 +19,8 @@ En effet, comment interpréter une valeur à mi chemin? Si mon clavier possède 
 
 Vous ne voudriez pas d'un clavier qui se trompe!
 
-> « - Monsieur votre machine de vote électronique n'a que trois touches ! GAUCHE  , DROITE , et INSOUMISSION CITOYENNE! J'ai appuyé sur INSOUMISSION CITOYENNE et ça a quand même voté pour DROITE ! »
-> « - Oui mais vous savez.... Ce n'est pas par ce qu'il n'y a que trois touches que c'est infaillible à tous les coups...»
+ * « - Monsieur votre machine de vote électronique n'a que trois touches ! GAUCHE  , DROITE , et INSOUMISSION CITOYENNE! J'ai appuyé sur INSOUMISSION CITOYENNE et ça a quand même voté pour DROITE ! »
+ * « - Oui mais vous savez.... Ce n'est pas par ce qu'il n'y a que trois touches que c'est infaillible à tous les coups...»
 
 ## Un Clavier à trois touches 
 
@@ -51,11 +51,11 @@ C'est pour cela que l'on parle de données binaires. Cela signifie qu'elle ne pe
 
 Si nous voulons cette fois créer ci un clavier avec trois touches, A, B, et C, nous pourrions le faire avec un bus de trois bits.
 
-|PREMIER FIL |SECOND FIL |TROISIÈME |VALEUR BINAIRE |TOUCHE CLAVIER|
-|0 |0 |0 |000 |aucune|
-|0 |0 |1 |001 |A|
-|0 |1 |0 |010 |B|
-|1 |0 |1 |100 |C|
+| PREMIER FIL | SECOND FIL | TROISIÈME | VALEUR BINAIRE | TOUCHE CLAVIER |
+| 0 | 0 | 0 | 000 | aucune |
+| 0 | 0 | 1 | 001 | A |
+| 0 | 1 | 0 | 010 | B |
+| 1 | 0 | 1 | 100 | C |
 
 Nous pourrions d'ailleurs ajouter autant de fil que nécessaires pour que chaque touche aie son propre fil distinctif, mais cela ne serait pas vraiment pratique car cela finirait par faire pas mal de fils...
 
@@ -119,12 +119,13 @@ Pourquoi huit et pas dix? Je ne rentre pas là dedans, cela date de la préhisto
 
 Attention:
 
-: un bit (abrégé b minuscule)
+#### un bit (abrégé b minuscule)
 Se prononce «bite» est l'unité de base qui code une information binaire ( un zéro ou un un )
-: un Byte (abrégé B majuscule)
+
+#### un Byte (abrégé B majuscule)
 est la traduction en anglais d'un octet (et se prononce bayte)
 
-: un octet (abrégé o)
+#### un octet (abrégé o)
 vaut huit bits
 
 C'était les unités de la préhistoire, et personne n'avait rien à y redire...
@@ -139,7 +140,7 @@ Comme pour les autres unités de la vie courante, on se mit très vite à parler
 
 La convention ( bien qu'elle ne soit pas vraiment respectée par tous ) demande d'utiliser les unités ainsi:
 
-: Une « mille-vingt-quatraine » d'octet
+#### Une « mille-vingt-quatraine » d'octet
 c'est aussi un Kilo-octet ( abrégé Kio en français et KiB en anglais)
 
 Remarquez bien le petit « i » dans l'unité abrégée.
@@ -153,7 +154,7 @@ Les vendeurs de disques durs, on très vite compris qu'ils avaient cependant int
 
 Et plus on va avancer dans les multiples, pire ce sera!
 
-: Un millier d'octet
+#### Un millier d'octet
 est aussi un Kilo-octet en français ( abrégé Ko et KB en anglais )
 
  * Un méga-octet (Mo) est mille kilo-octets (Ko)

@@ -44,13 +44,13 @@ Remarque:Oui oui les ssd sont comme plusieurs cartes sd empilées
 
 Une interface matérielle qui transforme des données en signal à émettre et un signal reçu en données.
 
-: Modem
+#### Modem
 Carte réseau qui transforme des données en signal pour les réseaux téléphonique
 
-: Carte Ethernet
+#### Carte Ethernet
 Carte réseau qui transforme des données en signal pour les réseaux câblés
 
-: Carte wifi
+#### Carte wifi
 Carte réseau qui transforme des données en signal pour les réseaux sans fils
 
 ### Un Clavier 
