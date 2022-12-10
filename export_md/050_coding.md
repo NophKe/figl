@@ -52,6 +52,7 @@ C'est pour cela que l'on parle de données binaires. Cela signifie qu'elle ne pe
 Si nous voulons cette fois créer ci un clavier avec trois touches, A, B, et C, nous pourrions le faire avec un bus de trois bits.
 
 | PREMIER FIL | SECOND FIL | TROISIÈME | VALEUR BINAIRE | TOUCHE CLAVIER |
+| ----------- | ---------- | --------- | -------------- | -------------- |
 | 0 | 0 | 0 | 000 | aucune |
 | 0 | 0 | 1 | 001 | A |
 | 0 | 1 | 0 | 010 | B |
@@ -61,7 +62,8 @@ Nous pourrions d'ailleurs ajouter autant de fil que nécessaires pour que chaque
 
 Si nous voulons cette fois créer un clavier avec trois touches, A, B, et C avec un bus de deux bits.
 
-|PREMIER FIL |SECOND FIL |VALEUR BINAIRE |TOUCHE CLAVIER|
+| PREMIER FIL | SECOND FIL | TROISIÈME | VALEUR BINAIRE | TOUCHE CLAVIER |
+| ----------- | ---------- | --------- | -------------- | -------------- |
 |0 |0 |00 |aucune appuyée|
 |0 |1 |01 |A|
 |1 |0 |10 |B|
@@ -71,7 +73,8 @@ Mais la deuxième solution n'est pas forcément la meilleure... Supposons que je
 
 Il me suffit de remplacer ma lettre C par shift !
 
-|PREMIER FIL |SECOND FIL |TROISIÈME |VALEUR BINAIRE |TOUCHE CLAVIER|
+| PREMIER FIL | SECOND FIL | TROISIÈME | VALEUR BINAIRE | TOUCHE CLAVIER |
+| ----------- | ---------- | --------- | -------------- | -------------- |
 |0 |0 |0 |000 |aucune|
 |0 |0 |1 |001 |A|
 |0 |1 |0 |010 |B|
