@@ -115,16 +115,16 @@ Si le protocole est bien fait, et que tout le monde le respecte, tout se passera
 
 En informatique, c'est pareil, n'importe quel composant (logiciel ou matériel) peut communiquer et interagir avec n'importe quel autre **SI ET SEULEMENT SI** il s'entendent sur une chaine continue de protocoles entre l'un et l'autre.
 
-: HTTP(s)
+#### HTTP(s)
 Le protocole pour envoyer/recevoir des pages web
 
-: FTP
+#### FTP
 Le protocole pour envoyer/recevoir des fichiers sur Internet
 
-: PCI
+#### PCI
 Protocole de communication des périphériques entre eux
 
-: MTP
+#### MTP
 Le !?#x de protocole inventé par Microsoft qui fait vous pouvez pas (plus) utiliser votre téléphone (ou autre) comme d'un disque usb, et qui fait que votre pc voit un appareil photo, plutôt qu'un téléphone, ou juste un disque! (bref!)
  
 -------------------------------------------

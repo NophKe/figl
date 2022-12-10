@@ -159,29 +159,29 @@ Hello World !
 Mais s'il lit ceci:
 
     
-    <u> <b> Hello </b> <i> World  </i> </u> sans fioriture...
+    <b>Hello</b> <i>World</i> sans fioriture...
 
 Il affichera:
-__ ** Hello ** // world // __ sans fioriture
+**Hello** *world* sans fioriture
 
 Les parties entre crochets sont les balises, ainsi:
 
-: **<u>		</u>**
+#### <u>		</u>
 Tout ce qui est entre ces deux balises est souligné *(underlined)*
-: **<b>		</i>**
+
+#### <b>		</b>
 Tout ce qui est entre ces deux balises est en gras
-: **<i>		</i>**
+
+#### <i>		</i>
 Tout ce qui est entre ces deux balises est en italique
 
-==Les adresses web==
+## Les adresses web
 
 Simplifié à l'extrême une adresse web c'est!
 
 
-|Un protocole |:// |un_serveur_internet |une_resource_d_internet|
-
-Par exemple:
-
+|Un protocole | \:// |un_serveur_internet |une_resource_d_internet|
+| ----------- | ---- | ---------------   | -- |
 |http |:/ |/gnu.org |/home.fr.html|
 
 La grande force du web, c'est d'avoir été conçu sans hiérarchie, sans annuaire, et sans contraintes... Personne n'impose à personne d'organiser son site en aucune façon.

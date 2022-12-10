@@ -16,19 +16,19 @@ Les interfaces graphiques de Windows, Mac, et Android sont configurables dans un
 
 ### Pour ne citer que les principales (et mes préférés) 
 
-: Kde
+#### Kde
 possède une interface utilisateur esthétique faite pour être facile d'accès pour les débutants
 
-: Gnome
+#### Gnome
 son grand concurrent en est à la version 3
 
-: Mate
+#### Mate
 la descendante de Gnome 2, dont certains *(personne)* n'arrivaient pas à se défaire...
 
-: Xfce
+#### Xfce
 environnement complet (comme Kde et Gnome) destiné à des machines moins puissantes. Il est léger et réactif.
 
-: i3
+#### i3
 est destiné à des utilisateurs plus avancés qui veulent un système entièrement configurable, utilisable sans trop lever les mains du clavier, et très réactif.
 
 ## Le Shell 
@@ -43,16 +43,16 @@ Le Shell n'est rien d'autre qu'un processus utilisateur, et même pas un qui soi
 
 ### Les différents shells 
 
-: sh
+#### sh
 C'est l'ancêtre de tous, le premier à avoir été écrit. Il a été conservé pour des raisons de compatibilité jusqu'à devenir part incontournable du standard POSIX
 
-: Bash
+#### Bash
 C'est le descendant de sh. Il l'améliore et l'étends tout en restant compatible avec son papa. Ce qui fait de lui le shell pré installé par défaut sur *presque* toutes les distribution Linux
 
-: Zsh
+#### Zsh
 Un shell moderne avec une auto-complétion puissante, de belles couleur qui le rendent lisible, même sans configuration préalable.
 
-: Fish
+#### Fish
 Un shell très pratique pour les débutants de la ligne de commande. Mais qui a une syntaxe parfois assez différente de Bash
  
 -------------------------------------------

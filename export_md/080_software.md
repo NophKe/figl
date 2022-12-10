@@ -1,7 +1,5 @@
 # Introduction au logiciel 
 
-
-
 Un logiciel c'est de la donnée exécutable. Par opposition les fichiers ne sont pas exécutables.
 Tous les programmes s'exécutent pas de la même façon.
 
@@ -226,22 +224,22 @@ Alors forcément de fil en aiguille...
 
 ## Définitions 
 
-: Code Source
+#### Code Source
 Le fichier de texte grâce auquel on écrit le programme ainsi que les commentaires
 
-: Compilateur
+#### Compilateur
 Le programme qui effectue l'action de transformer le fichier source en un véritable programme
 
-: Langage machine
+#### Langage machine
 Le langage dans lequel doit être écrit un programme pour être directement exécutable par la machine. Sans commentaire.
 
-: Langage de bas niveau
+#### Langage de bas niveau
 Langage de programmation proche du langage machine
 
-: Langage de haut niveau
+#### Langage de haut niveau
 Langage de programmation proche du langage humain
 
-: Exécutable
+#### Exécutable
 Programme issu d'une compilation pour une architecture matérielle spécifique et un système d'exploitation spécifique. En gros, un fichier qui contient des segments de données et des segments de code qu'un système d'exploitation sait reconnaitre et démarrer. (et à qui il sait fournir des librairies)
 
 ## Les Librairies 
@@ -262,16 +260,16 @@ La librairie n'est pas compilé dans l'exécutable, ce qui est dans l'exécutabl
 
 Les librairies à connaitre sont:
 
-: Les fameuses DLL de Windows
+#### Les fameuses DLL de Windows
 No comment
 
-: Glibc
+#### Glibc
 Celle qui construit Gnu-Linux
 
-: Gtk
+#### Gtk
 Fournit les éléments d'interface graphique de Gnome
 
-: Qt
+#### Qt
 Fournit les éléments d'interface graphique de Kde
 
 ## Les éxécutables.... 
